@@ -1,0 +1,71 @@
+
+
+nav {
+  border: 1px solid black;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+nav .navbar-brand {
+  margin: 0 auto
+}
+
+nav ul {
+  list-style: none;
+  display: inline-block;
+  margin-left: 50px;
+}
+
+nav ul li {
+  float: left;
+  margin: auto 10px;
+  font-size: 20px;
+}
+
+.outer-wraper {
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-1 {
+  width: 1000px;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pic-slider {
+  max-width: 520px;
+  float: right;
+}
+
+.avatar-div {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 0;
+}
+
+.thumbnail {
+  display: inline-block;
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.brief-biograph {
+  max-width: 480px
+}
+
+.brief-biograph h2 {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.brief-biograph p {
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 17px;
+}

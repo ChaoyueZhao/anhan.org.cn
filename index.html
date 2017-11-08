@@ -3,9 +3,160 @@
   <head>
     <meta charset="utf-8">
     <title>纪念安汉</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link href="css/jquery.bxslider.css" rel="stylesheet"/>
+
+
+    </script>
   </head>
   <body>
-    <h2>安汉，字杰三，民国时期著名农垦专家。</h2>
-    <p>这是一个纪念安汉的网页</p>
+
+
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">
+            <!-- <img alt="安汉纪念馆" src="pic/logo.png"> -->
+            <span>安汉纪念馆</span>
+          </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">史料文献 <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">安汉研究 <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">纪念活动 <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    <div class="outer-wraper">
+      <section class="section-1">
+        <div class="pic-slider">
+          <div class="">
+            <ul class="bxslider">
+              <li>
+                <img src="pic/an-han-three.png">
+                <div class="bx-caption">
+                  <span>安汉夫妇与黄统先生</span>
+                </div>
+              </li>
+              <li>
+                <img src="pic/standing.png">
+                <div class="bx-caption">
+                  <span>安汉先生在黎坪</span>
+                </div>
+              </li>
+              <li>
+                <img src="pic/an-han-france.png" alt="安汉在法国">
+                <div class="bx-caption">
+                  <span>安汉先生与白友三（左）和李宝峯（右）在法国榜来威克公学（拍摄于民国十年十二月）。</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="brief-biograph">
+          <div class="avatar-div">
+            <img src="pic/avatar.png" alt="安汉" class="thumbnail">
+            <p>安汉(1897~1943)</p>
+          </div>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;安汉，字杰三，陕西南郑县梁山人，民国著名农垦专家。
+            早年留法学农，回国后积极倡导开发西北，多次参加考察西北农业的活动，曾任西北开发协会主席，
+            著有《西北垦殖论》和《西北农业考察》，后期担任国营黄龙山垦区管理局副局长和国营黎坪垦区管理局局长。</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在黎坪垦区任上，安汉受到鄂陕甘边区警备总司令祝绍周和南郑县县长孙宗复的诬害，被以“包庇种烟和贪污”的罪名逮捕并枪决。</p>
+        </div>
+      </section>
+
+      <section>
+        <div class="chronicle">
+
+        </div>
+      </section>
+
+      <section>
+        <div class="infomation">
+
+        </div>
+        <div class="events">
+
+        </div>
+      </section>
+
+      <footer>
+        <span></span>
+      </footer>
+    </div>
+
+
+
+
+
+
+  <script src="js/bootstrap.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="js/jquery.bxslider.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.bxslider').bxSlider();
+    })
+    $('.bxslider').bxSlider({
+      auto: true,
+      autoHover: true,
+      pause: 4500,
+      pager: true,
+      caption: true,
+      controls: true,
+
+
+
+    })
+  </script>
   </body>
 </html>

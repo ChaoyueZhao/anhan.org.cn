@@ -7,44 +7,100 @@ nav {
 }
 
 nav .navbar-brand {
-  margin: 0 auto
+  padding-left: 40px;
+  padding-right: 40px
 }
 
-nav ul {
+nav navbar-nav {
   list-style: none;
   display: inline-block;
-  margin-left: 50px;
+  margin-right: 50px;
 }
 
 nav ul li {
-  float: left;
+  float: right;
   margin: auto 10px;
   font-size: 20px;
 }
 
-.outer-wraper {
+
+.jumbotron {
   max-width: 1024px;
+  height: 750px;
+  text-align: center;
   margin-left: auto;
   margin-right: auto;
+  margin-top: -20px;
 }
 
-.section-1 {
-  width: 1000px;
+.jumbotron h1 {
+  margin-bottom: 70px
+}
+
+ .jumbotron .left {
+  height: 400px;
+  text-align: center;
+}
+
+.jumbotron .left p {
+  margin-top: -18px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.jumbotron .right {
+  height: 400px;
+  text-align: left;
+  padding-top: 25px
+}
+
+.jumbotron .right p {
+  font-size: 17px;
+}
+
+
+.outer-wraper {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 1024px
+}
+
+.section-2 {
   display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
+  width: 1024px;
+}
+
+.section-2-left {
+  margin: 0;
+  padding: 0;
+  max-width: 510px;
+  float: left;
+}
+
+.section-2-right {
+  margin-top: 30%
+
+
+}
+
+.section-2-right p {
+  font-size: 25px;
+  font-family: STHeiti,，KaiTi;
+  letter-spacing: 3px;
+}
+
+.section-2-right p:nth-child(2) {
+  font-size: 15px;
+}
+
+.section-2-right .xibei {
+  margin-bottom: 60px
 }
 
 .pic-slider {
-  max-width: 520px;
   float: right;
 }
 
-.avatar-div {
-  text-align: center;
-  padding-top: 10px;
-  padding-bottom: 0;
-}
 
 .thumbnail {
   display: inline-block;
@@ -54,18 +110,53 @@ nav ul li {
 
 }
 
-.brief-biograph {
-  max-width: 480px
+.brief-biograph  {
+  max-width: 1024px;
+  position: relative;
+  margin: 0 auto;
 }
 
-.brief-biograph h2 {
-  text-align: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
+
 
 .brief-biograph p {
   padding-left: 20px;
   padding-right: 20px;
   font-size: 17px;
+  text-align: left;
+}
+
+.avatar-div span {
+  font-size: 14px;
+  position:relative;
+  top: -15px;
+}
+
+.brief-biograph h3 {
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 20px;
+  letter-spacing: 5px;
+  background-color: grey
+}
+
+
+.news_container {
+    width:1024px;
+    height: 700px;
+    overflow: hidden;
+    position: relative;
+    padding: 3px;
+}
+.news {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    font-size: 19px;
+    font-family: "华文细黑", serif;
+    max-width: 1024px;
+}
+
+footer {
+  max-width: 1024px;
+  margin: 0 auto;
 }

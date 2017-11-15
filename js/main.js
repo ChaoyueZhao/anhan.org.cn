@@ -127,3 +127,23 @@ $("#example3").loopScroll({
 //$("#example4").loopScroll({ speed: 120 });
 //$("#example1").loopScroll({ direction: "downwards" });
 //$("#example2").loopScroll({ direction: "downwards", speed: 30 });
+
+//启动翻页插件，及设置属性
+$(document).ready(function(){
+  $('.bxslider').bxSlider();
+})
+$('.bxslider').bxSlider({
+  auto: true,
+  autoHover: true,
+  pause: 4000,
+  pager: true,
+  caption: true,
+  controls: true,
+});
+
+//设置导航栏菜单鼠标浮动展开
+$('.navbar .dropdown').hover(function() {
+  $(this).find('.dropdown-menu').first().stop(true, true).slideDown(150);
+}, function() {
+  $(this).find('.dropdown-menu').first().stop(true, true).slideUp(105)
+});

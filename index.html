@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
-  <head>
+    <head>
     <meta charset="utf-8">
     <title>安汉纪念馆</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link href="css/jquery.bxslider.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/animate.css">
 
 
     </script>
@@ -13,7 +15,7 @@
   <body>
 
 
-    <nav class="navbar navbar-default">
+    <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -30,38 +32,44 @@
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <div class="collapse navbar-collapse" id="navbar-list">
           <ul class="nav navbar-nav">
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">历史档案 <span class="caret"></span></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">历史档案</a>
               <ul class="dropdown-menu">
                 <li><a href="#">国家图书馆</a></li>
+                <li role="separator" class="divider"></li>
                 <li><a href="#">陕西档案馆</a></li>
+                <li role="separator" class="divider"></li>
                 <li><a href="#">汉中档案馆</a></li>
                 <li role="separator" class="divider"></li>
-                <li><a href="#">台湾中研院档案</a></li>
+                <li><a href="#">台湾档案馆</a></li>
                 <li role="separator" class="divider"></li>
-                <li><a href="#">法国国家图书馆</a></li>
+                <li><a href="#">法国图书馆</a></li>
               </ul>
             </li>
           </ul>
 
           <ul class="nav navbar-nav">
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">安汉研究 <span class="caret"></span></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">安汉研究</a>
               <ul class="dropdown-menu">
                 <li><a href="#">生平考证</a></li>
+                <li role="separator" class="divider"></li>
                 <li><a href="#">出版著作</a></li>
+                <li role="separator" class="divider"></li>
                 <li><a href="#">黎坪垦区</a></li>
                 <li role="separator" class="divider"></li>
                 <li><a href="#">农业考察</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">案件真相</a></li>
               </ul>
             </li>
           </ul>
 
           <ul class="nav navbar-nav">
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">纪念活动 <span class="caret"></span></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">纪念活动</a>
               <ul class="dropdown-menu">
                 <li><a href="#"></a></li>
                 <li><a href="#"></a></li>
@@ -71,14 +79,42 @@
               </ul>
             </li>
           </ul>
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-fluid -->
+
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">黎坪风光</a>
+              <ul class="dropdown-menu">
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">关于本站</a>
+              <ul class="dropdown-menu">
+                <li><a href="#"><i class="fa fa-question-circle-o" aria-hidden="true"></i> 常见问题解答</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#"><i class="fa fa-jpy" aria-hidden="true"></i> 捐助安汉小学</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#"><i class="fa fa-coffee" aria-hidden="true"></i> 请站长喝咖啡</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#"><i class="fa fa-commenting" aria-hidden="true"></i> 本站联系方式</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- 导航栏菜单结束 -->
+      </div><!-- 导航栏container结束 -->
     </nav>
 
     <div class="outer-wraper">
       <div class="jumbotron-wraper">
         <div class="jumbotron">
-          <h1>纪念安汉先生诞辰120周年</h1>
+          <h1 class="animated zoomIn">纪念安汉先生诞辰120周年</h1>
           <div class="row">
             <div class="col-md-4 col-md-offset-2 left">
               <img src="pic/avatar-jumbotron.png" alt="安汉头像" class="thumbnail">
@@ -108,7 +144,7 @@
                     <div class="text">
                       <p>1897年6月4日，安汉出生于陕西南郑县梁山镇。</p>
                       <br>
-                      <p>1918年安汉毕业于陕西省立甲种农业学校蚕科。</p>
+                      <p>1918年，安汉毕业于陕西省立甲种农业学校蚕科。</p>
                       <br>
                       <p>1920年12月15日，安汉乘坐法属“智利号”游轮前往法国留学。</p>
                       <br>
@@ -140,72 +176,113 @@
         </div>
       </section>
 
-      <div class="row section-2">
-        <div class="col-sm-12 col-md-7">
-          <div class="section-2-left">
-            <ul class="bxslider">
-              <li>
-                <img src="pic/an-han-three.png">
-                <div class="bx-caption">
-                  <span>安汉夫妇与黄统先生</span>
-                </div>
-              </li>
-              <li>
-                <img src="pic/standing.png">
-                <div class="bx-caption">
-                  <span>安汉先生在黎坪</span>
-                </div>
-              </li>
-              <li>
-                <img src="pic/an-han-france.png">
-                <div class="bx-caption">
-                  <span>安汉先生与白友三（左）和李宝峯（右）在法国榜来威克公学（民国十年十二月）。</span>
-                </div>
-              </li>
-              <li>
-                <img src="pic/nancy.png">
-                <div class="bx-caption">
-                  <span>安汉就读的法国南锡农学与殖民学院</span>
-                </div>
-              </li>
-              <li>
-                <img src="pic/mubei.png">
-                <div class="bx-caption">
-                  <span>安汉之墓，位于南郑县梁山镇，摄于2016年3月</span>
-                </div>
-              </li>
-            </ul>
+      <section class="section-2">
+        <h3>珍贵照片</h3>
+        <div class="row">
+          <div class="col-sm-12 col-md-7">
+            <div class="section-2-left">
+              <ul class="bxslider">
+                <li>
+                  <img src="pic/an-han-three.png">
+                  <div class="bx-caption">
+                    <span>安汉夫妇与黄统先生</span>
+                  </div>
+                </li>
+                <li>
+                  <img src="pic/standing.png">
+                  <div class="bx-caption">
+                    <span>安汉先生在黎坪</span>
+                  </div>
+                </li>
+                <li>
+                  <img src="pic/an-han-france.png">
+                  <div class="bx-caption">
+                    <span>安汉先生与白友三（左）和李宝峯（右）在法国榜来威克公学（民国十年十二月）。</span>
+                  </div>
+                </li>
+                <li>
+                  <img src="pic/nancy.png">
+                  <div class="bx-caption">
+                    <span>安汉就读的法国南锡农学与殖民学院</span>
+                  </div>
+                </li>
+                <li>
+                  <img src="pic/mubei.png">
+                  <div class="bx-caption">
+                    <span>安汉之墓，位于南郑县梁山镇，摄于2016年3月</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
 
-        <div class="col-sm-12 col-md-5">
-          <div class="section-2-right">
-            <div class="xibei">
-              <p class="blockquote-topP">汉生长于西秦，幼习稼穑，<br>留学法国，专攻农牧，<br>以开发西北为职志，<br>以研究屯垦为要图。</p>
-              <p>——《西北垦殖论》</p>
-            </div>
-            <div class="yuyouren">
-              <p class="blockquote-bottomP">天地有正气，园林无伪情。</p>
-              <p>—— 于右任</p>
+          <div class="col-sm-12 col-md-5">
+            <div class="section-2-right">
+              <div class="xibei">
+                <p class="blockquote-topP">汉生长于西秦，幼习稼穑，<br>留学法国，专攻农牧，<br>以开发西北为职志，<br>以研究屯垦为要图。</p>
+                <p>——《西北垦殖论》</p>
+              </div>
+              <div class="yuyouren">
+                <p class="blockquote-bottomP">天地有正气，园林无伪情。</p>
+                <p>—— 于右任</p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
+
+
 
       <footer>
         <div class="row">
-          <div class="col-md-3">
-            <div class="about">
-              <p>关于本站</p>
+          <div class="col-md-4">
+            <div class="panel panel-success">
+              <div class="panel-heading">
+                <h3 class="panel-title">分享本站</h3>
+              </div>
+              <div class="panel-body">
+                <ul>
+                  <li><a href="#" target="_blank">微博</a></li>
+                  <li><a href="#" target="_blank">微信</a></li>
+                  <li><a href="#" target="_blank">知乎</a></li>
+                  <li><a href="#" target="_blank">豆瓣</a></li>
+                  <li><a href="#" target="_blank">QQ</a></li>
+                </ul>
+              </div>
             </div>
           </div>
-          <div class="col-md-offset-3">
-            <div class="links">
-              <p>友情链接</p>
+          <div class="col-md-4">
+            <div class="panel panel-danger">
+              <div class="panel-heading">
+                <h3 class="panel-title">许可协议</h3>
+              </div>
+              <div class="panel-body">
+                <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />本作品采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可。
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="panel panel-primary">
+              <div class="panel-heading">
+                <h3 class="panel-title">友情链接</h3>
+              </div>
+              <div class="panel-body">
+                <ul>
+                  <li><a href="https://baike.baidu.com/item/%E5%AE%89%E6%B1%89/15280409">安汉百度百科</a></li>
+                  <li><a href="https://tieba.baidu.com/f?kw=%B0%B2%BA%BA">安汉百度贴吧</a></li>
+                  <li><a href="http://archives.sinica.edu.tw/">中研院近史所档案馆</a></li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       </footer>
+
+      <div class="bottom-line">
+        <p>Made with <i class="fa fa-heart"></i> by <a href="#" target="_blank">超越</a></p>
+      </div>
+
+
     </div>
 
 
@@ -218,17 +295,6 @@
   <script src="js/jquery.bxslider.js"></script>
   <script src="js/main.js"></script>
   <script>
-    $(document).ready(function(){
-      $('.bxslider').bxSlider();
-    })
-    $('.bxslider').bxSlider({
-      auto: true,
-      autoHover: true,
-      pause: 4000,
-      pager: true,
-      caption: true,
-      controls: true,
-    })
 
 
 

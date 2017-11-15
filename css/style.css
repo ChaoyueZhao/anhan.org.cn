@@ -1,28 +1,36 @@
 
 
 nav {
-  border: 1px solid black;
   max-width: 1024px;
   margin: 0 auto;
+  list-style: none;
 }
 
 nav .navbar-brand {
-  padding-left: 40px;
-  padding-right: 40px
+  padding-left: 80px;
+  padding-right: 80px;
+  font-size: 30px;
+  letter-spacing: 5px;
+  font-family: KaiTi;
+  font-weight: bold;
 }
 
-nav navbar-nav {
-  list-style: none;
-  display: inline-block;
-  margin-right: 50px;
+#navbar-list {
+  float:right;
+  margin-right: 30px;
 }
 
-nav ul li {
-  float: right;
-  margin: auto 10px;
-  font-size: 20px;
+#navbar-list .dropdown {
+  margin-right: 20px;
+  font-size: 17px;
 }
 
+#navbar-list .dropdown-menu {
+  margin: 0;
+  padding: 3px;
+  font-size: 15px;
+  text-align: left;
+}
 
 .jumbotron {
   max-width: 1024px;
@@ -30,11 +38,13 @@ nav ul li {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  margin-top: -20px;
+  margin-top: 40px;
+  margin-bottom: -30px;
 }
 
 .jumbotron h1 {
-  margin-bottom: 70px
+  margin-bottom: 85px;
+  letter-spacing: 4px;
 }
 
  .jumbotron .left {
@@ -62,7 +72,7 @@ nav ul li {
 .outer-wraper {
   text-align: center;
   margin: 0 auto;
-  max-width: 1024px
+  max-width: 1024px;
 }
 
 .section-2 {
@@ -78,7 +88,8 @@ nav ul li {
 }
 
 .section-2-right {
-  margin-top: 30%
+  margin-top: 25%;
+  margin-left: -10%
 
 
 }
@@ -133,10 +144,10 @@ nav ul li {
 
 .brief-biograph h3 {
   position: relative;
-  margin-top: 0;
-  margin-bottom: 20px;
   letter-spacing: 5px;
-  background-color: grey
+  background-color: grey;
+  line-height: 50px;
+  margin-top: -30px;
 }
 
 
@@ -151,12 +162,45 @@ nav ul li {
     position: absolute;
     left: 0px;
     top: 0px;
-    font-size: 19px;
+    font-size: 20px;
     font-family: "华文细黑", serif;
     max-width: 1024px;
+}
+
+.section-2 h3 {
+  position: relative;
+  margin-top: 10px;
+  letter-spacing: 5px;
+  background-color: grey;
+  line-height: 50px;
 }
 
 footer {
   max-width: 1024px;
   margin: 0 auto;
+  height: 130px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+footer ul {
+  margin: 0px;
+  list-style: none;
+}
+
+footer ul li {
+  float: left;
+  border: 1px solid #90a4ae;
+  border-radius: 5px;
+  margin: 0 4px;
+  padding: 3px;
+}
+
+
+.bottom-line p {
+  letter-spacing: 3px;
+}
+
+.bottom-line p i {
+  color: red;
 }

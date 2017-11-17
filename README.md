@@ -1,3 +1,3 @@
 # An-Han-Memorial-Website
 
-网页地址： https://www.anhan.org.cn
+网页地址： anhan.org.cn

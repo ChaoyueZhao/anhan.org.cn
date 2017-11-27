@@ -91,7 +91,7 @@ nav .navbar-brand p:nth-child(2) {
   margin-top: 70px;
   padding: 30px 0;
   height: calc(100vh - 70px);
-  background: url('https://cdn.pixabay.com/photo/2017/02/20/10/55/flowers-2082131_960_720.png');
+  background: url(../pic/background.png);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -129,19 +129,22 @@ nav .navbar-brand p:nth-child(2) {
 
 .section-3 {
   clear: both;
-
+  height: 800px;
 }
 
 .brief-biograph {
-  max-width: 25%;
+  padding: 5% 0;
+  max-width: 100%;
   height: 600px;
   display: inline-block;
-  float: left;
-  margin-left: 8rem;
+  float: right;
+  margin-right: 5%;
 }
 
 .brief-biograph>h3 {
   text-align: center;
+  letter-spacing: 0.25rem;
+  color: #0097a7;
 }
 
 
@@ -152,8 +155,9 @@ nav .navbar-brand p:nth-child(2) {
     width: 60rem;
     overflow: hidden;
     position: relative;
-    padding: ;
-    border: 1px solid black;
+    padding: 0.5rem;
+    border-top: 5px solid black;
+    border-radius: 1rem;
 }
 .news {
     position: absolute;
@@ -161,7 +165,7 @@ nav .navbar-brand p:nth-child(2) {
     top: 0px;
     font-size: 20px;
     font-family: "华文细黑", serif;
-    max-width: 1024px;
+    padding-left: 0.5rem;
 }
 
 .news .text {
@@ -169,12 +173,6 @@ nav .navbar-brand p:nth-child(2) {
   min-width: 530px;
 }
 
-
-.section-image {
-  width: 25%;
-  float: left;
-  display: inline-block;
-}
 
 .section-2 {
   height: 800px;

@@ -87,14 +87,21 @@ nav .navbar-brand p:nth-child(2) {
   margin: 0;
 }
 
+/*~~~~~~首页~~~~~~*/
+
 .homepage .wraper {
   margin-top: 70px;
   padding: 30px 0;
   height: calc(100vh - 70px);
-  background: url(../pic/background.png);
+  background: url('https://cdn.pixabay.com/photo/2017/02/20/10/55/flowers-2082131_960_720.png');
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  position: relative;
+}
+
+.homepage .headings {
+  margin-top: 30vh
 }
 
 .homepage h1 {
@@ -106,7 +113,7 @@ nav .navbar-brand p:nth-child(2) {
 }
 
 .homepage h3 {
-  margin-top: 15%;
+
   text-align: center;
   color: #0097a7;
 }
@@ -115,7 +122,6 @@ nav .navbar-brand p:nth-child(2) {
   letter-spacing: 0.25rem;
   text-align: center;
   font-size: 1.25em;
-  margin-top: 2rem;
 }
 
 .homepage p {
@@ -126,6 +132,54 @@ nav .navbar-brand p:nth-child(2) {
   margin: 0;
   padding: 2rem 7rem;
 }
+
+/*第二部分*/
+
+@media (max-width: 1150px) {
+  .section-2-left {
+    margin: 0 auto;
+  }
+}
+
+
+.section-2 {
+  height: 800px;
+  background-color: #F8F8F8;
+  text-align: center;
+}
+
+.section-2-left {
+  margin-top: 5%;
+  margin-left: 15%;
+  padding: 0;
+  max-width: 510px;
+  float: left;
+}
+
+
+
+.section-2-right {
+  display: inline-block;
+  max-width: 400px;
+  margin-top: 3%;
+  margin-right:20%;
+  float: right;
+}
+
+.section-2-right p:first-child {
+  font-family: Lishu;
+  font-size: 3rem;
+  padding-top: 3rem
+}
+
+.section-2-right p:last-child {
+  text-align: right;
+  font-size: 2rem;
+}
+
+
+
+/*第三部分*/
 
 .section-3 {
   clear: both;
@@ -157,7 +211,7 @@ nav .navbar-brand p:nth-child(2) {
     position: relative;
     padding: 0.5rem;
     border-top: 5px solid black;
-    border-radius: 1rem;
+    border-radius: 0.75rem;
 }
 .news {
     position: absolute;
@@ -166,45 +220,6 @@ nav .navbar-brand p:nth-child(2) {
     font-size: 20px;
     font-family: "华文细黑", serif;
     padding-left: 0.5rem;
-}
-
-.news .text {
-  max-width: 1024px;
-  min-width: 530px;
-}
-
-
-.section-2 {
-  height: 800px;
-  background-color: #F8F8F8
-}
-
-.section-2-left {
-  text-align: center;
-  margin-top: 5%;
-  margin-left:15%;
-  padding: 0;
-  max-width: 510px;
-  float: left;
-}
-
-.section-2-right {
-  display: inline-block;
-  max-width: 510px;
-  margin-right: 20%;
-  margin-top: 10%;
-  float: right;
-}
-
-.section-2-right p:first-child {
-  font-family: Lishu;
-  font-size: 3rem;
-  padding-top: 3rem
-}
-
-.section-2-right p:last-child {
-  text-align: right;
-  font-size: 2rem;
 }
 
 

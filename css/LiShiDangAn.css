@@ -1,0 +1,116 @@
+nav {
+  padding: 0 2em;
+  list-style: none;
+  background-color: #e3f2fd !important;
+  border-radius: 2px;
+  box-shadow: 0 2px 7px 1px rgba(0,0,0,0.2);
+}
+
+nav .container-fluild {
+  height: 90px;
+  padding: 0;
+  text-align: center;
+}
+
+
+
+nav .navbar-header button {
+  margin-top: 17px;
+}
+
+nav .navbar-brand {
+  font-size: 250%;
+  color: black;
+  letter-spacing: 3px;
+  font-family: KaiTi;
+  font-weight: bold;
+  max-width: 230px;
+  height: 70px;
+  padding: 0;
+  text-align: center;
+  margin-left: 1em !important;
+}
+
+.navbar-brand .logo img {
+  margin: auto 0;
+  position: relative;
+  max-width: 130%;
+  height:auto;
+  top: 0.25em;
+}
+
+nav .navbar-brand p:first-child {
+  margin-top: 13px;
+}
+
+nav .navbar-brand p:nth-child(2) {
+  font-size: 40%;
+  font-family: monospace;
+  position: relative;
+  letter-spacing: 5px;
+  padding: 0;
+  text-align: center;
+  max-width: 180px;
+  margin: 0 auto;
+}
+
+#navbar-list {
+  float:right;
+  margin-right: 10px;
+}
+
+#navbar-list .dropdown {
+  margin-right: 8px;
+  margin-top: 10px;
+  font-size: 17px;
+}
+
+#navbar-list .dropdown-menu {
+  margin: 0;
+  padding-top: 0;
+  font-size: 15px;
+  text-align: center;
+  width: 50px
+}
+
+#navbar-list .dropdown-menu p {
+  line-height: 20px;
+  margin-top: 12px;
+  letter-spacing: 1px
+}
+
+#navbar-list .divider {
+  margin: 0;
+}
+
+aside {
+  height: 700px;
+  width: 200px;
+  margin-top: 80px;
+
+}
+
+aside ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+aside ul li {
+  font-size: 1.5vw;
+  letter-spacing: 0.3em;
+  margin: 2em auto;
+}
+
+.tabs-left {
+  border-right: 1px solid #ddd;
+  border-bottom: none;
+}
+
+article {
+  margin-top: 80px;
+}
+
+article img {
+  max-width: 100%;
+}

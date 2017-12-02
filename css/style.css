@@ -107,13 +107,13 @@ nav .navbar-brand p:nth-child(2) {
 .homepage h1 {
   text-align: center;
 
-  font-size: 4em;
+  font-size: 7vh;
   color: #0097a7;
   letter-spacing: 0.5rem;
 }
 
 .homepage h3 {
-
+  font-size: 3vh;
   text-align: center;
   color: #0097a7;
 }
@@ -126,6 +126,7 @@ nav .navbar-brand p:nth-child(2) {
 
 .homepage p {
   margin-bottom: 2rem;
+  font-size: 3vh;
 }
 
 .full-width {
@@ -135,39 +136,30 @@ nav .navbar-brand p:nth-child(2) {
 
 /*第二部分*/
 
-@media (max-width: 1150px) {
-  .section-2-left {
-    margin: 0 auto;
-  }
-}
 
 
 .section-2 {
-  height: 800px;
+  height: 1200px;
   background-color: #F8F8F8;
   text-align: center;
 }
 
 .section-2-left {
-  margin-top: 5%;
-  margin-left: 15%;
+  margin: 6% auto 3% auto;
   padding: 0;
   max-width: 510px;
-  float: left;
 }
 
-
-
 .section-2-right {
+  clear:both;
   display: inline-block;
   max-width: 400px;
-  margin-top: 3%;
-  margin-right:20%;
-  float: right;
+  margin: 6% auto;
 }
 
 .section-2-right p:first-child {
   font-family: Lishu;
+  color: #1565c0;
   font-size: 3rem;
   padding-top: 3rem
 }
@@ -177,22 +169,35 @@ nav .navbar-brand p:nth-child(2) {
   font-size: 2rem;
 }
 
+@media (min-width: 1440px) {
+  .section-2 {
+    height: 800px;
+  }
 
+  .section-2-left {
+    float: left;
+    margin-left: 10%;
+  }
+
+  .section-2-right {
+    max-width: 700px;
+  }
+}
 
 /*第三部分*/
 
 .section-3 {
   clear: both;
   height: 800px;
+  text-align: center;
 }
 
 .brief-biograph {
   padding: 5% 0;
-  max-width: 100%;
   height: 600px;
   display: inline-block;
-  float: right;
-  margin-right: 5%;
+  margin: 0 auto;
+  text-align: left;
 }
 
 .brief-biograph>h3 {
@@ -227,13 +232,40 @@ nav .navbar-brand p:nth-child(2) {
 
 footer {
   clear:both;
-  max-width: 1024px;
-  min-width: 530px;
-  margin: 0 auto;
+  padding: 1em 2em;
   height: 230px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  text-align: center;
+  background-color: #b0bec5;
 }
+
+footer h3 {
+  font-size: 2rem !important;
+  letter-spacing: 3px;
+  padding-bottom: 1em;
+}
+
+footer .footer-left {
+  width: 30%;
+  display: inline-block;
+  float: left;
+  margin: 0 1.6666%;
+}
+
+footer .footer-middle {
+  width: 30%;
+  display: inline-block;
+  float: left;
+  margin: 0 1.6666%;
+}
+
+footer .footer-right {
+  width: 30%;
+  display: inline-block;
+  float: left;
+  margin: 0 1.6666%;
+}
+
+
 
 footer ul {
   margin: 0px;

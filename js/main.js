@@ -133,7 +133,7 @@ $(document).ready(function(){
   $('.bxslider').bxSlider();
 })
 $('.bxslider').bxSlider({
-  auto: true,
+  auto: false,
   autoHover: true,
   pause: 4000,
   pager: true,

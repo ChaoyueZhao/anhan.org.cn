@@ -1,9 +1,13 @@
+html body {
+  min-width: 100%;
+}
+
 nav {
-  max-width: 1024px;
-  min-width: 530px;
-  padding: auto 0 !important;
-  margin: 0 auto;
+  padding: 0 2em;
   list-style: none;
+  background-color: #e3f2fd !important;
+  border-radius: 2px;
+  box-shadow: 0 2px 7px 1px rgba(0,0,0,0.2);
 }
 
 nav .container-fluild {
@@ -12,25 +16,31 @@ nav .container-fluild {
   text-align: center;
 }
 
+
+
 nav .navbar-header button {
   margin-top: 17px;
 }
 
 nav .navbar-brand {
-  font-size: 35px;
+  font-size: 250%;
   color: black;
   letter-spacing: 3px;
   font-family: KaiTi;
   font-weight: bold;
-  width: 230px;
+  max-width: 230px;
   height: 70px;
   padding: 0;
   text-align: center;
-  margin: auto 0 auto 5%;
+  margin-left: 1em !important;
 }
 
-.navbar-brand .logo {
+.navbar-brand .logo img {
   margin: auto 0;
+  position: relative;
+  max-width: 130%;
+  height:auto;
+  top: 0.25em;
 }
 
 nav .navbar-brand p:first-child {
@@ -38,23 +48,23 @@ nav .navbar-brand p:first-child {
 }
 
 nav .navbar-brand p:nth-child(2) {
-  font-size: 16px;
+  font-size: 40%;
   font-family: monospace;
   position: relative;
   letter-spacing: 5px;
   padding: 0;
   text-align: center;
-  width: 180px;
+  max-width: 180px;
   margin: 0 auto;
 }
 
 #navbar-list {
   float:right;
-  margin-right: 30px;
+  margin-right: 10px;
 }
 
 #navbar-list .dropdown {
-  margin-right: 15px;
+  margin-right: 8px;
   margin-top: 10px;
   font-size: 17px;
 }
@@ -77,136 +87,136 @@ nav .navbar-brand p:nth-child(2) {
   margin: 0;
 }
 
-.jumbotron {
-  max-width: 1024px;
-  min-width: 530px;
-  height: 790px;
+/*~~~~~~首页~~~~~~*/
+
+.homepage .wraper {
+  margin-top: 70px;
+  padding: 30px 0;
+  height: calc(100vh - 70px);
+  background: url('https://cdn.pixabay.com/photo/2017/02/20/10/55/flowers-2082131_960_720.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.homepage .headings {
+  margin-top: 30vh
+}
+
+.homepage h1 {
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 50px;
-  margin-bottom: -30px;
+
+  font-size: 7vh;
+  color: #0097a7;
+  letter-spacing: 0.5rem;
 }
 
-.jumbotron h1 {
-  margin-top: 50px;
-  margin-bottom: 85px;
-  letter-spacing: 4px;
-}
-
- .jumbotron .left {
-  height: 320px;
+.homepage h3 {
+  font-size: 3vh;
   text-align: center;
+  color: #0097a7;
 }
 
-.jumbotron .left p {
-  margin-top: -18px;
-  font-size: 18px;
-  font-weight: bold;
-}
-
-.jumbotron .right {
-  height: 400px;
-
-  padding-top: 25px
-}
-
-.jumbotron .right p {
-  font-size: 17px;
-}
-
-
-.outer-wraper {
+.homepage .title {
+  letter-spacing: 0.25rem;
   text-align: center;
-  margin: 0 auto;
-  max-width: 1024px;
-  min-width: 530px;
+  font-size: 1.25em;
 }
+
+.homepage p {
+  margin-bottom: 2rem;
+  font-size: 3vh;
+}
+
+.full-width {
+  margin: 0;
+  padding: 2rem 7rem;
+}
+
+/*第二部分*/
+
+
 
 .section-2 {
-  display: inline-block;
-  max-width: 1024px;
-  min-width: 530px;
+  height: 1200px;
+  background-color: #F8F8F8;
+  text-align: center;
 }
 
 .section-2-left {
-  margin: 0;
+  margin: 6% auto 3% auto;
   padding: 0;
   max-width: 510px;
-  float: left;
 }
 
 .section-2-right {
-  margin-top: 25%;
-  margin-left: -10%
-
-
-}
-
-.section-2-right p {
-  font-size: 25px;
-  font-family: STHeiti,，KaiTi;
-  letter-spacing: 3px;
-}
-
-.section-2-right p:nth-child(2) {
-  font-size: 15px;
-}
-
-.section-2-right .xibei {
-  margin-bottom: 60px
-}
-
-.pic-slider {
-  float: right;
-}
-
-
-.thumbnail {
+  clear:both;
   display: inline-block;
-  float: none;
-  margin-left: auto;
-  margin-right: auto;
-
+  max-width: 400px;
+  margin: 6% auto;
 }
 
-.brief-biograph  {
-  max-width: 1024px;
-  min-width: 530px;
-  position: relative;
+.section-2-right p:first-child {
+  font-family: Lishu;
+  color: #1565c0;
+  font-size: 3rem;
+  padding-top: 3rem
+}
+
+.section-2-right p:last-child {
+  text-align: right;
+  font-size: 2rem;
+}
+
+@media (min-width: 1440px) {
+  .section-2 {
+    height: 800px;
+  }
+
+  .section-2-left {
+    float: left;
+    margin-left: 10%;
+  }
+
+  .section-2-right {
+    max-width: 700px;
+  }
+}
+
+/*第三部分*/
+
+.section-3 {
+  clear: both;
+  height: 800px;
+  text-align: center;
+}
+
+.brief-biograph {
+  padding: 5% 0;
+  height: 600px;
+  display: inline-block;
   margin: 0 auto;
-}
-
-
-
-.brief-biograph p {
-  padding-left: 20px;
-  padding-right: 20px;
-  font-size: 17px;
   text-align: left;
 }
 
-.avatar-div span {
-  font-size: 14px;
-  position:relative;
-  top: -15px;
+.brief-biograph>h3 {
+  text-align: center;
+  letter-spacing: 0.25rem;
+  color: #0097a7;
 }
 
-.brief-biograph h3 {
-  letter-spacing: 5px;
-  background-color: grey;
-  line-height: 50px;
-  margin-top: -30px;
-}
 
 
 .news_container {
-    max-width:1024px;
-    min-width: 530px;
-    height: 700px;
+
+    height:40rem;
+    width: 60rem;
     overflow: hidden;
     position: relative;
-    padding: 3px;
+    padding: 0.5rem;
+    border-top: 5px solid black;
+    border-radius: 0.75rem;
 }
 .news {
     position: absolute;
@@ -214,30 +224,48 @@ nav .navbar-brand p:nth-child(2) {
     top: 0px;
     font-size: 20px;
     font-family: "华文细黑", serif;
-    max-width: 1024px;
+    padding-left: 0.5rem;
 }
 
-.news .text {
-  max-width: 1024px;
-  min-width: 530px;
-}
 
-.section-2 h3 {
-  position: relative;
-  margin-top: 10px;
-  letter-spacing: 5px;
-  background-color: grey;
-  line-height: 50px;
-}
+
 
 footer {
-  max-width: 1024px;
-  min-width: 530px;
-  margin: 0 auto;
-  height: 130px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  clear:both;
+  padding: 1em 2em;
+  height: 230px;
+  text-align: center;
+  background-color: #b0bec5;
 }
+
+footer h3 {
+  font-size: 2rem !important;
+  letter-spacing: 3px;
+  padding-bottom: 1em;
+}
+
+footer .footer-left {
+  width: 30%;
+  display: inline-block;
+  float: left;
+  margin: 0 1.6666%;
+}
+
+footer .footer-middle {
+  width: 30%;
+  display: inline-block;
+  float: left;
+  margin: 0 1.6666%;
+}
+
+footer .footer-right {
+  width: 30%;
+  display: inline-block;
+  float: left;
+  margin: 0 1.6666%;
+}
+
+
 
 footer ul {
   margin: 0px;

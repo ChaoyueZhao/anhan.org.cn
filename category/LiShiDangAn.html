@@ -10,105 +10,157 @@
     <link rel="stylesheet" href="../css/animate.css">
   </head>
   <body>
-    <header>
-      <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-list" aria-expanded="false">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="../index.html">
-              <!-- <img alt="安汉纪念馆" src="pic/logo.png"> -->
-              <div class="logo">
-                <img src="../pic/lishu-logo.svg" alt="安汉纪念馆">
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-list" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="../index.html">
+            <!-- <img alt="安汉纪念馆" src="pic/logo.png"> -->
+            <div class="logo">
+              <img src="../pic/lishu-logo.svg" alt="安汉纪念馆">
+            </div>
+          </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="navbar-list">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="#">历史档案</a>
+          </ul>
+
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="#">安汉研究</a>
+            </li>
+          </ul>
+
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="#">文学作品</a>
+            </li>
+          </ul>
+
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="#">黎坪风光</a>
+            </li>
+          </ul>
+
+          <ul class="nav navbar-nav">
+            <li class="dropdown" id="donate">
+              <a href="#">捐助 <i class="fa fa-jpy" aria-hidden="true"></i></a>
+            </li>
+          </ul>
+        </div><!-- 导航栏菜单结束 -->
+      </div><!-- 导航栏container结束 -->
+    </nav>
+  </header>
+
+  <div class="row">
+    <aside class="col-md-2">
+      <ul class="nav nav-tabs tabs-left">
+        <li class="active"><a href="#home" data-toggle="tab">国家图书馆</a></li>
+        <li><a href="#profile" data-toggle="tab">陕西档案馆</a></li>
+        <li><a href="#messages" data-toggle="tab">汉中档案馆</a></li>
+        <li><a href="#settings" data-toggle="tab">台湾档案馆</a></li>
+        <li><a href="#settings1" data-toggle="tab">法国图书馆</a></li>
+      </ul>
+    </aside>
+    <article class="col-md-10">
+      <div class="tab-content">
+        <div role="tabpanel" class="tab-pane active" id="home">
+          <div class="col-md-12 heading">
+            <h3>国图相关文献简介</h3>
+            <p>国家图书馆是中国最大的图书馆，在微缩胶卷阅览室，保存有安汉遇害时候西安报纸上的新闻。</p>
+          </div>
+
+          <div class="col-md-4">
+            <div class="thumbnail">
+              <img src="../pic/QinFengGongShang.png" alt="...">
+              <div class="caption">
+                <h3>秦风工商日报</h3>
+                <p>1943年11月6日第三版</p>
+                <p>
+                  <a href="../pic/QinFengGongShang.png" class="btn btn-primary" role="button">查看</a>
+                  <a href="../pic/QinFengGongShang.png" class="btn btn-default" role="button" download="../pic/QinFengGongShang.png">下载</a></p>
               </div>
-            </a>
-          </div>
-
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse" id="navbar-list">
-            <ul class="nav navbar-nav">
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">历史档案</a>
-
-              </li>
-            </ul>
-
-            <ul class="nav navbar-nav">
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">安汉研究</a>
-
-              </li>
-            </ul>
-
-            <ul class="nav navbar-nav">
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">文学作品</a>
-
-              </li>
-            </ul>
-
-            <ul class="nav navbar-nav">
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">黎坪风光</a>
-
-              </li>
-            </ul>
-
-            <ul class="nav navbar-nav">
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">关于本站</a>
-
-              </li>
-            </ul>
-          </div><!-- 导航栏菜单结束 -->
-        </div><!-- 导航栏container结束 -->
-      </nav>
-    </header>
-    <div class="row">
-      <aside class="col-md-2">
-        <ul class="nav nav-tabs tabs-left">
-          <li class="active"><a href="#home" data-toggle="tab">国家图书馆</a></li>
-          <li><a href="#profile" data-toggle="tab">陕西档案馆</a></li>
-          <li><a href="#messages" data-toggle="tab">汉中档案馆</a></li>
-          <li><a href="#settings" data-toggle="tab">台湾档案馆</a></li>
-          <li><a href="#settings1" data-toggle="tab">法国图书馆</a></li>
-        </ul>
-      </aside>
-      <article class="col-md-10">
-        <div class="tab-content">
-          <div role="tabpanel" class="tab-pane active" id="home">
-            <div class="col-md-4">
-              <img src="../pic/standing.png" alt="安汉">
             </div>
           </div>
-          <div role="tabpanel" class="tab-pane" id="profile">
-            <div class="col-md-4">
-              <img src="../pic/standing.png" alt="安汉">
+          <div class="col-md-4">
+            <div class="thumbnail">
+              <img src="../pic/XiBeiWenHua.png" alt="...">
+              <div class="caption">
+                <h3>西北文化日报</h3>
+                <p>1943年11月6日第二版</p>
+                <p>
+                  <a href="../pic/XiBeiWenHua.png" class="btn btn-primary" role="button">查看</a>
+                  <a href="../pic/XiBeiWenHua.png" class="btn btn-default" role="button" download="../pic/XiBeiWenHua.png">下载</a>
+                </p>
+              </div>
             </div>
           </div>
-          <div role="tabpanel" class="tab-pane" id="messages">
-            <div class="col-md-4">
-              <img src="../pic/standing.png" alt="安汉">
-            </div>
-          </div>
-          <div role="tabpanel" class="tab-pane" id="settings">
-            <div class="col-md-4">
-              <img src="../pic/standing.png" alt="安汉">
-            </div>
-          </div>
-          <div role="tabpanel" class="tab-pane" id="settings2">
-            <div class="col-md-4">
-              <img src="../pic/standing.png" alt="安汉">
+          <div class="col-md-4">
+            <div class="thumbnail">
+              <img src="../pic/XiJingRiBao.png" alt="...">
+              <div class="caption">
+                <h3>西京日报</h3>
+                <p>1943年11月6日第三版</p>
+                <p>
+                  <a href="../pic/XiJingRiBao.png" class="btn btn-primary" role="button">查看</a>
+                  <a href="../pic/XiJingRiBao.png" class="btn btn-default" download="../pic/XiJingRiBao.png">下载</a>
+                </p>
+              </div>
             </div>
           </div>
         </div>
-      </article>
-    </div>
+        <div role="tabpanel" class="tab-pane" id="profile">
+          <div class="col-md-12 heading">
+            <h3>国图相关文献简介</h3>
+            <p>国家图书馆是中国最大的图书馆，在微缩胶卷阅览室保存有安汉遇害时候西安报纸上的新闻</p>
+          </div>
+          <div class="col-md-4">
+            <img src="../pic/standing.png" alt="安汉">
+          </div>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="messages">
+          <div class="col-md-12 heading">
+            <h3>国图相关文献简介</h3>
+            <p>国家图书馆是中国最大的图书馆，在微缩胶卷阅览室保存有安汉遇害时候西安报纸上的新闻</p>
+          </div>
+          <div class="col-md-4">
+            <img src="../pic/standing.png" alt="安汉">
+          </div>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="settings">
+          <div class="col-md-12 heading">
+            <h3>国图相关文献简介</h3>
+            <p>国家图书馆是中国最大的图书馆，在微缩胶卷阅览室保存有安汉遇害时候西安报纸上的新闻</p>
+          </div>
+          <div class="col-md-4">
+            <img src="../pic/standing.png" alt="安汉">
+          </div>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="settings2">
+          <div class="col-md-12 heading">
+            <h3>国图相关文献简介</h3>
+            <p>国家图书馆是中国最大的图书馆，在微缩胶卷阅览室保存有安汉遇害时候西安报纸上的新闻</p>
+          </div>
+          <div class="col-md-4">
+            <img src="../pic/standing.png" alt="安汉">
+          </div>
+        </div>
+      </div>
+    </article>
+  </div>
+
+
 
 
     <script src="../js/jquery-3.2.1.min.js"></script>

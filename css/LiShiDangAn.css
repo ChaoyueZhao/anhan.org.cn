@@ -89,6 +89,12 @@ aside {
   text-align: right;
 }
 
+@media (max-width: 1024px) {
+  aside {
+    height: 20px;
+  }
+}
+
 aside ul {
   list-style: none;
   padding: 0;
@@ -114,6 +120,13 @@ article {
 
 article img {
   max-width: 100%;
+}
+
+@media (max-width: 1024px) {
+  article .newsPaper {
+    height: 300px;
+    overflow: hidden;
+  }
 }
 
 article .thumbnail {

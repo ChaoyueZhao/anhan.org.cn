@@ -19,24 +19,12 @@ nav .navbar-header button {
 }
 
 nav .navbar-brand {
-  font-size: 250%;
-  color: black;
+  font-size: 25px;
+  color: #17a7e0 !important;
   letter-spacing: 3px;
-  font-family: KaiTi;
   font-weight: bold;
-  max-width: 230px;
   height: 70px;
-  padding: 0;
-  text-align: center;
-  margin-left: 1em !important;
-}
-
-.navbar-brand .logo img {
-  margin: auto 0;
-  position: relative;
-  max-width: 130%;
-  height:auto;
-  top: 0.25em;
+  float: none !important;
 }
 
 nav .navbar-brand p:first-child {

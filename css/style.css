@@ -1,5 +1,11 @@
-html body {
+html{
   width: 100%;
+  margin: 0;
+  padding: 0
+}
+
+body {
+  min-width: 360px
 }
 
 nav {
@@ -16,32 +22,28 @@ nav .container-fluild {
   text-align: center;
 }
 
-
-
 nav .navbar-header button {
   margin-top: 17px;
 }
 
 nav .navbar-brand {
-  font-size: 250%;
-  color: black;
+  font-size: 25px;
+  color: #17a7e0 !important;
   letter-spacing: 3px;
-  font-family: KaiTi;
   font-weight: bold;
-  max-width: 230px;
   height: 70px;
-  padding: 0;
-  text-align: center;
-  margin-left: 1em !important;
+  float: none !important;
 }
 
-.navbar-brand .logo img {
-  margin: auto 0;
+
+/*.navbar-brand .logo img {
+  margin: 0;
   position: relative;
-  max-width: 130%;
-  height:auto;
+  width: auto;
+  height: 70px;
   top: 0.25em;
-}
+  padding: 0
+}*/
 
 nav .navbar-brand p:first-child {
   margin-top: 13px;
@@ -106,13 +108,13 @@ nav .navbar-brand p:nth-child(2) {
 .homepage h1 {
   text-align: center;
   margin-top: 1rem;
-  font-size: 7vh;
+  font-size: 3em;
   color: #0097a7;
   letter-spacing: 0.5rem;
 }
 
 .homepage h3 {
-  font-size: 3vh;
+  font-size: 1.25em;
   text-align: center;
   color: #757575;
 }
@@ -120,12 +122,12 @@ nav .navbar-brand p:nth-child(2) {
 .homepage .title {
   letter-spacing: 0.25rem;
   text-align: center;
-  font-size: 1.25em;
+  font-size: 1em;
 }
 
 .homepage p {
   margin-bottom: 2rem;
-  font-size: 3vh;
+  font-size: 1.25em;
 }
 
 .full-width {
@@ -168,20 +170,7 @@ nav .navbar-brand p:nth-child(2) {
   font-size: 2rem;
 }
 
-@media (min-width: 1440px) {
-  .section-2 {
-    height: 800px;
-  }
 
-  .section-2-left {
-    float: left;
-    margin-left: 10%;
-  }
-
-  .section-2-right {
-    max-width: 700px;
-  }
-}
 
 /*第三部分*/
 
@@ -194,6 +183,7 @@ nav .navbar-brand p:nth-child(2) {
 .brief-biograph {
   padding: 5% 0;
   height: 600px;
+  width: 80%;
   display: inline-block;
   margin: 0 auto;
   text-align: left;
@@ -210,10 +200,10 @@ nav .navbar-brand p:nth-child(2) {
 .news_container {
 
     height:40rem;
-    width: 60rem;
+    width: 100%;
     overflow: hidden;
     position: relative;
-    padding: 0.5rem;
+    padding: 0.5em;
     border-top: 5px solid black;
     border-radius: 0.75rem;
 }
@@ -221,7 +211,7 @@ nav .navbar-brand p:nth-child(2) {
     position: absolute;
     left: 0px;
     top: 0px;
-    font-size: 20px;
+    font-size: 1em;
     font-family: "华文细黑", serif;
     padding-left: 0.5rem;
 }
@@ -282,4 +272,70 @@ footer .about p {
 
 .bottom-line p i {
   color: red;
+}
+
+@media (min-width: 1440px) {
+  .section-2 {
+    height: 800px;
+  }
+
+  .section-2-left {
+    float: left;
+    margin-left: 10%;
+  }
+
+  .section-2-right {
+    max-width: 700px;
+  }
+
+  .brief-biograph {
+    width: 50%;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 560px) {
+  .section-2-right p:first-child {
+    font-size: 2rem;
+    padding: 0;
+  }
+
+  .section-2-right p:last-child {
+    font-size: 2rem;
+    padding: 0
+  }
+
+  .section-2 {
+    height: 900px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .section-2-right {
+    margin: 3% auto;
+  }
+
+  .section-3 {
+    padding: 0;
+    margin: 0;
+    height: 650px;
+  }
+
+  .homepage {
+    font-size: 14px;
+  }
+
+  .brief-biograph {
+    width: 80%;
+  }
+
+  footer .row>div {
+    width: 100%
+  }
+
+
+  footer {
+    height: 400px;
+  }
+
 }

@@ -1,3 +1,13 @@
+html,body {
+  height: 100%;
+  weight: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+  body {
+  background-color: #f5f5f5 !important;
+}
 nav {
   padding: 0 2em;
   list-style: none;
@@ -70,15 +80,186 @@ nav .navbar-brand p:nth-child(2) {
   color: #ff5722 !important;
 }
 
-aside {
+.wraper {
+  height: 100%;
+  margin: 0 15vw;
+  background-color: white;
+}
+
+section {
+  /*margin: 0 15vw;*/
+  height: auto;
+  background-color: white;
+  overflow: visible;
+}
+
+section>ul {
+  margin: 80px 0 0 0;
+  font-size: 1.75rem;
+  letter-spacing: 0.4rem;
+}
+
+section .jieshao {
+  height: 100px;
+  padding: 0.5rem 0 0 10%;
+  background-color: lightgrey;
+}
+
+section .content {
+  margin: 0 auto;
+  height: auto;
+
+
+  width: 80%;
+
+}
+
+section .content ul {
+  list-style: none;
+  margin: 0;
+  padding: 0
+}
+
+.content ul li {
+  margin: 2% 0;
+  background-color:inherit;
+  border: 0.2rem solid black;
+  border-radius: 5px;
+}
+
+
+section .content-left {
+  display: inline-block;
+  width: 80%;
+  height: 4rem;
+  float: left;
+  background-color: #e1f5fe;
+  /*border-bottom: 0.2rem solid black;*/
+}
+
+.content-left h4 {
+  font-size: 2.5rem;
+  line-height: 4rem;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+  margin: 0;
+  padding-left: 0.5rem;
+}
+
+
+section .content-right {
+  display: inline-block;
+  width: 20%;
+  height: 4rem;
+  font-size: 3rem;
+  line-height: 3rem;
+  text-align: right;
+  background-color: #e1f5fe;
+  /*border-bottom: 0.2rem solid black;*/
+  clear: both;
+}
+
+.content-right i {
+  line-height: 4rem;
+  color: #90caf9;
+  font-size: 4rem;
+  padding-right: 10%;
+}
+
+.content-right i:hover {
+  font-size: 5rem;
+}
+
+
+
+.content .xiaLa {
+  display: block;
+  height: auto;
+  overflow: auto;
+}
+
+.xiaLa .tuPian {
+  width: 60%;
+  height: auto;
+  overflow: hidden;
+  display: inline-block;
+  float: left;
+}
+
+.xiaLa .shuoMing {
+  display: inline-block;
+  width: 40%;
+  font-size: 1.75rem;
+  clear:both;
+}
+
+.content .yinCang {
+  display: none;
+}
+
+footer {
+  clear:both;
+  padding: 1em 2em;
+  height: 230px;
+  text-align: center;
+  background-color: #b0bec5;
+}
+
+footer h3 {
+  font-size: 2rem !important;
+  letter-spacing: 3px;
+  padding-bottom: 1em;
+}
+
+footer .footer-left {
+  width: 30%;
+  display: inline-block;
+  float: left;
+  margin: 0 1.6666%;
+}
+
+footer .footer-middle {
+  width: 30%;
+  display: inline-block;
+  float: left;
+  margin: 0 1.6666%;
+}
+
+footer .footer-right {
+  width: 30%;
+  display: inline-block;
+  float: left;
+  margin: 0 1.6666%;
+}
+
+
+
+footer ul {
+  margin: 0px;
+  list-style: none;
+}
+
+footer .about p {
+  font-size: 1.5rem;
+}
+
+
+.bottom-line p {
+  letter-spacing: 3px;
+}
+
+.bottom-line p i {
+  color: red;
+}
+/*aside {
   height: 700px;
   width: 200px;
   margin-top: 80px;
   text-align: right;
-}
+}*/
 
 @media (max-width: 1024px) {
-  aside {
+  /*aside {
     height: 20px;
   }
 }
@@ -93,26 +274,26 @@ aside ul li {
   font-size: 1.5vw;
   letter-spacing: 0.3em;
   margin: 2em auto;
-}
+}*/
 
-.tabs-left {
+/*.tabs-left {
   border-right: 1px solid #ddd;
   border-bottom: none;
   margin-left: 2em;
 
-}
+}*/
 
-article {
+/*article {
   margin-top: 80px;
 }
 
 article img {
   max-width: 100%;
-}
+}*/
 
 @media (max-width: 1024px) {
-  article .newsPaper {
-    height: 300px;
+  /*article .dangAnTuPian {
+    height: 200px;
     overflow: hidden;
   }
 }
@@ -124,4 +305,4 @@ article .thumbnail {
 article .heading {
   height: 10em;
   padding: 1em 5em;
-}
+}*/

@@ -114,7 +114,7 @@ nav .navbar-brand p:nth-child(2) {
 }
 
 .homepage .headings {
-  margin-top: 25vh
+  margin-top: 20vh
 }
 
 .homepage h1 {
@@ -154,7 +154,7 @@ nav .navbar-brand p:nth-child(2) {
 
 .title a span {
   position: absolute;
-  top: 70vh;
+  top: 75vh;
   left: 50%;
   width: 30px;
   height: 30px;
@@ -174,13 +174,13 @@ nav .navbar-brand p:nth-child(2) {
   animation-delay: 0s;
 }
 .title a span:nth-of-type(2) {
-  top: calc(70vh + 16px);
+  top: calc(75vh + 16px);
   -webkit-animation-delay: .15s;
   animation-delay: .15s;
 }
 
 .title a span:nth-of-type(3) {
-  top: calc(70vh + 32px);
+  top: calc(75vh + 32px);
   -webkit-animation-delay: .3s;
   animation-delay: .3s;
 }
@@ -385,6 +385,10 @@ footer .about p {
 }
 
 @media (max-width: 560px) {
+
+  .homepage .headings {
+    margin-top: 17vh
+  }
 
   .homepage h1 {
     text-align: center;

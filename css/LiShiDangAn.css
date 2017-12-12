@@ -99,30 +99,63 @@ section>ul {
   letter-spacing: 0.4rem;
 }
 
+
+
 section .jieshao {
-  height: 18rem;
-  padding: 0.5rem 10% 0 10%;
-  background-color: lightgrey;
+  height: 25rem;
+}
+
+section .jieshao-wenzi {
+  height: 8rem;
+  position: relative;
+  background: lightgrey;
+}
+
+section .jieshao-wenzi .NeiRong {
+  position: absolute;
+  padding: 0 10%;
+  bottom: 0;
 }
 
 .jieshao h3 {
   font-size: 2.75rem;
-  margin-top: 8.5rem;
 }
 
 .jieshao p {
   font-size: 1.5rem;
-
 }
 
-#GuoTu {
-  background: url('../pic/GuoTuBeiJing.jpg');
+#GuoJiaTuShuGuan {
+  background: url('../pic/LiShiDangAn/GuoTu/GuoTuBeiJing.jpg');
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   overflow: hidden;
 }
 
+#ShanXiDangAnGuan {
+  background: url('../pic/LiShiDangAn/ShanXI/DangAnGuan.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+#FaGuoTuShuGuan {
+  background: url('../pic/LiShiDangAn/FaGuo/FaTuBeiJing.jpg');
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+#ZhongYanYuan {
+  background: url('../pic/LiShiDangAn/TaiWan/JinShiGuan.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
 
 section .content {
   margin: 0 auto;

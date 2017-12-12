@@ -100,26 +100,34 @@ section>ul {
 }
 
 section .jieshao {
-  height: 12rem;
+  height: 18rem;
   padding: 0.5rem 10% 0 10%;
   background-color: lightgrey;
 }
 
 .jieshao h3 {
   font-size: 2.75rem;
+  margin-top: 8.5rem;
 }
 
 .jieshao p {
   font-size: 1.5rem;
+
 }
+
+#GuoTu {
+  background: url('../pic/GuoTuBeiJing.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
 
 section .content {
   margin: 0 auto;
   height: auto;
-
-
   width: 80%;
-
 }
 
 section .content ul {

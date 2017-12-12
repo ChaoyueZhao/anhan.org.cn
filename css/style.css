@@ -114,33 +114,33 @@ nav .navbar-brand p:nth-child(2) {
 }
 
 .homepage .headings {
-  margin-top: 30vh
+  margin-top: 25vh
 }
 
 .homepage h1 {
   text-align: center;
   margin-top: 1rem;
-  font-size: 3em;
+  font-size: 4rem;
   color: #0097a7;
   letter-spacing: 0.5rem;
 }
 
 .homepage h3 {
-  font-size: 1.25em;
+  font-size: 1.75rem;
   text-align: center;
-  color: white;
+  color: #bbdefb;
 }
 
 .homepage .title {
   letter-spacing: 0.25rem;
   text-align: center;
-  font-size: 1em;
-  color: #01579b;
+  font-size: 2rem;
+  color: #64b5f6;
 }
 
 .homepage p {
-  margin-bottom: 1rem;
-  font-size: 1.25em;
+  margin-top: 1.5rem;
+  font-size: 2rem;
 }
 
 .full-width {
@@ -311,7 +311,8 @@ footer {
 footer h3 {
   font-size: 2rem !important;
   letter-spacing: 3px;
-  padding-bottom: 1em;
+  padding-bottom: 0.5em;
+
 }
 
 footer .footer-left {
@@ -340,6 +341,14 @@ footer .footer-right {
 footer ul {
   margin: 0px;
   list-style: none;
+  padding-left: 0
+}
+
+footer ul li {
+  margin-top: 0.2rem;
+  letter-spacing: 1.5px;
+  text-align: center;
+
 }
 
 footer .about p {
@@ -376,9 +385,41 @@ footer .about p {
 }
 
 @media (max-width: 560px) {
+
+  .homepage h1 {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 2.5rem;
+    color: #0097a7;
+    letter-spacing: 0.5rem;
+  }
+
+  .homepage h3 {
+    font-size: 0.75rem;
+    text-align: center;
+    color: #bbdefb;
+  }
+
+  .homepage .title {
+    letter-spacing: 0.1rem;
+    text-align: center;
+    font-size: 1rem;
+    color: #64b5f6;
+  }
+
+  .homepage p {
+    margin-top: 1.5rem;
+    font-size: 1rem;
+  }
+
   .section-2-right p:first-child {
     font-size: 2rem;
     padding: 0;
+  }
+
+  .section-2-left {
+    padding-top: 80px;
+    margin-top: 0
   }
 
   .section-2-right p:last-child {

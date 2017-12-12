@@ -133,7 +133,7 @@ $(document).ready(function(){
   $('.bxslider').bxSlider();
 })
 $('.bxslider').bxSlider({
-  auto: true,
+  auto: false,
   autoHover: true,
   pause: 5000,
   pager: true,
@@ -266,28 +266,16 @@ particlesJS("particles-js",{
 $(function() {
   $('.title a').on('click', function(e) {
     e.preventDefault();
-    $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 800, 'linear');
+    $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 600, 'linear');
   });
 });
 
-/* ---- stats.js config ---- */
-
-// var count_particles;
-// var stats;
-// var update;
-// stats = new Stats;
-// stats.setMode(0);
-// stats.domElement.style.position = 'absolute';
-// stats.domElement.style.left = '0px';
-// stats.domElement.style.top = '0px';
-// document.body.appendChild(stats.domElement);
-// count_particles = document.querySelector('.js-count-particles');
-// update = function() {
-//   stats.begin();
-//   stats.end();
-//   if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
-//     count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
-//   }
-//   requestAnimationFrame(update);
-// };
-// requestAnimationFrame(update);
+$('.navbar').hide();
+$(window).scroll(function(){
+  if ($(this).scrollTop() > $(this).height()-1) {
+    $('.navbar').fadeIn();
+  }
+  else{
+    $('.navbar').fadeOut();
+  }
+})

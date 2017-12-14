@@ -82,7 +82,7 @@ nav .navbar-brand p:nth-child(2) {
 
 .wraper {
   height: 100%;
-  margin: 0 15vw;
+  margin: 0;
   background-color: white;
 }
 
@@ -92,6 +92,11 @@ section {
   background-color: white;
   overflow: visible;
 }
+
+.tab-pane {
+  padding-bottom: 10vh;
+}
+
 
 section>ul {
   margin: 80px 0 0 0;
@@ -106,23 +111,25 @@ section .jieshao {
 }
 
 section .jieshao-wenzi {
-  height: 8rem;
-  position: relative;
+  height: auto;
   background: lightgrey;
 }
 
 section .jieshao-wenzi .NeiRong {
-  position: absolute;
+  height: auto;
   padding: 0 10%;
-  bottom: 0;
 }
 
-.jieshao h3 {
+.NeiRong p:first-of-type {
   font-size: 2.75rem;
+  margin: 0;
+  padding: 0.5rem 0 0 0;
 }
 
-.jieshao p {
+.NeiRong p:last-of-type {
+  margin: 0;
   font-size: 1.5rem;
+  padding: 0.25rem 0 0.75rem 0;
 }
 
 #GuoJiaTuShuGuan {
@@ -193,6 +200,7 @@ section .content-left {
   display: inline-block;
   width: 90%;
   height: 4rem;
+  font-size: 1rem;
   float: left;
   background-color: #e1f5fe;
   /*border-bottom: 0.2rem solid black;*/
@@ -274,7 +282,7 @@ section .content-right {
 
 footer {
   clear:both;
-  padding: 1em 2em;
+  padding: 3rem 0 5rem;
   height: 230px;
   text-align: center;
   background-color: #b0bec5;
@@ -326,58 +334,14 @@ footer .about p {
 .bottom-line p i {
   color: red;
 }
-/*aside {
-  height: 700px;
-  width: 200px;
-  margin-top: 80px;
-  text-align: right;
-}*/
 
-@media (max-width: 1024px) {
-  /*aside {
-    height: 20px;
+
+@media (min-width: 1024px) {
+
+  .wraper {
+    height: 100%;
+    margin: 0 15vw;
+    background-color: white;
   }
-}
-
-aside ul {
-  list-style: none;
-  padding: 0;
 
 }
-
-aside ul li {
-  font-size: 1.5vw;
-  letter-spacing: 0.3em;
-  margin: 2em auto;
-}*/
-
-/*.tabs-left {
-  border-right: 1px solid #ddd;
-  border-bottom: none;
-  margin-left: 2em;
-
-}*/
-
-/*article {
-  margin-top: 80px;
-}
-
-article img {
-  max-width: 100%;
-}*/
-
-@media (max-width: 1024px) {
-  /*article .dangAnTuPian {
-    height: 200px;
-    overflow: hidden;
-  }
-}
-
-article .thumbnail {
-  width: 100% !important;
-}
-
-article .heading {
-  height: 10em;
-  padding: 1em 5em;
-}*/

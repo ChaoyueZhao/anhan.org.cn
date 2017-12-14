@@ -7,6 +7,7 @@ html{
 body {
   min-width: 360px
 }
+
 canvas {
   display: block;
   vertical-align: bottom;
@@ -17,7 +18,7 @@ canvas {
   top:0;
   z-index: -1;
   width: 100%;
-  height: 100%;
+  height: 100vh;
 }
 
 nav {
@@ -103,9 +104,9 @@ nav .navbar-brand p:nth-child(2) {
 /*~~~~~~首页~~~~~~*/
 
 .homepage .wraper {
-  margin-top: 70px;
-  padding: 30px 0;
-  height: calc(100vh - 70px);
+  /* margin-top: 70px; */
+  padding: 30px 0 0;
+  height: 100vh;
   /*background: url('../pic/background.svg');
   background-size: cover;
   background-position: center center;
@@ -114,39 +115,38 @@ nav .navbar-brand p:nth-child(2) {
 }
 
 .homepage .headings {
-  margin-top: 20vh
+  margin-top: 25vh;
+  font-size: 1.5rem;
 }
 
 .homepage h1 {
   text-align: center;
-  margin-top: 1rem;
-  font-size: 4rem;
+  margin-top: 0.5em;
+  font-size: 1.5em;
+  font-weight: bold;
   color: #0097a7;
-  letter-spacing: 0.5rem;
+  letter-spacing: 0.3em;
 }
 
 .homepage h3 {
-  font-size: 1.75rem;
+  font-size: 0.5em;
   text-align: center;
   color: #bbdefb;
 }
 
 .homepage .title {
-  letter-spacing: 0.25rem;
+  letter-spacing: 0.1em;
   text-align: center;
-  font-size: 2rem;
+  font-size: 1em;
   color: #64b5f6;
 }
 
 .homepage p {
-  margin-top: 1.5rem;
-  font-size: 2rem;
+  margin-top: 1em;
+  font-size: 0.75em;
 }
 
-.full-width {
-  margin: 0;
-  padding: 2rem 7rem;
-}
+
 
 .title a {
   padding-top: 80px;
@@ -207,42 +207,50 @@ nav .navbar-brand p:nth-child(2) {
   }
 }
 
-
-
 /*第二部分*/
-
 .section-2 {
-  height: 1200px;
+  height: auto;
   background-color: #c5cae9;
   text-align: center;
+  font-size: 1rem;
 }
 
 .section-2-left {
-  margin: 6% auto 3% auto;
-  padding: 0;
+  margin: 0 auto;
+  padding-top: 90px;
   max-width: 510px;
 }
 
 .section-2-right {
-  clear:both;
   display: inline-block;
-  max-width: 400px;
-  margin: 6% auto;
+  margin: 0;
+  padding: 10px 0 30px;
+  clear: both;
 }
 
-.section-2-right p:first-child {
-  font-family: Lishu;
+.section-2-right p:first-of-type {
+  font-family: KaiTi;
+  text-align: left;
+  line-height: 1.5em;
   color: #1565c0;
-  font-size: 3rem;
-  padding-top: 3rem
+  font-size: 2.5em;
+  font-weight: bold;
 }
 
-.section-2-right p:last-child {
+
+.section-2-right p:last-of-type {
+  text-align: center;
   text-align: right;
-  font-size: 2rem;
+  font-size: 1.5em;
 }
 
 
+
+.section-3 {
+  padding: 0;
+  margin: 0;
+  height: 650px;
+}
 
 /*第三部分*/
 
@@ -250,6 +258,7 @@ nav .navbar-brand p:nth-child(2) {
   clear: both;
   height: 800px;
   text-align: center;
+  background-color: lightblue;
   background: url('../pic/background.svg');
   background-size: cover;
   background-position: center center;
@@ -298,170 +307,141 @@ nav .navbar-brand p:nth-child(2) {
 }
 
 
-
-
-footer {
-  clear:both;
-  padding: 1em 2em;
-  height: 230px;
-  text-align: center;
-  background-color: #b0bec5;
-}
-
-footer h3 {
-  font-size: 2rem !important;
-  letter-spacing: 3px;
-  padding-bottom: 0.5em;
-
-}
-
-footer .footer-left {
-  width: 30%;
-  display: inline-block;
-  float: left;
-  margin: 0 1.6666%;
-}
-
-footer .footer-middle {
-  width: 30%;
-  display: inline-block;
-  float: left;
-  margin: 0 1.6666%;
-}
-
-footer .footer-right {
-  width: 30%;
-  display: inline-block;
-  float: left;
-  margin: 0 1.6666%;
-}
-
-
-
-footer ul {
-  margin: 0px;
-  list-style: none;
-  padding-left: 0
-}
-
-footer ul li {
-  margin-top: 0.2rem;
-  letter-spacing: 1.5px;
-  text-align: center;
-
-}
-
-footer .about p {
-  font-size: 1.5rem;
-}
-
-
-.bottom-line p {
-  letter-spacing: 3px;
-}
-
-.bottom-line p i {
-  color: red;
-}
-
-@media (min-width: 1440px) {
-  .section-2 {
-    height: 800px;
-  }
-
-  .section-2-left {
-    float: left;
-    margin-left: 10%;
-  }
-
-  .section-2-right {
-    max-width: 700px;
-  }
-
-  .brief-biograph {
-    width: 50%;
-    font-size: 20px;
-  }
-}
-
-@media (max-width: 560px) {
-
-  .homepage .headings {
-    margin-top: 17vh
-  }
-
-  .homepage h1 {
-    text-align: center;
-    margin-top: 1rem;
-    font-size: 2.5rem;
-    color: #0097a7;
-    letter-spacing: 0.5rem;
-  }
-
-  .homepage h3 {
-    font-size: 0.75rem;
-    text-align: center;
-    color: #bbdefb;
-  }
-
-  .homepage .title {
-    letter-spacing: 0.1rem;
-    text-align: center;
-    font-size: 1rem;
-    color: #64b5f6;
-  }
-
-  .homepage p {
-    margin-top: 1.5rem;
-    font-size: 1rem;
-  }
-
-  .section-2-right p:first-child {
-    font-size: 2rem;
-    padding: 0;
-  }
-
-  .section-2-left {
-    padding-top: 80px;
-    margin-top: 0
-  }
-
-  .section-2-right p:last-child {
-    font-size: 2rem;
-    padding: 0
-  }
-
-  .section-2 {
-    height: 900px;
-    padding: 0;
-    margin: 0;
-  }
-
-  .section-2-right {
-    margin: 3% auto;
-  }
-
-  .section-3 {
-    padding: 0;
-    margin: 0;
-    height: 650px;
-  }
-
-  .homepage {
-    font-size: 14px;
-  }
-
   .brief-biograph {
     width: 80%;
   }
 
-  footer .row>div {
-    width: 100%
+
+
+  footer {
+    clear:both;
+    padding: 2rem 0;
+    height: auto;
+    text-align: center;
+    background-color: #b0bec5;
+  }
+
+  footer h3 {
+    font-size: 2rem !important;
+    letter-spacing: 3px;
+    padding-bottom: 0.5em;
+
+  }
+
+
+
+  footer ul {
+    margin: 0px;
+    list-style: none;
+    padding-left: 0
+  }
+
+  footer ul li {
+    margin-top: 0.2rem;
+    letter-spacing: 1.5px;
+    text-align: center;
+
+  }
+
+  footer .about p {
+    font-size: 1.5rem;
+  }
+
+
+  .bottom-line p {
+    letter-spacing: 3px;
+  }
+
+  .bottom-line p i {
+    color: red;
+  }
+
+
+
+@media (min-width: 1024px) {
+
+  .homepage .headings {
+    margin-top: 30vh;
+    font-size: 2.5rem;
+  }
+
+  .section-2 {
+    margin: 0;
+    padding: 0;
+    background-color: #c5cae9;
+    text-align: center;
+    padding: 4%;
+    height: auto;
+  }
+
+  .section-2-left {
+    float: left;
+    margin-left: 5%
+  }
+
+  .section-2-right {
+    font-size: 1.25rem;
+    display: inline-block;
+    max-width: 400px;
+    margin: 6% auto;
+  }
+
+
+  .section-2-right p:first-child {
+    font-family: Lishu;
+    color: #1565c0;
+    font-size: 2em;
+    padding-top: 2em
+  }
+
+  .section-2-right p:last-child {
+    text-align: right;
+    font-size: 1.5em;
   }
 
 
   footer {
-    height: 400px;
+    padding: 3rem 0 5rem;
   }
 
+  footer .footer-left {
+    width: 30%;
+    display: inline-block;
+    float: left;
+    margin: 0 1.6666%;
+  }
+
+  footer .footer-middle {
+    width: 30%;
+    display: inline-block;
+    float: left;
+    margin: 0 1.6666%;
+  }
+
+  footer .footer-right {
+    width: 30%;
+    float: left;
+    display: inline-block;
+    margin: 0 1.6666%;
+  }
+}
+
+
+
+@media (min-width: 1440px) {
+
+  .section-2 {
+    padding: 0 10%;
+  }
+  /* .section-2-left {
+    margin-left: 12%;
+  } */
+
+  .section-2-right {
+    font-size: 1.5rem;
+  }
+
+  .brief-biograph {
+    width: 60%;
+  }
 }

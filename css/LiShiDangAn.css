@@ -5,79 +5,215 @@ html,body {
   margin: 0;
 }
 
-  body {
+body {
   background-color: #f5f5f5 !important;
 }
+/* ！！！导航栏样式！！！ */
 nav {
-  padding: 0 2em;
-  list-style: none;
-  background-color: #e3f2fd !important;
-  border-radius: 2px;
+  height: auto;
+  min-height: 70px;
+  background-color: white;
+  font-size: 2rem;
+  width:100%;
+  z-index: 99;
   box-shadow: 0 2px 7px 1px rgba(0,0,0,0.2);
+  padding-bottom: 0;
 }
 
-nav .container-fluild {
-  height: 90px;
-  padding: 0;
-  text-align: center;
+nav a:link {
+  text-decoration: none;
 }
 
-
-
-nav .navbar-header button {
-  margin-top: 17px;
+nav .logo-div {
+  display: inline-block;
+  float:left;
+  width: auto;
+  font-size: 1.5em;
+  font-family: Microsoft YaHei;
+  letter-spacing: 0.1em;
+  padding: .4em;
+  margin-left: 5%;
 }
 
-nav .navbar-brand {
-  font-size: 25px;
+nav .logo-div span {
   color: #17a7e0 !important;
-  letter-spacing: 3px;
   font-weight: bold;
-  height: 70px;
-  float: none !important;
+
 }
 
-nav .navbar-brand p:first-child {
-  margin-top: 13px;
+nav .toggle-button {
+  display: inline-block;
+  float: right;
+  padding-top: 1em;
+  margin-right: 10%;
 }
 
-nav .navbar-brand p:nth-child(2) {
-  font-size: 40%;
-  font-family: monospace;
-  position: relative;
-  letter-spacing: 5px;
+
+nav ul {
+  list-style: none;
+  display: inline-block;
+  text-align: right;
+  width: 100%;
   padding: 0;
-  text-align: center;
-  max-width: 180px;
-  margin: 0 auto;
+  margin: 0;
 }
 
-#navbar-list {
-  float:right;
-  margin-right: 10px;
+#navbar-list .hidden {
+  display: none;
 }
 
-#navbar-list .dropdown {
-  margin-right: 0.5em;
-  margin-top: 10px;
+
+#navbar-list li {
+  width: 100%;
+  float: left;
   font-size: 1.25em;
-  letter-spacing: 3px;
-}
- #navbar-list a {
-   padding-bottom: 0.3em;
-   padding-left: 0;
-   padding-right: 0;
-   margin-right: 1em;
- }
-
-#navbar-list a:hover {
-  border-bottom: 4px solid #17a7e0;
-  color: #17a7e0 !important;
+  padding: 0.3em 0;
+  border-top: 1px #C6C6C6 solid;
+  text-align: left;
+  color: #17a7e0;
 }
 
-#navbar-list #donate a:hover {
-  border-bottom: 4px solid #ff5722;
-  color: #ff5722 !important;
+#navbar-list li:nth-child(even) {
+  border-left: 1px #C6C6C6 solid;
+}
+
+
+#navbar-list p {
+  padding-left: 40px;
+  margin: 0;
+  position: relative;
+}
+
+#navbar-list i {
+  color:#17a7e0;
+  font-size: 1.75em;
+  margin-right: 25px;
+}
+
+#navbar-list span {
+  position: absolute;
+  top: 10%;
+  color: #17a7e0;
+}
+
+#ShouYe,
+#JuanZhu {
+  letter-spacing: 1em;
+}
+
+#navbar-list li:hover {
+  color: red !important;
+  /* background-color: #6ab218 */
+}
+
+/* ！！！响应式导航栏！！！ */
+@media (min-width: 480px) {
+  #navbar-list li {
+    width: 50%;
+  }
+
+  nav .toggle-button {
+    margin-right: 5%;
+  }
+}
+
+@media (min-width: 1000px) {
+  #navbar-list li:nth-child(even) {
+    border-left: none;
+  }
+
+  nav .logo-div {
+    display: inline-block;
+    float:left;
+    width: 20%;
+    font-size: 1.5em;
+    font-family: Microsoft YaHei;
+    letter-spacing: 0.1em;
+    padding: .4em;
+    margin-left: 5%;
+  }
+  nav .toggle-button {
+    display: none
+  }
+
+  #navbar-list {
+    display:inline-block !important;
+  }
+
+  nav ul {
+    width: auto;
+    list-style: none;
+    display: inline-block;
+    text-align: right;
+    margin: 0;
+    float: right;
+  }
+
+  #navbar-list p {
+    padding-left: 0;
+    margin: 0;
+    position: relative;
+  }
+
+  #navbar-list i {
+    display: none;
+  }
+
+  #navbar-list span {
+    position: absolute;
+    top: 0;
+    color: #666;
+  }
+
+  #navbar-list li {
+    width: 120px;
+    float: left;
+    font-size: 0.9em;
+    padding: 1.3em 0;
+    border-top: none;
+    text-align: left;
+  }
+
+  #navbar-list a {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  #navbar-list li:hover {
+    color: white !important;
+    background-color: white
+  }
+
+  #navbar-list li span{
+    letter-spacing: 0.2em;
+  }
+
+  #navbar-list span:hover {
+    border-bottom: 4px solid #17a7e0;
+    color: #17a7e0 !important;
+  }
+
+  #ShouYe {
+    letter-spacing: 0;
+    margin-left: 35px
+  }
+
+
+  #JuanZhu {
+    letter-spacing: 0;
+  }
+
+  #JuanZhu::before {
+    font-family: FontAwesome;
+    content:" \f157";
+  }
+
+  #donate span:hover {
+    border-bottom: 4px solid #ff5722;
+    color: #ff5722 !important;
+  }
+
+
 }
 
 .wraper {
@@ -99,7 +235,7 @@ section {
 
 
 section>ul {
-  margin: 80px 0 0 0;
+  margin-top: 15px;
   font-size: 1.75rem;
   letter-spacing: 0.4rem;
 }
@@ -194,8 +330,6 @@ section .content ul {
   border: 0.2rem solid #e0e0e0;
 }
 
-
-
 section .content-left {
   display: inline-block;
   width: 90%;
@@ -203,12 +337,7 @@ section .content-left {
   font-size: 1rem;
   float: left;
   background-color: #e1f5fe;
-  /*border-bottom: 0.2rem solid black;*/
 }
-
-/*section .content-left:hover {
-  background-color: red;
-}*/
 
 .content-left h4 {
   font-size: 2.5rem;
@@ -223,7 +352,6 @@ section .content-left {
 .content-left h4:hover {
   font-size: 2.7rem;
 }
-
 
 section .content-right {
   display: inline-block;
@@ -247,8 +375,6 @@ section .content-right {
 .content-right i:hover {
   font-size: 5rem;
 }
-
-
 
 .content .xiaLa {
   display: block;
@@ -315,8 +441,6 @@ footer .footer-right {
   margin: 0 1.6666%;
 }
 
-
-
 footer ul {
   margin: 0px;
   list-style: none;
@@ -326,7 +450,6 @@ footer .about p {
   font-size: 1.5rem;
 }
 
-
 .bottom-line p {
   letter-spacing: 3px;
 }
@@ -335,13 +458,10 @@ footer .about p {
   color: red;
 }
 
-
 @media (min-width: 1024px) {
-
   .wraper {
     height: 100%;
     margin: 0 15vw;
     background-color: white;
   }
-
 }

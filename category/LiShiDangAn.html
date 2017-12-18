@@ -11,59 +11,77 @@
     <link rel="stylesheet" href="../css/animate.css">
   </head>
   <body>
-    <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-list" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="../index.html">
-            <!-- <img alt="安汉纪念馆" src="pic/logo.png"> -->
-            <div class="logo">
-              <!-- <img src="pic/lishu-logo.svg" alt="安汉纪念馆" class="img-responsive"> -->
-              <span>安汉纪念馆</span>
-            </div>
-          </a>
+    <header>
+      <nav>
+        <div class="logo-div">
+          <a href="#"><span>安汉纪念馆</span></a>
         </div>
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="navbar-list">
-          <ul class="nav navbar-nav">
-            <li class="dropdown">
-              <a href="../category/LiShiDangAn.html">档案文献</a>
-          </ul>
+        <div class="toggle-button">
+          <a><i class="fa fa-bars fa-lg" aria-hidden="true"></i></a>
+        </div>
 
-          <ul class="nav navbar-nav">
-            <li class="dropdown">
-              <a href="#">安汉研究</a>
-            </li>
-          </ul>
-
-          <ul class="nav navbar-nav">
-            <li class="dropdown">
-              <a href="#">文学作品</a>
-            </li>
-          </ul>
-
-          <ul class="nav navbar-nav">
-            <li class="dropdown">
-              <a href="#">黎坪风光</a>
-            </li>
-          </ul>
-
-          <ul class="nav navbar-nav">
-            <li class="dropdown" id="donate">
-              <a href="#">捐助 <i class="fa fa-jpy" aria-hidden="true"></i></a>
-            </li>
-          </ul>
-        </div><!-- 导航栏菜单结束 -->
-      </div><!-- 导航栏container结束 -->
-    </nav>
-  </header>
+        <ul id="navbar-list" class="hidden">
+          <li>
+            <a href="../index.html"><p><i class="fa fa-home fa-fw" aria-hidden="true"></i><span id="ShouYe">首页</span></p></a>
+          </li>
+          <li>
+            <a href="../category/LiShiDangAn.html"><p><i class="fa fa-book fa-fw" aria-hidden="true"></i><span>档案文献</span></p></a>
+          </li>
+          <li>
+            <a href="#"><p><i class="fa fa-search fa-fw" aria-hidden="true"></i><span>安汉研究</span></a></p>
+            <!-- <ul class="dropdown-menu">
+              <li><a href="#"><p>生平年谱</p></a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#"><p>书籍文章</p></a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#"><p>黎坪垦区</p></a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#"><p>农业考察</p></a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#"><p>案件真相</p></a></li>
+            </ul> -->
+          </li>
+          <li>
+            <a href="#" ><p><i class="fa fa-pencil fa-fw" aria-hidden="true"></i><span>文学作品</span></p></a>
+            <!-- <ul class="dropdown-menu">
+              <li><a href="#"><p>学术论文</p></a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#"><p>纪念文章</p></a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#"><p>小说散文</p></a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#"><p>诗歌戏剧</p></a></li>
+            </ul> -->
+          </li>
+          <li>
+            <a href="#"><p><i class="fa fa-binoculars fa-fw" aria-hidden="true"></i><span>黎坪风光</span></p></a>
+            <!-- <ul class="dropdown-menu">
+              <li><a href="#"><p>黎坪历史</p></a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#"><p>景区介绍</p></a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#"><p>旅游攻略</p></a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#"><p>风景欣赏</p></a></li>
+            </ul> -->
+          </li>
+          <li id="donate">
+            <a href="#"><p><i class="fa fa-jpy fa-fw" aria-hidden="true"></i><span id="JuanZhu">捐助</span></p></a>
+            <!-- <ul class="dropdown-menu">
+              <li><a href="#"><p></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#"><p><i class="fa fa-jpy" aria-hidden="true"></i> 捐助安汉小学</p></a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#"><p><i class="fa fa-coffee" aria-hidden="true"></i> 请站长喝咖啡</p></a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#"><p><i class="fa fa-commenting" aria-hidden="true"></i> 本站联系方式</p></a></li>
+            </ul> -->
+          </li>
+        </ul>
+        <div style="clear: both"></div>
+      </nav>
+    </header>
 
   <!-- <div class="row">
     <aside class="col-xm-12 col-sm-12 col-md-12">

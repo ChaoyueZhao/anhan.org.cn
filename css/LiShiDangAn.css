@@ -271,7 +271,7 @@ section .jieshao-wenzi .NeiRong {
 #GuoJiaTuShuGuan {
   background: url('../pic/LiShiDangAn/GuoTu/GuoTuBeiJing.jpg');
   background-size: cover;
-  background-position: center center;
+  background-position: center 60%;
   background-repeat: no-repeat;
   overflow: hidden;
 }
@@ -287,7 +287,7 @@ section .jieshao-wenzi .NeiRong {
 #FaGuoTuShuGuan {
   background: url('../pic/LiShiDangAn/FaGuo/FaTuBeiJing.jpg');
   background-size: cover;
-  background-position: center bottom;
+  background-position: center 85%;
   background-repeat: no-repeat;
   overflow: hidden;
 }
@@ -295,7 +295,23 @@ section .jieshao-wenzi .NeiRong {
 #ZhongYanYuan {
   background: url('../pic/LiShiDangAn/TaiWan/JinShiGuan.png');
   background-size: cover;
-  background-position: center center;
+  background-position: center 85%;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+#QinGongJianXue {
+  background: url('../pic/LiShiDangAn/FaGuo/paris-1920s.jpg');
+  background-size: cover;
+  background-position: center 40%;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+#LiAngTuShuGuan {
+  background: url('../pic/LiShiDangAn/FaGuo/LiAng.jpg');
+  background-size: cover;
+  background-position: center 80%;
   background-repeat: no-repeat;
   overflow: hidden;
 }
@@ -379,6 +395,7 @@ section .content-right {
 .content .xiaLa {
   display: block;
   height: auto;
+  padding: 2em;
   overflow: auto;
 }
 
@@ -396,6 +413,7 @@ section .content-right {
   font-size: 1.75rem;
   padding: 1rem;
   clear:both;
+  letter-spacing: 0.1em;
 }
 
 .content .yinCang {

@@ -258,6 +258,7 @@ section .jieshao-wenzi .NeiRong {
 
 .NeiRong p:first-of-type {
   font-size: 2.75rem;
+  font-weight: bold;
   margin: 0;
   padding: 0.5rem 0 0 0;
 }
@@ -278,6 +279,14 @@ section .jieshao-wenzi .NeiRong {
 
 #ShanXiDangAnGuan {
   background: url('../pic/LiShiDangAn/ShanXI/DangAnGuan.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+#NanZhengWenShi {
+  background: url('../pic/LiShiDangAn/HanZhong/NanZheng.jpg');
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -475,6 +484,28 @@ footer .about p {
 .bottom-line p i {
   color: red;
 }
+
+.backToTop {
+  display: inline-block;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 4em;
+  padding: 0 1em;
+  background: #E8E8E8;
+  border: 2px solid #e0e0e0;
+  letter-spacing: 0.1em;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #90caf9;
+  border-radius: 3px;
+}
+
+.backToTop:hover {
+  cursor: pointer;
+  background: #e1f5fe
+}
+
 
 @media (min-width: 1024px) {
   .wraper {

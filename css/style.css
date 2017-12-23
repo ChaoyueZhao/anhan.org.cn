@@ -183,17 +183,17 @@ nav ul {
     width: 120px;
     float: left;
     font-size: 0.9em;
-    padding: 1.3em 0;
+    padding: 1.3em 0 0;
     border-top: none;
     text-align: left;
   }
 
-  #navbar-list a {
+  #navbar-list a:not(:last-child) {
     padding-left: 0;
     padding-right: 0;
   }
 
-  #navbar-list li:hover {
+  #navbar-list li:not(:last-child):hover {
     color: white !important;
     background-color: white
   }
@@ -212,100 +212,77 @@ nav ul {
     margin-left: 35px
   }
 
-
-  #JuanZhu {
-    letter-spacing: 0;
+  .buttonfx{
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 70px;
+    text-align: center;
+    color: #17a7e0; /* button text color */
+    outline: none;
+    background: transparent;
+    border: none;
+    border: 1px solid #17a7e0;
+    border-radius: 5px;
+    letter-spacing: 3px !important;
+    text-transform: uppercase;
+    font: 300 18px Microsoft YaHei; /* use google font */
+    position: relative;
+    cursor: pointer;
+    text-decoration: none; /* remove underline if using A instead of BUTTON tag */
+    overflow: hidden;
+    transition: all .3s;
   }
-
-  #JuanZhu::before {
-    font-family: FontAwesome;
-    content:" \f157";
+  
+  /* //// Default effect: Slide from Top  //// */
+  
+  .buttonfx:before,
+  .buttonfx:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    background: #17a7e0; /* onhover background color */
+    z-index: -1;
+    transform: translate3D(0,-100%,0); /* move elements above button so they don't appear initially */
+    transition: all .3s;
   }
-
-  #donate span:hover {
-    border-bottom: 4px solid #ff5722;
-    color: #ff5722 !important;
+  
+  .buttonfx:before{
+    background: white; /* button default background color */
+    z-index: -2;
+    transform: translate3D(0,0,0);
   }
-
-
-.buttonfx{
-  color: black; /* button text color */
-  outline: none;
-  background: transparent;
-  border: none;
-  border-bottom: 4px solid #eee;
-  letter-spacing: 0.0625em;
-  padding: 8px 10px;
-  text-transform: uppercase;
-  font: bold 16px 'Bitter', sans-serif; /* use google font */
-  line-height: 2;
-  position: relative;
-	display: inline-block;
-  margin-right: 20px;
-  margin-bottom: 20px;
-  cursor: pointer;
-	text-decoration: none; /* remove underline if using A instead of BUTTON tag */
-  overflow: hidden;
-  transition: all .5s;
+  
+  .buttonfx:hover{
+    color: white;
+    text-decoration: none;
+  }
+  
+  .buttonfx:hover:after{
+    transform: translate3D(0,0,0);
+    transition: all .3s;
+  }
+  
+  
+  /* //// Angle In  //// */
+  
+  .angleinleft:after{
+    width: 200%;
+    transform-origin: 0 bottom;
+    transform: translate3D(-50%,0,0) rotate(-50deg);
+  }
+  
+  .angleinleft:hover:after{
+    transform: rotate(0deg);
+    transition: all .3s;
+  }
+/* 导航栏响应式结束 */
 }
 
-/* //// Default effect: Slide from Top  //// */
-
-.buttonfx:before,
-.buttonfx:after{
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  height: 100%;
-  background: #259f6c; /* onhover background color */
-  z-index: -1;
-  transform: translate3D(0,-100%,0); /* move elements above button so they don't appear initially */
-  transition: all .5s;
-}
-
-.buttonfx:before{
-  background: #fafcd6; /* button default background color */
-  z-index: -2;
-  transform: translate3D(0,0,0);
-}
-
-.buttonfx:hover{
-	color: white;
-}
-
-.buttonfx:hover:after{
-  transform: translate3D(0,0,0);
-  transition: all .5s;
-}
-
-/* //// Double Take  //// */
-
-.doubletake:before,
-.doubletake:after{
-  width: 200%;
-  background: #259f6c;
-  transform-origin: 0 bottom;
-  transform: translate3D(-50%,0,0) rotate(-50deg);
-}
-
-.doubletake:before{
-  opacity: .4;
-}
-
-.doubletake:hover:before,
-.doubletake:hover:after{
-  transform: rotate(0deg);
-  transition: all .25s;
-}
-
-.doubletake:hover:after{
-  transition-delay: .25s;
-}
-
-}
 
 /*~~~~~~首页大标题部分~~~~~~*/
 

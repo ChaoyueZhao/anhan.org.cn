@@ -229,6 +229,33 @@ section {
   overflow: visible;
 }
 
+.nav-tabs li a {
+  font-size: 1.75em;
+  font-family: KaiTi;
+  font-weight: bold;
+  color: #17a7e0;
+}
+
+.nav-tabs li a:hover {
+  background-color: #17a7e0 !important;
+  color: white;
+}
+
+.nav-tabs li a:focus {
+  background-color: #17a7e0 !important;
+  color: white !important;
+}
+
+.nav-tabs > li.active > a {
+  background-color: #17a7e0 !important;
+  color: white !important;
+}
+
+.nav-tabs > li.active > a:hover {
+  background-color: #17a7e0 !important;
+  color: white !important;
+}
+
 .tab-pane {
   padding-bottom: 10vh;
 }

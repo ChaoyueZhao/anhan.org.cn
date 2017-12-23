@@ -278,9 +278,9 @@ section .jieshao-wenzi .NeiRong {
 }
 
 #ShanXiDangAnGuan {
-  background: url('../pic/LiShiDangAn/ShanXI/DangAnGuan.jpg');
+  background: url('../pic/LiShiDangAn/XiAn/background.jpg');
   background-size: cover;
-  background-position: center center;
+  background-position: center bottom;
   background-repeat: no-repeat;
   overflow: hidden;
 }

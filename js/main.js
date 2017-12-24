@@ -1,72 +1,6 @@
-// $(".scrolling").css("margin-top", "-820px");
-// $(".scrolling").mouseover(function(){
-
-  // var $marginTop = parseInt($( this ).css("margin-top"));
-  // $( this ).css("margin-top", $marginTop+1+"px");
-
-  // while ($marginTop > -820) {
-  //   $marginTop--;
-  //   $( this ).css("margin-top", $marginTop + 'px');
-  //   if ($marginTop == -820) {
-  //     $marginTop == 500;
-  //   }
-  // }
- // });
-
-// {
-// //   var $top = $( this ).css("top");
-// //   while ($top > -820 ) {
-// //     $top--;
-// //     if ($top = -820) {
-// //       $top = 500;
-// //     };
-// //    };
-// // }));
-
-// $('h1').css("color", "red");
-
-
-// var $marginTop = parseInt($(".scrolling").css("margin-top"));
-//
-// var scrollingTop = function(){
-//   $marginTop--;
-//   $(".scrolling").css("margin-top", $marginTop + "px");
-// };
-//
-// var rolling = setInterval(scrollingTop, 40);
-//
-// $(".scrolling").mouseover(function(){
-//   clearInterval(rolling);
-// });
-
-// var rolling = setInterval(function(){
-//   var $marginTop = parseInt($(".scrolling").css("margin-top"));
-//   var isPause = false;
-//   if (!isPause) {
-//     $marginTop--;
-//     $(".scrolling").css("margin-top", $marginTop + "px");
-//   }
-// }, 50);
-//
-// $(".scrolling-box").hover(function(){
-//   isPause = false; isPause = true;
-// });
-
-  // for (i=0; i > -420; i--) {
-  //   $marginTop-=i;
-  //   $( this ).css("margin-top", $marginTop + "px");
-  // };
-  // while ($marginTop > -820) {
-  //   $marginTop--;
-  //   $(".scrolling").css("margin-top", $marginTop + "px");
-  //   if ($marginTop == -820) {
-  //     $marginTop == 500;
-  //   };
-  // };
-
-
-// setInterval(scrollingTop(),500);
-
+$('nav .toggle-button').click(function(){
+  $('#navbar-list').toggleClass('hidden');
+});
 
 (function ($, undefined) {
     $.fn.loopScroll = function (p_options) {
@@ -135,15 +69,142 @@ $(document).ready(function(){
 $('.bxslider').bxSlider({
   auto: false,
   autoHover: true,
-  pause: 4000,
+  pause: 5000,
   pager: true,
   caption: true,
   controls: true,
 });
 
-//设置导航栏菜单鼠标浮动展开
-$('.navbar .dropdown').hover(function() {
-  $(this).find('.dropdown-menu').first().stop(true, true).slideDown(150);
-}, function() {
-  $(this).find('.dropdown-menu').first().stop(true, true).slideUp(105)
+
+
+particlesJS("particles-js",{
+  "particles": {
+    "number": {
+      "value": 160,
+      "density": {
+        "enable": true,
+        "value_area": 800
+      }
+    },
+    "color": {
+      "value": "#ffffff"
+    },
+    "shape": {
+      "type": "circle",
+      "stroke": {
+        "width": 0,
+        "color": "#000000"
+      },
+      "polygon": {
+        "nb_sides": 5
+      },
+      "image": {
+        "src": "img/github.svg",
+        "width": 100,
+        "height": 100
+      }
+    },
+    "opacity": {
+      "value": 1,
+      "random": true,
+      "anim": {
+        "enable": true,
+        "speed": 1,
+        "opacity_min": 0,
+        "sync": false
+      }
+    },
+    "size": {
+      "value": 3,
+      "random": true,
+      "anim": {
+        "enable": false,
+        "speed": 4,
+        "size_min": 0.3,
+        "sync": false
+      }
+    },
+    "line_linked": {
+      "enable": false,
+      "distance": 150,
+      "color": "#ffffff",
+      "opacity": 0.4,
+      "width": 1
+    },
+    "move": {
+      "enable": true,
+      "speed": 1,
+      "direction": "none",
+      "random": true,
+      "straight": false,
+      "out_mode": "out",
+      "bounce": false,
+      "attract": {
+        "enable": false,
+        "rotateX": 600,
+        "rotateY": 600
+      }
+    }
+  },
+  "interactivity": {
+    "detect_on": "canvas",
+    "events": {
+      "onhover": {
+        "enable": true,
+        "mode": "bubble"
+      },
+      "onclick": {
+        "enable": true,
+        "mode": "repulse"
+      },
+      "resize": true
+    },
+    "modes": {
+      "grab": {
+        "distance": 400,
+        "line_linked": {
+          "opacity": 1
+        }
+      },
+      "bubble": {
+        "distance": 250,
+        "size": 0,
+        "duration": 2,
+        "opacity": 0,
+        "speed": 3
+      },
+      "repulse": {
+        "distance": 400,
+        "duration": 0.4
+      },
+      "push": {
+        "particles_nb": 4
+      },
+      "remove": {
+        "particles_nb": 2
+      }
+    }
+  },
+  "retina_detect": true
+})
+
+//向下指示标
+$(function() {
+  $('.title a').on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 600, 'linear');
+  });
 });
+
+
+
+
+$('nav').hide();
+$(window).scroll(function(){
+  if ($(this).scrollTop() > $(this).height()-1) {
+    $('nav').fadeIn();
+  }
+  else{
+    $('nav').fadeOut();
+  }
+})

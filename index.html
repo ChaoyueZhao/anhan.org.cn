@@ -1,8 +1,12 @@
 <!DOCTYPE html>
-<html>
-    <head>
+<html lang=zh-cmn-Hans>
+  <head>
     <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="description" content="本站是为纪念民国农垦专家安汉先生创建的在线博物馆，独家提供相关历史档案、学术文献和文学作品的在线阅览及免费下载。">
     <title>安汉纪念馆</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link href="css/jquery.bxslider.css" rel="stylesheet"/>
@@ -12,119 +16,80 @@
   <body>
 
     <header>
-      <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-list" aria-expanded="false">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">
-              <!-- <img alt="安汉纪念馆" src="pic/logo.png"> -->
-              <div class="logo">
-                <img src="pic/lishu-logo.svg" alt="安汉纪念馆">
-              </div>
-            </a>
-          </div>
+      <nav>
+        <div class="logo-div">
+          <a href="#"><span>安汉纪念馆</span></a>
+        </div>
 
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse" id="navbar-list">
-            <ul class="nav navbar-nav">
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">历史档案</a>
-                <ul class="dropdown-menu">
-                  <li><a href="#"><p>国家图书馆</p></a></li>
-                  <li role="separator" class="divider"></li>
-                  <li><a href="#"><p>陕西档案馆</p></a></li>
-                  <li role="separator" class="divider"></li>
-                  <li><a href="#"><p>汉中档案馆</p></a></li>
-                  <li role="separator" class="divider"></li>
-                  <li><a href="#"><p>台湾档案馆</p></a></li>
-                  <li role="separator" class="divider"></li>
-                  <li><a href="#"><p>法国图书馆</p></a></li>
-                </ul>
-              </li>
-            </ul>
+        <div class="toggle-button">
+          <a><i class="fa fa-bars fa-lg" aria-hidden="true"></i></a>
+        </div>
 
-            <ul class="nav navbar-nav">
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">安汉研究</a>
-                <ul class="dropdown-menu">
-                  <li><a href="#"><p>生平年谱</p></a></li>
-                  <li role="separator" class="divider"></li>
-                  <li><a href="#"><p>书籍文章</p></a></li>
-                  <li role="separator" class="divider"></li>
-                  <li><a href="#"><p>黎坪垦区</p></a></li>
-                  <li role="separator" class="divider"></li>
-                  <li><a href="#"><p>农业考察</p></a></li>
-                  <li role="separator" class="divider"></li>
-                  <li><a href="#"><p>案件真相</p></a></li>
-                </ul>
-              </li>
-            </ul>
-
-            <ul class="nav navbar-nav">
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">文学作品</a>
-                <ul class="dropdown-menu">
-                  <li><a href="#"><p>学术论文</p></a></li>
-                  <li role="separator" class="divider"></li>
-                  <li><a href="#"><p>纪念文章</p></a></li>
-                  <li role="separator" class="divider"></li>
-                  <li><a href="#"><p>小说散文</p></a></li>
-                  <li role="separator" class="divider"></li>
-                  <li><a href="#"><p>诗歌戏剧</p></a></li>
-                </ul>
-              </li>
-            </ul>
-
-            <ul class="nav navbar-nav">
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">黎坪风光</a>
-                <ul class="dropdown-menu">
-                  <li><a href="#"><p>黎坪历史</p></a></li>
-                  <li role="separator" class="divider"></li>
-                  <li><a href="#"><p>景区介绍</p></a></li>
-                  <li role="separator" class="divider"></li>
-                  <li><a href="#"><p>旅游攻略</p></a></li>
-                  <li role="separator" class="divider"></li>
-                  <li><a href="#"><p>风景欣赏</p></a></li>
-                </ul>
-              </li>
-            </ul>
-
-            <ul class="nav navbar-nav">
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">关于本站</a>
-                <ul class="dropdown-menu">
-                  <li><a href="#"><p><i class="fa fa-question-circle-o" aria-hidden="true"></i> 常见问题解答</p></a></li>
-                  <li role="separator" class="divider"></li>
-                  <li><a href="#"><p><i class="fa fa-jpy" aria-hidden="true"></i> 捐助安汉小学</p></a></li>
-                  <li role="separator" class="divider"></li>
-                  <li><a href="#"><p><i class="fa fa-coffee" aria-hidden="true"></i> 请站长喝咖啡</p></a></li>
-                  <li role="separator" class="divider"></li>
-                  <li><a href="#"><p><i class="fa fa-commenting" aria-hidden="true"></i> 本站联系方式</p></a></li>
-                </ul>
-              </li>
-            </ul>
-          </div><!-- 导航栏菜单结束 -->
-        </div><!-- 导航栏container结束 -->
+        <ul id="navbar-list" class="hidden">
+          <li>
+            <a href="index.html"><p><i class="fa fa-home fa-fw" aria-hidden="true"></i><span id="ShouYe">首页</span></p></a>
+          </li>
+          <li>
+            <a href="category/LiShiDangAn.html"><p><i class="fa fa-book fa-fw" aria-hidden="true"></i><span>档案文献</span></p></a>
+          </li>
+          <li>
+            <a href="#"><p><i class="fa fa-search fa-fw" aria-hidden="true"></i><span>安汉研究</span></a></p>
+            <!-- <ul class="dropdown-menu">
+              <li><a href="#"><p>生平年谱</p></a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#"><p>书籍文章</p></a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#"><p>黎坪垦区</p></a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#"><p>农业考察</p></a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#"><p>案件真相</p></a></li>
+            </ul> -->
+          </li>
+          <li>
+            <a href="#" ><p><i class="fa fa-pencil fa-fw" aria-hidden="true"></i><span>文学作品</span></p></a>
+            <!-- <ul class="dropdown-menu">
+              <li><a href="#"><p>学术论文</p></a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#"><p>纪念文章</p></a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#"><p>小说散文</p></a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#"><p>诗歌戏剧</p></a></li>
+            </ul> -->
+          </li>
+          <li>
+            <a href="#"><p><i class="fa fa-binoculars fa-fw" aria-hidden="true"></i><span>黎坪风光</span></p></a>
+            <!-- <ul class="dropdown-menu">
+              <li><a href="#"><p>黎坪历史</p></a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#"><p>景区介绍</p></a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#"><p>旅游攻略</p></a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#"><p>风景欣赏</p></a></li>
+            </ul> -->
+          </li>
+          <li>
+            <a class="buttonfx angleinleft" id="donate">捐助</a>
+          </li>
+        </ul>
+        
+        <div style="clear: both"></div>
       </nav>
     </header>
 
+    <div id="particles-js" style="background-color: rgb(35, 39, 65)"></div>
     <section class="homepage">
       <div class="wraper">
         <div class="headings">
           <h3>1897年6月4日——1943年11月3日</h3>
           <h1>纪念安汉先生诞辰120周年</h1>
-          <div class="title">
+           <div class="title">
             <p>民国著名农垦专家，伟大的西部开发先行者</p>
             <!-- <p>伟大的西部开发先行者</p> -->
-            <button type="button" name="button" class="btn btn-success">了解更多</button>
-            <!-- <p>法国高等农学院毕业</p>
+             <a href="#section-two"><span></span><span></span><span></span></a>
+             <!-- <p>法国高等农学院毕业</p>
             <p>农业教育家和改革者</p>
             <p>出版《西北垦殖论》和《西北农业考察》</p>
             <p>担任国营黄龙山垦区和黎坪垦区负责人</p> -->
@@ -133,36 +98,38 @@
       </div>
     </section>
 
-    <section class="full-width section-2">
+
+
+    <section class="section-2" id="section-two">
 
       <div class="section-2-left">
         <ul class="bxslider">
           <li>
-            <img src="pic/standing.png" alt="安汉先生在黎坪">
+            <img src="pic/standing.jpg" alt="安汉先生在黎坪">
             <div class="bx-caption">
               <span>安汉先生在黎坪</span>
             </div>
           </li>
           <li>
-            <img src="pic/an-han-three.png" alt="安汉夫妇与黄统先生">
+            <img src="pic/an-han-three.jpg" alt="安汉夫妇与黄统先生">
             <div class="bx-caption">
               <span>安汉夫妇与黄统先生</span>
             </div>
           </li>
           <li>
-            <img src="pic/an-han-france.png" alt="安汉先生在法国与同学合影">
+            <img src="pic/an-han-france.jpg" alt="安汉先生在法国与同学合影">
             <div class="bx-caption">
               <span>安汉先生与白友三（左）和李宝峯（右）在法国榜来威克公学（民国十年十二月）。</span>
             </div>
           </li>
           <li>
-            <img src="pic/nancy.png" alt="安汉就读的法国大学">
+            <img src="pic/nancy.jpg" alt="安汉就读的法国大学">
             <div class="bx-caption">
               <span>安汉就读的法国南锡农学与殖民学院</span>
             </div>
           </li>
           <li>
-            <img src="pic/mubei.png" alt="安汉之墓">
+            <img src="pic/mubei.jpg" alt="安汉之墓">
             <div class="bx-caption">
               <span>安汉之墓，位于南郑县梁山镇，摄于2016年3月</span>
             </div>
@@ -173,12 +140,15 @@
       <div class="section-2-right">
         <div class="xibei">
           <p class="blockquote-topP">汉生长于西秦，幼习稼穑，<br>留学法国，专攻农牧，<br>以开发西北为职志，<br>以研究屯垦为要图。</p>
-          <p>——《西北垦殖论》</p>
+          <p>&mdash;《西北垦殖论》</p>
         </div>
         <div class="yuyouren">
           <p class="blockquote-bottomP">天地有正气，园林无伪情。</p>
-          <p>—— 于右任</p>
+          <p>&mdash; 于右任</p>
         </div>
+      </div>
+      <div class="clearfix">
+
       </div>
     </section>
 
@@ -224,16 +194,9 @@
     <footer>
       <div class="row">
         <div class="footer-left">
-          <div class="">
-            <h3 class="panel-title">分享本站</h3>
-          </div>
-          <div class="">
-            <ul>
-              <li><a href="#" target="_blank"><i class="fa fa-weibo" aria-hidden="true"></i> 微博</a></li>
-              <li><a href="#" target="_blank"><i class="fa fa-weixin" aria-hidden="true"></i> 微信</a></li>
-              <li><a href="#" target="_blank"><i class="fa fa-qq" aria-hidden="true"></i> QQ</a></li>
-              <li><a href="#" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i> 推特</a></li>
-            </ul>
+          <div class="about">
+            <h3 class="panel-title">关于本站</h3>
+            <p><a><i class="fa fa-question-circle-o" aria-hidden="true"></i> 常见问题解答</a></p>
           </div>
         </div>
         <div class="footer-middle">
@@ -263,15 +226,15 @@
         </div>
       </div>
 
-
-
     </footer>
 
 
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="js/bootstrap.js"></script>
   <script src="js/jquery.bxslider.js"></script>
+  <script src="js/particles.js"></script>
   <script src="js/main.js"></script>
+
 
   </body>
 </html>

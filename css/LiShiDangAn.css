@@ -462,16 +462,55 @@ section .content-right {
 
 footer {
   clear:both;
-  padding: 3rem 0 5rem;
-  height: 230px;
+  padding: 2rem 0;
+  height: auto;
   text-align: center;
   background-color: #b0bec5;
 }
 
 footer h3 {
   font-size: 2rem !important;
+  font-weight: bold;
   letter-spacing: 3px;
-  padding-bottom: 1em;
+  padding-bottom: 0.5em;
+}
+
+footer ul {
+  margin: 0px;
+  list-style: none;
+  padding-left: 0
+}
+
+footer ul li {
+  margin-top: 0.5rem;
+  letter-spacing: 1.5px;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+footer ul li a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: none;
+}
+
+footer .about p {
+  font-size: 1.5rem;
+}
+
+.bottom-line p {
+  letter-spacing: 3px;
+}
+
+.footer-middle i {
+  color: red;
+}
+
+footer {
+  padding: 2rem 0 5rem;
 }
 
 footer .footer-left {
@@ -490,26 +529,9 @@ footer .footer-middle {
 
 footer .footer-right {
   width: 30%;
-  display: inline-block;
   float: left;
+  display: inline-block;
   margin: 0 1.6666%;
-}
-
-footer ul {
-  margin: 0px;
-  list-style: none;
-}
-
-footer .about p {
-  font-size: 1.5rem;
-}
-
-.bottom-line p {
-  letter-spacing: 3px;
-}
-
-.bottom-line p i {
-  color: red;
 }
 
 .backToTop {

@@ -481,13 +481,14 @@ footer {
   clear:both;
   padding: 2rem 0;
   height: auto;
-  text-align: center;
+  text-align: left;
   background-color: #b0bec5;
 }
 
 footer h3 {
   font-size: 2rem !important;
   font-weight: bold;
+  margin: 0;
   letter-spacing: 3px;
   padding-bottom: 0.5em;
 }
@@ -501,7 +502,7 @@ footer ul {
 footer ul li {
   margin-top: 0.5rem;
   letter-spacing: 1.5px;
-  text-align: center;
+  text-align: left;
   font-size: 1.2em;
 }
 
@@ -522,9 +523,19 @@ footer .about p {
   letter-spacing: 3px;
 }
 
-.footer-middle i {
-  color: red;
+
+footer .bottom-div {
+  clear: both;
+  margin-top:2em;
 }
+
+.bottom-div p {
+  display: inline-block;
+  margin: 0;
+  margin-left: 5%;
+  padding: 0;
+}
+
 
 /* ！！！整体响应式布局！！！ */
 @media (min-width: 1024px) {
@@ -567,29 +578,30 @@ footer .about p {
   }
 
   footer {
-    padding: 2rem 0 5rem;
+    padding: 2rem 12.5% 5rem 12.5%;
+    display: flex !important;
+    justify-content: space-between
   }
 
-  footer .footer-left {
-    width: 30%;
+
+  /* footer .map-list {
+    width: 15%;
     display: inline-block;
     float: left;
-    margin: 0 1.6666%;
+    font-size: 0.8em;
+  }
+  
+  footer .about {
+    width: 15%;
+    display: inline-block;
+    float: left; 
   }
 
-  footer .footer-middle {
-    width: 30%;
-    display: inline-block;
-    float: left;
-    margin: 0 1.6666%;
-  }
-
-  footer .footer-right {
-    width: 30%;
+  footer .footer-links {
+    width: 15%;
     float: left;
     display: inline-block;
-    margin: 0 1.6666%;
-  }
+  } */
 }
 
 

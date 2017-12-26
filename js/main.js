@@ -76,7 +76,7 @@ $('.bxslider').bxSlider({
 });
 
 
-
+//星空背景插件
 particlesJS("particles-js",{
   "particles": {
     "number": {
@@ -199,12 +199,16 @@ $(function() {
 
 
 
-$('nav').hide();
-$(window).scroll(function(){
-  if ($(this).scrollTop() > $(this).height()-1) {
-    $('nav').fadeIn();
-  }
-  else{
-    $('nav').fadeOut();
-  }
-})
+newFunction();
+function newFunction() {
+  $('nav').hide();
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > $(this).height() - 1) {
+      $('nav').fadeIn();
+    }
+    else {
+      $('nav').fadeOut();
+    }
+  });
+}
+

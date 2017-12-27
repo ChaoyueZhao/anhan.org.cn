@@ -198,7 +198,7 @@ $(function() {
 
 
 
-
+//主页导航栏显示
 newFunction();
 function newFunction() {
   $('nav').hide();
@@ -211,4 +211,17 @@ function newFunction() {
     }
   });
 }
+
+
+//外链点开tab
+// Javascript to enable link to tab
+// var url11 = document.location.toString();
+// if (url11.match('#')) {
+//     $('.nav-tabs a[href="#' + url11.split('#')[1] + '"]').tab('show');
+// } 
+
+// // Change hash for page-reload
+// $('.nav-tabs a').on('shown.bs.tab', function (e) {
+//     window.location.hash = e.target.hash;
+// })
 

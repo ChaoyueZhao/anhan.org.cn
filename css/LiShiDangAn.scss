@@ -246,6 +246,34 @@ nav {
     }
 }
 
+.intro {
+    height: 300px;
+    text-align: center;
+    box-shadow: 0 0 15px #666;
+    article {
+        width: 80%;
+        margin: 0 auto;
+        h1 {
+            padding-top: 5%;
+            letter-spacing: 2px;
+            font-weight: bold;
+            font-family: "Microsoft YaHei";
+        }
+        p {
+            padding: 2% 10%;
+            font-size: 1.4em;
+            text-align: left;
+            span {
+                color: #b3b3b3;
+                a {
+                    color: inherit;
+                    text-decoration-line: underline;
+                }
+            }
+        }
+    }
+}
+
 section {
     height: auto;
     background-color: white;
@@ -457,13 +485,14 @@ section {
 
 footer {
     clear:both;
-    padding: 2rem 0 5rem;
+    padding: 2rem 0;
     height: auto;
-    text-align: center;
+    text-align: left;
     background-color: #b0bec5;
     h3 {
         font-size: 2rem !important;
         font-weight: bold;
+        margin: 0;
         letter-spacing: 3px;
         padding-bottom: 0.5em;
     }
@@ -474,7 +503,7 @@ footer {
         li {
             margin-top: 0.5rem;
             letter-spacing: 1.5px;
-            text-align: center;
+            text-align: left;
             font-size: 1.2em;
             a {
                 cursor: pointer;
@@ -483,38 +512,38 @@ footer {
                     text-decoration: none;
                 }
             }
+     
         }
     }
     .about p {
         font-size: 1.5rem;
     }
+
     .bottom-line p {
         letter-spacing: 3px;
     }
-
-    .footer-left {
-        width: 30%;
-        display: inline-block;
-        float: left;
-        margin: 0 1.6666%;
+    @media (min-width: 1024px) {
+        padding: 2rem 12.5% 5rem 12.5%;
+        display: flex !important;
+        justify-content: space-between;
     }
-    .footer-middle {
-        width: 30%;
-        display: inline-block;
-        float: left;
-        margin: 0 1.6666%;
-        i {
-            color: red;
+}
+
+.bottom-div {
+    clear: both;
+    padding: 1em 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+    p a {       
+        color: rgb(133, 173, 211) !important;
+        &:hover {
+            text-decoration: none;
         }
     }
-    .footer-right {
-        width: 30%;
-        float: left;
-        display: inline-block;
-        margin: 0 1.6666%;
-    }
-
 }
+
 
 .backToTop {
     display: inline-block;

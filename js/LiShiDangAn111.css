@@ -1,0 +1,565 @@
+html,body {
+  height: 100%;
+  weight: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #f5f5f5 !important;
+}
+/* ！！！导航栏样式！！！ */
+nav {
+  height: auto;
+  min-height: 70px;
+  background-color: white;
+  font-size: 2rem;
+  width:100%;
+  z-index: 99;
+  box-shadow: 0 2px 7px 1px rgba(0,0,0,0.2);
+  padding-bottom: 0;
+}
+
+nav a:link {
+  text-decoration: none;
+}
+
+nav .logo-div {
+  display: inline-block;
+  float:left;
+  width: auto;
+  font-size: 1.5em;
+  font-family: Microsoft YaHei;
+  letter-spacing: 0.1em;
+  padding: .4em;
+  margin-left: 5%;
+}
+
+nav .logo-div span {
+  color: #17a7e0 !important;
+  font-weight: bold;
+
+}
+
+nav .toggle-button {
+  display: inline-block;
+  float: right;
+  padding-top: 1em;
+  margin-right: 10%;
+}
+
+
+nav ul {
+  list-style: none;
+  display: inline-block;
+  text-align: right;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+#navbar-list .hidden {
+  display: none;
+}
+
+
+#navbar-list li {
+  width: 100%;
+  float: left;
+  font-size: 1.25em;
+  padding: 0.3em 0;
+  border-top: 1px #C6C6C6 solid;
+  text-align: left;
+  color: #17a7e0;
+}
+
+#navbar-list li:nth-child(even) {
+  border-left: 1px #C6C6C6 solid;
+}
+
+
+#navbar-list p {
+  padding-left: 40px;
+  margin: 0;
+  position: relative;
+}
+
+#navbar-list i {
+  color:#17a7e0;
+  font-size: 1.75em;
+  margin-right: 25px;
+}
+
+#navbar-list span {
+  position: absolute;
+  top: 10%;
+  color: #17a7e0;
+}
+
+#ShouYe,
+#JuanZhu {
+  letter-spacing: 1em;
+}
+
+#navbar-list li:hover {
+  color: red !important;
+  /* background-color: #6ab218 */
+}
+
+/* ！！！响应式导航栏！！！ */
+@media (min-width: 480px) {
+  #navbar-list li {
+    width: 50%;
+  }
+
+  nav .toggle-button {
+    margin-right: 5%;
+  }
+}
+
+@media (min-width: 1000px) {
+  #navbar-list li:nth-child(even) {
+    border-left: none;
+  }
+
+  nav .logo-div {
+    display: inline-block;
+    float:left;
+    width: 20%;
+    font-size: 1.5em;
+    font-family: Microsoft YaHei;
+    letter-spacing: 0.1em;
+    padding: .4em;
+    margin-left: 5%;
+  }
+  nav .toggle-button {
+    display: none
+  }
+
+  #navbar-list {
+    display:inline-block !important;
+  }
+
+  nav ul {
+    width: auto;
+    list-style: none;
+    display: inline-block;
+    text-align: right;
+    margin: 0;
+    float: right;
+  }
+
+  #navbar-list p {
+    padding-left: 0;
+    margin: 0;
+    position: relative;
+  }
+
+  #navbar-list i {
+    display: none;
+  }
+
+  #navbar-list span {
+    position: absolute;
+    top: 0;
+    color: #666;
+  }
+
+  #navbar-list li {
+    width: 120px;
+    float: left;
+    font-size: 0.9em;
+    padding: 1.3em 0;
+    border-top: none;
+    text-align: left;
+  }
+
+  #navbar-list a {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  #navbar-list li:hover {
+    color: white !important;
+    background-color: white
+  }
+
+  #navbar-list li span{
+    letter-spacing: 0.2em;
+  }
+
+  #navbar-list span:hover {
+    border-bottom: 4px solid #17a7e0;
+    color: #17a7e0 !important;
+  }
+
+  #ShouYe {
+    letter-spacing: 0;
+    margin-left: 35px
+  }
+
+
+  #JuanZhu {
+    letter-spacing: 0;
+  }
+
+  #JuanZhu::before {
+    font-family: FontAwesome;
+    content:" \f157";
+  }
+
+  #donate span:hover {
+    border-bottom: 4px solid #ff5722;
+    color: #ff5722 !important;
+  }
+
+
+}
+
+.wraper {
+  height: 100%;
+  margin: 0;
+  background-color: white;
+}
+
+section {
+  /*margin: 0 15vw;*/
+  height: auto;
+  background-color: white;
+  overflow: visible;
+}
+
+.nav-tabs li a {
+  font-size: 1.75em;
+  font-family: KaiTi;
+  font-weight: bold;
+  color: #17a7e0;
+}
+
+.nav-tabs li a:hover {
+  background-color: #17a7e0 !important;
+  color: white;
+}
+
+.nav-tabs li a:focus {
+  background-color: #17a7e0 !important;
+  color: white !important;
+}
+
+.nav-tabs > li.active > a {
+  background-color: #17a7e0 !important;
+  color: white !important;
+}
+
+.nav-tabs > li.active > a:hover {
+  background-color: #17a7e0 !important;
+  color: white !important;
+}
+
+.tab-pane {
+  padding-bottom: 10vh;
+}
+
+
+section>ul {
+  margin-top: 15px;
+  font-size: 1.75rem;
+  letter-spacing: 0.4rem;
+}
+
+
+
+section .jieshao {
+  height: 25rem;
+}
+
+section .jieshao-wenzi {
+  height: auto;
+  background: lightgrey;
+}
+
+section .jieshao-wenzi .NeiRong {
+  height: auto;
+  padding: 0 10%;
+}
+
+.NeiRong p:first-of-type {
+  font-size: 2.75rem;
+  font-weight: bold;
+  margin: 0;
+  padding: 0.5rem 0 0 0;
+}
+
+.NeiRong p:last-of-type {
+  margin: 0;
+  font-size: 1.5rem;
+  padding: 0.25rem 0 0.75rem 0;
+}
+
+#GuoJiaTuShuGuan {
+  background: url('../pic/LiShiDangAn/GuoTu/GuoTuBeiJing.jpg');
+  background-size: cover;
+  background-position: center 60%;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+#ShanXiDangAnGuan {
+  background: url('../pic/LiShiDangAn/XiAn/background.jpg');
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+#NanZhengWenShi {
+  background: url('../pic/LiShiDangAn/HanZhong/NanZheng.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+#FaGuoTuShuGuan {
+  background: url('../pic/LiShiDangAn/FaGuo/FaTuBeiJing.jpg');
+  background-size: cover;
+  background-position: center 85%;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+#ZhongYanYuan {
+  background: url('../pic/LiShiDangAn/TaiWan/JinShiGuan.png');
+  background-size: cover;
+  background-position: center 85%;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+#QinGongJianXue {
+  background: url('../pic/LiShiDangAn/FaGuo/paris-1920s.jpg');
+  background-size: cover;
+  background-position: center 40%;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+#LiAngTuShuGuan {
+  background: url('../pic/LiShiDangAn/FaGuo/LiAng.jpg');
+  background-size: cover;
+  background-position: center 80%;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+section .content {
+  margin: 0 auto;
+  height: auto;
+  width: 80%;
+}
+
+section .content ul {
+  list-style: none;
+  margin: 0;
+  padding: 0
+}
+
+.content ul li {
+  margin: 2% 0;
+  background-color:inherit;
+  border: 0.3rem solid white;
+  border-radius: 5px;
+  transition: all 0.2s ease;
+}
+
+.content ul li:hover {
+  border: 0.3rem solid #e0e0e0;
+  border-style: outset;
+
+}
+
+.BiaoTi {
+  border: 0.2rem solid #e0e0e0;
+}
+
+section .content-left {
+  display: inline-block;
+  width: 90%;
+  height: 4rem;
+  font-size: 1rem;
+  float: left;
+  background-color: #e1f5fe;
+}
+
+.content-left h4 {
+  font-size: 2.5rem;
+  line-height: 4rem;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+  margin: 0;
+  padding-left: 0.5rem;
+  font-family: KaiTi;
+}
+
+.content-left h4:hover {
+  font-size: 2.7rem;
+}
+
+section .content-right {
+  display: inline-block;
+  width: 10%;
+  height: 4rem;
+  font-size: 3rem;
+  line-height: 3rem;
+  text-align: right;
+  background-color: #e1f5fe;
+  /*border-bottom: 0.2rem solid black;*/
+  clear: both;
+}
+
+.content-right i {
+  line-height: 4rem;
+  color: #90caf9;
+  font-size: 4rem;
+  padding-right: 10%;
+}
+
+.content-right i:hover {
+  font-size: 5rem;
+}
+
+.content .xiaLa {
+  display: block;
+  height: auto;
+  padding: 2em;
+  overflow: auto;
+}
+
+.xiaLa .tuPian {
+  width: 60%;
+  height: auto;
+  overflow: hidden;
+  display: inline-block;
+  float: left;
+}
+
+.xiaLa .shuoMing {
+  display: inline-block;
+  width: 40%;
+  font-size: 1.75rem;
+  padding: 1rem;
+  clear:both;
+  letter-spacing: 0.1em;
+}
+
+.content .yinCang {
+  display: none;
+}
+
+.BiaoTi:hover {
+  cursor: pointer;
+}
+
+footer {
+  clear:both;
+  padding: 2rem 0;
+  height: auto;
+  text-align: center;
+  background-color: #b0bec5;
+}
+
+footer h3 {
+  font-size: 2rem !important;
+  font-weight: bold;
+  letter-spacing: 3px;
+  padding-bottom: 0.5em;
+}
+
+footer ul {
+  margin: 0px;
+  list-style: none;
+  padding-left: 0
+}
+
+footer ul li {
+  margin-top: 0.5rem;
+  letter-spacing: 1.5px;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+footer ul li a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: none;
+}
+
+footer .about p {
+  font-size: 1.5rem;
+}
+
+.bottom-line p {
+  letter-spacing: 3px;
+}
+
+.footer-middle i {
+  color: red;
+}
+
+footer {
+  padding: 2rem 0 5rem;
+}
+
+footer .footer-left {
+  width: 30%;
+  display: inline-block;
+  float: left;
+  margin: 0 1.6666%;
+}
+
+footer .footer-middle {
+  width: 30%;
+  display: inline-block;
+  float: left;
+  margin: 0 1.6666%;
+}
+
+footer .footer-right {
+  width: 30%;
+  float: left;
+  display: inline-block;
+  margin: 0 1.6666%;
+}
+
+.backToTop {
+  display: inline-block;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 4em;
+  padding: 0 1em;
+  background: #E8E8E8;
+  border: 2px solid #e0e0e0;
+  letter-spacing: 0.1em;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #90caf9;
+  border-radius: 3px;
+}
+
+.backToTop:hover {
+  cursor: pointer;
+  background: #e1f5fe
+}
+
+
+@media (min-width: 1024px) {
+  .wraper {
+    height: 100%;
+    margin: 0 15vw;
+    background-color: white;
+  }
+}

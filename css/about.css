@@ -199,8 +199,17 @@ section {
       background-color: white; } }
   section h1 {
     text-align: center;
-    padding: 3% 0; }
+    padding: 3% 0 1% 0;
+    margin-bottom: 0; }
   section article {
-    padding: 1% 15%; }
+    padding: 1% 15%;
+    letter-spacing: 1px; }
+    section article ul {
+      list-style: none;
+      padding-left: 0; }
+  section #about-donate-website img {
+    width: 200px;
+    height: 250px;
+    margin: 0 15px; }
 
 /*# sourceMappingURL=about.css.map */

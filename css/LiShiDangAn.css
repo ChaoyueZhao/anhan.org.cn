@@ -189,18 +189,24 @@ nav {
 .wraper {
   height: 100%;
   margin: 0;
-  background-color: white; }
+  background-color: white;
+  display: flex;
+  flex-direction: column; }
   @media (min-width: 1024px) {
     .wraper {
+      display: block;
       height: 100%;
       margin: 0 15vw;
       background-color: white; } }
 
 .intro {
-  height: 300px;
+  height: auto;
   text-align: center;
   box-shadow: 0 0 15px #666;
   border-radius: 5px; }
+  @media (max-width: 600px) {
+    .intro {
+      flex: 0 0 auto; } }
   .intro article {
     width: 80%;
     margin: 0 auto; }
@@ -210,7 +216,7 @@ nav {
       font-weight: bold;
       font-family: "Microsoft YaHei"; }
     .intro article p {
-      padding: 2% 10%;
+      padding: 2% 10% 5%;
       font-size: 1.4em;
       text-align: left; }
       .intro article p span {
@@ -220,6 +226,7 @@ nav {
           text-decoration-line: underline; }
 
 section {
+  flex: 1 0 auto;
   height: auto;
   background-color: white;
   overflow: visible; }
@@ -383,8 +390,11 @@ section {
     display: none; }
 
 footer {
+  flex: 0 0 auto;
   clear: both;
-  padding: 2rem 0;
+  padding: 2rem 5% 5rem;
+  display: flex !important;
+  justify-content: space-between;
   height: auto;
   text-align: left;
   background-color: #b0bec5; }
@@ -414,7 +424,7 @@ footer {
     letter-spacing: 3px; }
   @media (min-width: 1024px) {
     footer {
-      padding: 2rem 12.5% 5rem 12.5%;
+      padding: 2rem 10% 5rem 10%;
       display: flex !important;
       justify-content: space-between; } }
 
@@ -425,6 +435,9 @@ footer {
   justify-content: space-around;
   background-color: black;
   color: white; }
+  @media (max-width: 600px) {
+    .bottom-div {
+      flex: 0 0 auto; } }
   .bottom-div p a {
     color: #85add3 !important; }
     .bottom-div p a:hover {

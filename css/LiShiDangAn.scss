@@ -9,6 +9,7 @@ html,body {
 
 body {
     background-color: #f5f5f5 !important;
+
 }
 
 nav {
@@ -239,7 +240,11 @@ nav {
     height: 100%;
     margin: 0;
     background-color: white;
+    display: flex;
+    flex-direction: column;
+
     @media (min-width: 1024px) {
+        display: block;
         height: 100%;
         margin: 0 15vw;
         background-color: white;
@@ -247,7 +252,10 @@ nav {
 }
 
 .intro {
-    height: 300px;
+    @media (max-width: 600px) {
+        flex: 0 0 auto;
+    }  
+    height: auto;
     text-align: center;
     box-shadow: 0 0 15px #666;
     border-radius: 5px;
@@ -261,7 +269,7 @@ nav {
             font-family: "Microsoft YaHei";
         }
         p {
-            padding: 2% 10%;
+            padding: 2% 10% 5%;
             font-size: 1.4em;
             text-align: left;
             span {
@@ -276,6 +284,7 @@ nav {
 }
 
 section {
+    flex: 1 0 auto;
     height: auto;
     background-color: white;
     overflow: visible;
@@ -491,8 +500,11 @@ section {
 }
 
 footer {
+    flex: 0 0 auto;
     clear:both;
-    padding: 2rem 0;
+    padding: 2rem 5% 5rem;
+    display: flex !important;
+    justify-content: space-between;
     height: auto;
     text-align: left;
     background-color: #b0bec5;
@@ -530,13 +542,16 @@ footer {
         letter-spacing: 3px;
     }
     @media (min-width: 1024px) {
-        padding: 2rem 12.5% 5rem 12.5%;
+        padding: 2rem 10% 5rem 10%;
         display: flex !important;
         justify-content: space-between;
     }
 }
 
 .bottom-div {
+    @media (max-width: 600px) {
+        flex: 0 0 auto;
+    }  
     clear: both;
     padding: 1em 0;
     display: flex;

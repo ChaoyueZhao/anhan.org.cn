@@ -1,7 +1,9 @@
 $main-color: #17a7e0;
 
 body {
-    background-color: #f5f5f5 !important;
+    background-color: #303030 !important;
+    color: #e6e6e6;
+    
 }
 
 html{
@@ -245,11 +247,14 @@ nav {
 section {
     height: 100%;
     margin: 0;
-    background-color: white;
+    background-color: #242424;
+    color: #bdbdbd;
+    padding-bottom: 100px;
     @media (min-width: 1024px) {
         height: 100%;
         margin: 0 15vw;
-        background-color: white;
+        background-color: #242424;
+        color: #bdbdbd;
     }
     h1 {
         text-align: center;
@@ -258,10 +263,24 @@ section {
     }
     article {
         padding: 1% 15%;
-        letter-spacing: 1px;
+        letter-spacing: 2px;
         ul {
             list-style: none;
             padding-left: 0;
+        }
+        button {
+            background-color: #5cb85c;
+            border-color: #5cb85c;
+            color: #fff;
+            padding: 10px 16px;
+            font-size: 18px;
+            line-height: 1.33;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+        a {
+            color: white !important;
+            font-weight: bold;
         }
     }
     #about-donate-website {
@@ -273,4 +292,24 @@ section {
     }
 }
 
+.backToHome {
+    display: inline-block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 4em;
+    padding: 0.5rem 0.5rem 0.5rem 0.2rem;
+    background: #303030;
+    letter-spacing: 0.1em;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #e6e6e6;
+    border-radius: 3px;
+    &:hover {
+        cursor: pointer;
+    }
+    a {
+        color: #e6e6e6;
+    }
+}
 

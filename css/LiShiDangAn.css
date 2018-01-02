@@ -200,13 +200,11 @@ nav {
       background-color: white; } }
 
 .intro {
+  flex: 0 0 auto;
   height: auto;
   text-align: center;
   box-shadow: 0 0 15px #666;
   border-radius: 5px; }
-  @media (max-width: 600px) {
-    .intro {
-      flex: 0 0 auto; } }
   .intro article {
     width: 80%;
     margin: 0 auto; }

@@ -252,9 +252,7 @@ nav {
 }
 
 .intro {
-    @media (max-width: 600px) {
-        flex: 0 0 auto;
-    }  
+    flex: 0 0 auto;
     height: auto;
     text-align: center;
     box-shadow: 0 0 15px #666;

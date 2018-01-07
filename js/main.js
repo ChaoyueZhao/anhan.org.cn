@@ -189,28 +189,28 @@ particlesJS("particles-js",{
 })
 
 //向下指示标
-$(function() {
-  $('.title a').on('click', function(e) {
-    e.preventDefault();
-    $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 600, 'linear');
-  });
-});
+// $(function() {
+//   $('.title a').on('click', function(e) {
+//     e.preventDefault();
+//     $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 600, 'linear');
+//   });
+// });
 
 
 
 //主页导航栏显示
-newFunction();
-function newFunction() {
-  $('nav').hide();
-  $(window).scroll(function () {
-    if ($(this).scrollTop() > $(this).height() - 1) {
-      $('nav').fadeIn();
-    }
-    else {
-      $('nav').fadeOut();
-    }
-  });
-}
+// newFunction();
+// function newFunction() {
+//   $('nav').hide();
+//   $(window).scroll(function () {
+//     if ($(this).scrollTop() > $(this).height() - 1) {
+//       $('nav').fadeIn();
+//     }
+//     else {
+//       $('nav').fadeOut();
+//     }
+//   });
+// }
 
 
 //外链点开tab

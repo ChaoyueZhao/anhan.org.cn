@@ -194,13 +194,15 @@ section {
   margin: 0;
   background-color: #242424;
   color: #bdbdbd;
-  padding-bottom: 100px; }
+  padding-bottom: 100px;
+  font-size: 0.8rem; }
   @media (min-width: 1024px) {
     section {
       height: 100%;
       margin: 0 15vw;
       background-color: #242424;
-      color: #bdbdbd; } }
+      color: #bdbdbd;
+      font-size: 1rem; } }
   section h1 {
     text-align: center;
     padding: 3% 0 1% 0;
@@ -233,7 +235,7 @@ section {
   position: fixed;
   top: 0;
   left: 0;
-  margin: 4em;
+  margin: 4em 1em;
   padding: 0.5rem 0.5rem 0.5rem 0.2rem;
   background: #303030;
   letter-spacing: 0.1em;
@@ -245,5 +247,8 @@ section {
     cursor: pointer; }
   .backToHome a {
     color: #e6e6e6; }
+  @media (min-width: 1000px) {
+    .backToHome {
+      margin: 4em 5em; } }
 
 /*# sourceMappingURL=about.css.map */

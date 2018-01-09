@@ -4,13 +4,11 @@ html {
   margin: 0;
   padding: 0; }
 
-body {
-  min-width: 360px; }
-
 canvas {
   display: block; }
 
 #particles-js {
+  margin-top: 4rem;
   position: absolute;
   top: 0;
   z-index: -1;
@@ -18,208 +16,39 @@ canvas {
   height: 600px; }
 
 nav {
-  height: auto;
-  min-height: 70px;
-  background-color: white;
-  font-size: 2rem;
-  position: fixed;
-  width: 100%;
-  z-index: 99;
-  box-shadow: 0 2px 7px 1px rgba(0, 0, 0, 0.2);
-  padding-bottom: 0; }
-  nav a:link {
-    text-decoration: none; }
-  nav .logo-div {
-    display: inline-block;
-    width: auto;
-    font-size: 1.5em;
-    letter-spacing: 0.1em;
-    padding: .4em;
-    margin-left: 5%; }
-    nav .logo-div span {
-      color: #17a7e0 !important;
-      font-weight: bold; }
-  nav .toggle-button {
-    display: inline-block;
-    float: right;
-    padding-top: 1em;
-    margin-right: 10%; }
-  nav ul {
-    list-style: none;
-    display: inline-block;
-    text-align: right;
-    width: 100%;
-    padding: 0;
-    margin: 0; }
-  nav #navbar-list .hidden {
-    display: none; }
-  nav #navbar-list li {
-    width: 100%;
-    float: left;
-    font-size: 1.25em;
-    padding: 0.3em 0;
-    border-top: 1px #C6C6C6 solid;
-    text-align: left;
-    color: #17a7e0; }
-    nav #navbar-list li:nth-child(even) {
-      border-left: 1px #C6C6C6 solid; }
-  nav #navbar-list p {
-    padding-left: 40px;
-    margin: 0;
-    position: relative; }
-  nav #navbar-list i {
-    color: #17a7e0;
-    font-size: 1.75em;
-    margin-right: 25px; }
-  nav #navbar-list span {
-    position: absolute;
-    top: 10%;
-    color: #17a7e0; }
-  nav #navbar-list #ShouYe,
-  nav #navbar-list #donate {
-    letter-spacing: 1em; }
-  @media screen and (min-width: 480px) {
-    nav #navbar-list li {
-      width: 50%; }
-    nav nav .toggle-button {
-      margin-right: 5%; } }
-  @media screen and (min-width: 1000px) {
-    nav {
-      /* //// Default effect: Slide from Top  //// */
-      /* //// Angle In  //// */ }
-      nav #navbar-list li:nth-child(even) {
-        border-left: none; }
-      nav .logo-div {
-        display: inline-block;
-        float: left;
-        width: 20%;
-        font-size: 1.5em;
-        font-family: "Microsoft YaHei";
-        letter-spacing: 0.1em;
-        padding: .4em;
-        margin-left: 5%; }
-      nav .toggle-button {
-        display: none; }
-      nav #navbar-list {
-        display: inline-block !important; }
-        nav #navbar-list p {
-          padding-left: 0;
-          margin: 0;
-          position: relative; }
-        nav #navbar-list i {
-          display: none; }
-        nav #navbar-list span {
-          position: absolute;
-          top: 0;
-          color: #666; }
-        nav #navbar-list li {
-          width: 120px;
-          float: left;
-          font-size: 0.9em;
-          padding: 1.3em 0 0;
-          border-top: none;
-          text-align: left; }
-          nav #navbar-list li:not(:last-child):hover {
-            color: white !important;
-            background-color: white; }
-          nav #navbar-list li span {
-            letter-spacing: 0.2em; }
-            nav #navbar-list li span:hover {
-              border-bottom: 4px solid #17a7e0;
-              color: #17a7e0 !important; }
-        nav #navbar-list a:not(:last-child) {
-          padding-left: 0;
-          padding-right: 0; }
-      nav ul {
-        width: auto;
-        list-style: none;
-        display: inline-block;
-        text-align: right;
-        margin: 0;
-        float: right; }
-      nav #ShouYe {
-        letter-spacing: 0;
-        margin-left: 35px; }
-      nav .buttonfx {
-        float: left;
-        margin: 0;
-        padding: 0;
-        width: 70px;
-        text-align: center;
-        color: #17a7e0;
-        /* button text color */
-        outline: none;
-        background: transparent;
-        border: none;
-        border: 1px solid #17a7e0;
-        border-radius: 5px;
-        letter-spacing: 3px !important;
-        text-transform: uppercase;
-        font: 300 18px Microsoft YaHei;
-        /* use google font */
-        position: relative;
-        cursor: pointer;
-        text-decoration: none;
-        /* remove underline if using A instead of BUTTON tag */
-        overflow: hidden;
-        transition: all .3s; }
-      nav .buttonfx:before,
-      nav .buttonfx:after {
-        content: '';
-        position: absolute;
-        left: 0;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        height: 100%;
-        background: #17a7e0;
-        /* onhover background color */
-        z-index: -1;
-        transform: translate3D(0, -100%, 0);
-        /* move elements above button so they don't appear initially */
-        transition: all .3s; }
-      nav .buttonfx:before {
-        background: white;
-        /* button default background color */
-        z-index: -2;
-        transform: translate3D(0, 0, 0); }
-      nav .buttonfx:hover {
-        color: white;
-        text-decoration: none; }
-      nav .buttonfx:hover:after {
-        transform: translate3D(0, 0, 0);
-        transition: all .3s; }
-      nav .angleinleft:after {
-        width: 200%;
-        transform-origin: 0 bottom;
-        transform: translate3D(-50%, 0, 0) rotate(-50deg); }
-      nav .angleinleft:hover:after {
-        transform: rotate(0deg);
-        transition: all .3s; } }
+  letter-spacing: 0.2rem;
+  background-color: white !important; }
+  @media (min-width: 992px) {
+    nav .brand-logo {
+      padding-left: 5% !important; } }
+  nav .brand-logo span {
+    color: #17a7e0 !important;
+    font-weight: bold; }
+  nav li a {
+    color: #666 !important;
+    font-size: 1.2rem !important; }
 
 .homepage .wraper {
   clear: both;
-  padding: 5rem 0 0;
-  height: 600px;
-  position: relative; }
+  padding: 0;
+  height: 300px; }
 .homepage .headings {
-  margin-top: 15%;
   font-size: 1rem; }
 .homepage h1 {
   text-align: center;
   margin-top: 0.2em;
-  font-size: 2em;
+  font-size: 3.5rem;
   font-weight: bold;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.2rem;
   color: #0097a7; }
 .homepage h3 {
-  font-size: 1em;
+  font-size: 1.25rem;
   text-align: center;
-  margin-top: 0.1em;
+  margin-top: 0.1rem;
   color: #bbdefb; }
 .homepage p {
   margin-top: 0.75em;
-  font-size: 1em; }
+  font-size: 1rem; }
 .homepage .title {
   letter-spacing: 0.1em;
   text-align: center;
@@ -236,8 +65,8 @@ nav {
 .section-1 {
   background-color: #F8F8F8;
   display: grid;
-  grid-template-areas: "header header header header header" "left content content content right" "footer footer footer footer footer";
-  grid-template-rows: 10rem 30rem 10rem;
+  grid-template-areas: "header header header header header" "left content content content right";
+  grid-template-rows: 1fr 30rem;
   grid-template-columns: 20% 20% 20% 20% 20%; }
   .section-1 img {
     width: 30%;
@@ -245,15 +74,15 @@ nav {
   .section-1 .grid-left {
     grid-row: 2/3;
     grid-column: 2/3;
-    padding: 20% 5%; }
+    padding: 0 5%; }
   .section-1 .grid-middle {
     grid-row: 2/3;
     grid-column: 3/4;
-    padding: 20% 5%; }
+    padding: 0 5%; }
   .section-1 .grid-right {
     grid-row: 2/3;
     grid-column: 4/5;
-    padding: 20% 5%; }
+    padding: 0 5%; }
   .section-1 p {
     font-size: 18px;
     padding-top: 5%;
@@ -273,24 +102,32 @@ nav {
       font-size: 40px;
       letter-spacing: 1px;
       font-family: "NSimSun", "Microsoft YaHei", "微软雅黑";
-      font-weight: bold; }
+      font-weight: bold;
+      margin: 5rem 0; }
   .section-1 a:link {
     text-decoration-line: none; }
 
 .section-2 {
   height: auto;
-  background-color: white;
+  background-color: #F8F8F8;
   text-align: center;
   font-size: 1rem; }
+  .section-2 h1 {
+    font-size: 40px;
+    letter-spacing: 1px;
+    font-family: "NSimSun", "Microsoft YaHei", "微软雅黑";
+    font-weight: bold;
+    padding: 5rem 0;
+    margin: 0; }
   .section-2 .section-2-left {
     margin: 0 auto;
-    padding-top: 90px;
     max-width: 510px; }
   .section-2 .section-2-right {
     display: inline-block;
     margin: 0;
-    padding: 10px 0 30px;
-    clear: both; }
+    padding: 0 0 30px;
+    clear: both;
+    font-size: 1rem !important; }
     .section-2 .section-2-right p:first-of-type {
       font-family: KaiTi;
       text-align: left;
@@ -309,7 +146,7 @@ nav {
     .section-2 {
       margin: 0;
       padding: 0;
-      background-color: white;
+      background-color: #F8F8F8;
       text-align: center;
       padding: 4%;
       height: auto; }
@@ -320,12 +157,12 @@ nav {
         font-size: 1.25rem;
         display: inline-block;
         max-width: 400px;
-        margin: 6% auto; }
+        margin: 0 auto; }
         .section-2 .section-2-right p:first-child {
           font-family: Lishu;
           color: #888;
           font-size: 2em;
-          padding-top: 2em; }
+          padding-top: 1em; }
         .section-2 .section-2-right p:last-child {
           text-align: right;
           font-size: 1.5em; } }
@@ -334,11 +171,16 @@ nav {
       padding: 0 10%; } }
 
 .dangAn {
-  background-color: #F8F8F8;
+  background-color: white;
   display: grid;
   grid-template-areas: "header" "left content line content line content right" "room" "left content line content line content right" "footer";
-  grid-template-rows: 15rem 30rem 5rem 30rem 15rem;
+  grid-template-rows: 1fr 30rem 5rem 30rem 15rem;
   grid-template-columns: 1fr repeat(2, 30rem 5rem) 30rem 1fr; }
+  .dangAn h1 {
+    font-size: 40px;
+    letter-spacing: 1px;
+    font-family: "NSimSun", "Microsoft YaHei", "微软雅黑";
+    font-weight: bold; }
   .dangAn img {
     width: 100%;
     height: 100%;
@@ -408,8 +250,9 @@ nav {
       text-transform: uppercase; }
   .dangAn header {
     grid-area: 1/4/2/5;
-    text-align: center;
-    padding-top: 10%; }
+    text-align: center; }
+    .dangAn header h1 {
+      margin: 5rem 0; }
   .dangAn #row-2-1 {
     grid-area: 2/2/3/3; }
   .dangAn #row-2-2 {
@@ -434,17 +277,19 @@ nav {
   background-position: center center;
   background-repeat: no-repeat; }
   .section-3 .brief-biograph {
-    padding: 5% 0;
     height: 600px;
     width: 80%;
     display: inline-block;
     margin: 0 auto;
     text-align: left;
     color: black; }
-    .section-3 .brief-biograph > h3 {
+    .section-3 .brief-biograph h1 {
+      font-size: 40px;
+      letter-spacing: 1px;
+      font-family: "NSimSun", "Microsoft YaHei", "微软雅黑";
+      font-weight: bold;
       text-align: center;
-      letter-spacing: 0.25rem;
-      color: black; }
+      margin: 5rem; }
     .section-3 .brief-biograph i {
       color: black; }
     @media (min-width: 1440px) {
@@ -455,7 +300,7 @@ nav {
     width: 100%;
     overflow: hidden;
     position: relative;
-    padding: 0.5em;
+    padding: 1rem !important;
     border-top: 5px solid black;
     border-radius: 0.75rem; }
     .section-3 .news_container .news {
@@ -465,9 +310,14 @@ nav {
       font-size: 2rem;
       font-family: "华文细黑", serif;
       padding-left: 0.5rem; }
+      .section-3 .news_container .news .text p {
+        margin: 0;
+        font-size: 1.5rem; }
 
 footer {
+  margin-bottom: 0 !important;
   clear: both;
+  margin-top: 5rem;
   padding: 2rem 0;
   height: auto;
   text-align: left;
@@ -498,11 +348,6 @@ footer {
     font-size: 1.5rem; }
   footer .bottom-line p {
     letter-spacing: 3px; }
-  @media (min-width: 1024px) {
-    footer {
-      padding: 2rem 12.5% 5rem 12.5%;
-      display: flex !important;
-      justify-content: space-between; } }
 
 .bottom-div {
   clear: both;

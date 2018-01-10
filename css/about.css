@@ -233,7 +233,16 @@ section {
     margin: 0 15px; }
   section #about-contact span {
     font-size: 18px;
-    font-family: "Microsoft YaHei"; }
+    font-family: "Microsoft YaHei";
+    position: relative; }
+    section #about-contact span i:first-of-type {
+      position: absolute;
+      top: -5px;
+      left: 0; }
+    section #about-contact span i:last-of-type {
+      position: absolute;
+      bottom: -5px;
+      right: 0; }
 
 .backToHome {
   display: inline-block;

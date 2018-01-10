@@ -298,7 +298,21 @@ section {
     #about-contact {
         span {
             font-size: 18px;
-            font-family: "Microsoft YaHei"
+            font-family: "Microsoft YaHei";
+            position: relative;
+            i {
+                &:first-of-type {
+                    position: absolute;
+                    top: -5px;
+                    left: 0;
+                }
+                &:last-of-type {
+                    position: absolute;
+                    bottom: -5px;
+                    right: 0;
+                }
+
+            }
         }
     }
 }

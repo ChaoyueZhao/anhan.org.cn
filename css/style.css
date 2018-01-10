@@ -37,7 +37,7 @@ nav {
 .homepage h1 {
   text-align: center;
   margin-top: 0.2em;
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   font-weight: bold;
   letter-spacing: 0.2rem;
   color: #0097a7; }
@@ -174,8 +174,8 @@ nav {
   background-color: white;
   display: grid;
   grid-template-areas: "header" "left content line content line content right" "room" "left content line content line content right" "footer";
-  grid-template-rows: 1fr 30rem 5rem 30rem 15rem;
-  grid-template-columns: 1fr repeat(2, 30rem 5rem) 30rem 1fr; }
+  grid-template-rows: 1fr 20rem 3rem 20rem 15rem;
+  grid-template-columns: 1fr repeat(2, 20rem 3rem) 20rem 1fr; }
   .dangAn h1 {
     font-size: 40px;
     letter-spacing: 1px;
@@ -321,13 +321,13 @@ footer {
   padding: 2rem 0;
   height: auto;
   text-align: left;
-  background-color: #b0bec5; }
+  background-color: #808080; }
   footer h3 {
-    font-size: 2rem !important;
-    font-weight: bold;
+    font-size: 1.2rem !important;
     margin: 0;
     letter-spacing: 3px;
-    padding-bottom: 0.5em; }
+    padding-bottom: 0.5em;
+    color: white; }
   footer ul {
     margin: 0px;
     list-style: none;
@@ -336,14 +336,14 @@ footer {
       margin-top: 0.5rem;
       letter-spacing: 1.5px;
       text-align: left;
-      font-size: 1.2em; }
+      font-size: 1rem; }
       footer ul li a {
         cursor: pointer;
         text-decoration: none;
-        color: #3d3d3d; }
+        color: rgba(255, 255, 255, 0.6); }
         footer ul li a:hover {
           text-decoration: none;
-          color: black; }
+          color: white; }
   footer .about p {
     font-size: 1.5rem; }
   footer .bottom-line p {

@@ -239,19 +239,19 @@ section {
         border-top: none;
         box-shadow:  -1px 0 2px 0 rgba(0,0,0,0.12), 1px 0 2px 0 rgba(0,0,0,0.12), 0 1px 1px 0 rgba(0,0,0,0.24);
         .tuPian {
-            width: 60%;
-            height: auto;
+            width: 25rem;
+            height: 25rem;
             overflow: hidden;
             display: inline-block;
-            float: left;
         }
         .shuoMing {
             display: inline-block;
             width: 40%;
-            font-size: 1.75rem;
+            font-size: 1.5rem;
             padding: 1rem;
             clear:both;
             letter-spacing: 0.1em;
+            float: right;
         }
     }
     .yinCang {
@@ -260,20 +260,19 @@ section {
 }
 
 footer {
-    flex: 0 0 auto;
+    margin-bottom: 0 !important;
     clear:both;
-    padding: 2rem 5% 5rem;
-    display: flex !important;
-    justify-content: space-between;
+    margin-top: 5rem;
+    padding: 2rem 0 ;
     height: auto;
     text-align: left;
-    background-color: #b0bec5;
+    background-color: #808080;
     h3 {
-        font-size: 2rem !important;
-        font-weight: bold;
+        font-size: 1.2rem !important;
         margin: 0;
         letter-spacing: 3px;
         padding-bottom: 0.5em;
+        color: white;
     }
     ul {
         margin: 0px;
@@ -283,13 +282,14 @@ footer {
             margin-top: 0.5rem;
             letter-spacing: 1.5px;
             text-align: left;
-            font-size: 1.2em;
+            font-size: 1rem;
             a {
                 cursor: pointer;
                 text-decoration: none;
-                color:rgb(61, 61, 61);
+                color: rgba(255, 255, 255, 0.6);
                 &:hover {
                     text-decoration: none;
+                    color: white
                 }
             }
      
@@ -301,11 +301,6 @@ footer {
 
     .bottom-line p {
         letter-spacing: 3px;
-    }
-    @media (min-width: 1024px) {
-        padding: 2rem 10% 5rem 10%;
-        display: flex !important;
-        justify-content: space-between;
     }
 }
 

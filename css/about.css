@@ -203,7 +203,9 @@ section {
       background-color: #242424;
       color: #bdbdbd;
       font-size: 1rem; } }
-  section h1 {
+  section p {
+    font-size: 17px; }
+  section h3 {
     text-align: center;
     padding: 3% 0 1% 0;
     margin-bottom: 0; }
@@ -229,6 +231,9 @@ section {
     width: 200px;
     height: 250px;
     margin: 0 15px; }
+  section #about-contact span {
+    font-size: 18px;
+    font-family: "Microsoft YaHei"; }
 
 .backToHome {
   display: inline-block;

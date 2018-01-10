@@ -82,7 +82,7 @@ section {
     }
     .tabs a {
         font-size: 1.5rem !important;
-        color: $main-color !important;
+        letter-spacing: 2px;
     }
     .jieshao {
         height: 25rem;
@@ -314,10 +314,13 @@ footer {
     justify-content: space-around;
     background-color: black;
     color: white;
-    p a {       
-        color: rgb(133, 173, 211) !important;
-        &:hover {
-            text-decoration: none;
+    p {
+        margin: 0;
+        a {       
+            color: rgb(133, 173, 211) !important;
+            &:hover {
+                text-decoration: none;
+            }
         }
     }
 }

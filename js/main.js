@@ -64,16 +64,16 @@ $("#example3").loopScroll({
 
 //启动翻页插件，及设置属性
 $(document).ready(function(){
-  $('.bxslider').bxSlider();
+  $('.bxslider').bxSlider({
+    auto: false,
+    autoHover: true,
+    pause: 5000,
+    pager: true,
+    caption: true,
+    controls: true,
+  });
 })
-$('.bxslider').bxSlider({
-  auto: false,
-  autoHover: true,
-  pause: 5000,
-  pager: true,
-  caption: true,
-  controls: true,
-});
+
 
 
 //星空背景插件

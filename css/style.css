@@ -1,8 +1,9 @@
 @charset "UTF-8";
-html {
+html, body {
+  height: 100%;
   width: 100%;
-  margin: 0;
-  padding: 0; }
+  padding: 0;
+  margin: 0; }
 
 canvas {
   display: block; }
@@ -64,49 +65,30 @@ nav {
     font-size: 2rem; } }
 
 .section-1 {
+  clear: both;
   background-color: #F8F8F8;
-  display: grid;
-  grid-template-areas: "header header header header header" "left content content content right";
-  grid-template-rows: 1fr 27rem;
-  grid-template-columns: 20% 20% 20% 20% 20%; }
+  padding-bottom: 5rem; }
+  .section-1 h1 {
+    text-align: center;
+    font-size: 40px;
+    letter-spacing: 1px;
+    font-family: "NSimSun", "Microsoft YaHei", "微软雅黑";
+    font-weight: bold;
+    padding: 5rem 0;
+    margin: 0; }
   .section-1 img {
     width: 30%;
     margin-left: 35%; }
-  .section-1 .grid-left {
-    grid-row: 2/3;
-    grid-column: 2/3;
-    padding: 0 5%; }
-  .section-1 .grid-middle {
-    grid-row: 2/3;
-    grid-column: 3/4;
-    padding: 0 5%; }
-  .section-1 .grid-right {
-    grid-row: 2/3;
-    grid-column: 4/5;
-    padding: 0 5%; }
-  .section-1 p {
-    font-size: 18px;
-    padding-top: 5%;
-    text-align: center;
-    color: #888; }
   .section-1 h3 {
     color: #141414;
     font-size: 22px;
     text-align: center;
     margin-bottom: 0; }
-  .section-1 header {
-    grid-row: 1/2;
-    grid-column: 2/5;
+  .section-1 p {
+    font-size: 18px;
+    padding-top: 5%;
     text-align: center;
-    align-self: end; }
-    .section-1 header h1 {
-      font-size: 40px;
-      letter-spacing: 1px;
-      font-family: "NSimSun", "Microsoft YaHei", "微软雅黑";
-      font-weight: bold;
-      margin: 5rem 0; }
-  .section-1 a:link {
-    text-decoration-line: none; }
+    color: #888; }
 
 .section-2 {
   height: auto;
@@ -172,11 +154,8 @@ nav {
       padding: 0 10% 5%; } }
 
 .dangAn {
-  background-color: white;
-  display: grid;
-  grid-template-areas: "header" "left content line content line content right" "room" "left content line content line content right" "footer";
-  grid-template-rows: 1fr 22rem 4rem 22rem 15rem;
-  grid-template-columns: 1fr repeat(2, 22rem 4rem) 22rem 1fr; }
+  padding-bottom: 5rem;
+  background-color: white; }
   .dangAn h1 {
     font-size: 40px;
     letter-spacing: 1px;
@@ -187,13 +166,20 @@ nav {
     height: 100%;
     display: block;
     position: relative;
+    border-radius: 5%;
     -webkit-transition: all .4s ease-in;
     transition: all .4s ease-in; }
   .dangAn .dangAn-img {
     position: relative;
     text-align: center;
     overflow: hidden;
-    border-radius: 5%; }
+    border-radius: 5%;
+    height: 40vw;
+    margin: 0.5rem; }
+    @media (min-width: 992px) {
+      .dangAn .dangAn-img {
+        height: calc(45vw/3);
+        margin: 1rem; } }
     .dangAn .dangAn-img:hover img {
       -ms-transform: scale(1.2);
       -webkit-transform: scale(1.2);
@@ -227,7 +213,7 @@ nav {
       position: relative;
       font-size: 17px;
       background: rgba(0, 0, 0, 0.6);
-      padding: 10px;
+      padding: 5px;
       margin-top: 30%; }
     .dangAn .overlay a {
       text-decoration: none;
@@ -235,7 +221,7 @@ nav {
       text-transform: uppercase;
       border: 1px solid #fff;
       background-color: transparent;
-      margin: 10% 0 0;
+      margin: 0;
       padding: 7px 14px; }
       .dangAn .overlay a:hover {
         box-shadow: 0 0 5px #fff; }
@@ -253,19 +239,7 @@ nav {
     grid-area: 1/4/2/5;
     text-align: center; }
     .dangAn header h1 {
-      margin: 5rem 0; }
-  .dangAn #row-2-1 {
-    grid-area: 2/2/3/3; }
-  .dangAn #row-2-2 {
-    grid-area: 2/4/3/5; }
-  .dangAn #row-2-3 {
-    grid-area: 2/6/3/7; }
-  .dangAn #row-3-1 {
-    grid-area: 4/2/5/3; }
-  .dangAn #row-3-2 {
-    grid-area: 4/4/5/5; }
-  .dangAn #row-3-3 {
-    grid-area: 4/6/5/7; }
+      margin: 5rem 0 4rem; }
 
 .section-3 {
   padding: 0;

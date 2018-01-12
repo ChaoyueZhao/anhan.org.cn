@@ -63,16 +63,22 @@ $("#example3").loopScroll({
 //$("#example2").loopScroll({ direction: "downwards", speed: 30 });
 
 //启动翻页插件，及设置属性
+// $(document).ready(function(){
+//   $('.bxslider').bxSlider({
+//     auto: false,
+//     autoHover: true,
+//     pause: 5000,
+//     pager: true,
+//     caption: true,
+//     controls: true,
+//   });
+// })
+
 $(document).ready(function(){
-  $('.bxslider').bxSlider({
-    auto: false,
-    autoHover: true,
-    pause: 5000,
-    pager: true,
-    caption: true,
-    controls: true,
+  $('.slider').slider({
+    height: 540
   });
-})
+});
 
 
 

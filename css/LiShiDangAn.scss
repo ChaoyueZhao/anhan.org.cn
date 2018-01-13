@@ -41,7 +41,7 @@ nav {
     @media (min-width: 1024px) {
         display: block;
         height: 100%;
-        margin: 0 15vw;
+        margin: 0 10vw;
         background-color: white;
     }
 }
@@ -55,7 +55,7 @@ nav {
     article {
         width: 80%;
         margin: 0 auto;
-        h1 {
+        h3 {
             padding-top: 5%;
             letter-spacing: 2px;
             font-weight: bold;
@@ -63,7 +63,7 @@ nav {
         }
         p {
             padding: 2% 10% 5%;
-            font-size: 1.4em;
+            font-size: 1.4rem;
             text-align: left;
             span {
                 color: #b3b3b3;
@@ -80,10 +80,18 @@ section {
     ul {
         margin-bottom: 1rem !important;
     }
-    .tabs a {
-        font-size: 1.5rem !important;
-        letter-spacing: 2px;
+    .tabs {
+        margin-top: 3rem;
+        a {
+            font-size: 2rem !important;
+            letter-spacing: 2px;
+            @media (min-width: 993px) {
+                font-size: 1.75rem !important;
+            }
+        }
     }
+    
+
     .jieshao {
         height: 25rem;
     }
@@ -262,7 +270,8 @@ section {
 footer {
     margin-bottom: 0 !important;
     clear:both;
-    margin-top: 5rem;
+    width: 100%;
+    margin: 0 !important;
     padding: 2rem 0 ;
     height: auto;
     text-align: left;
@@ -301,6 +310,9 @@ footer {
 
     .bottom-line p {
         letter-spacing: 3px;
+    }
+    @media (min-width: 1024px) {
+        margin: 15vw;
     }
 }
 

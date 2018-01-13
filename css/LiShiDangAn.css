@@ -30,7 +30,7 @@ nav {
     .wraper {
       display: block;
       height: 100%;
-      margin: 0 15vw;
+      margin: 0 10vw;
       background-color: white; } }
 
 .intro {
@@ -42,14 +42,14 @@ nav {
   .intro article {
     width: 80%;
     margin: 0 auto; }
-    .intro article h1 {
+    .intro article h3 {
       padding-top: 5%;
       letter-spacing: 2px;
       font-weight: bold;
       font-family: "Microsoft YaHei"; }
     .intro article p {
       padding: 2% 10% 5%;
-      font-size: 1.4em;
+      font-size: 1.4rem;
       text-align: left; }
       .intro article p span {
         color: #b3b3b3; }
@@ -59,9 +59,14 @@ nav {
 
 section ul {
   margin-bottom: 1rem !important; }
-section .tabs a {
-  font-size: 1.5rem !important;
-  letter-spacing: 2px; }
+section .tabs {
+  margin-top: 3rem; }
+  section .tabs a {
+    font-size: 2rem !important;
+    letter-spacing: 2px; }
+    @media (min-width: 993px) {
+      section .tabs a {
+        font-size: 1.75rem !important; } }
 section .jieshao {
   height: 25rem; }
 section .jieshao-wenzi {
@@ -203,7 +208,8 @@ section .yinCang {
 footer {
   margin-bottom: 0 !important;
   clear: both;
-  margin-top: 5rem;
+  width: 100%;
+  margin: 0 !important;
   padding: 2rem 0;
   height: auto;
   text-align: left;
@@ -234,6 +240,9 @@ footer {
     font-size: 1.5rem; }
   footer .bottom-line p {
     letter-spacing: 3px; }
+  @media (min-width: 1024px) {
+    footer {
+      margin: 15vw; } }
 
 .bottom-div {
   clear: both;

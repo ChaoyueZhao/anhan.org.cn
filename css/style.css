@@ -77,8 +77,8 @@ nav {
     padding: 5rem 0;
     margin: 0; }
   .section-1 img {
-    width: 30%;
-    margin-left: 35%; }
+    width: 20%;
+    margin-left: 40%; }
   .section-1 h3 {
     color: #141414;
     font-size: 22px;
@@ -86,9 +86,21 @@ nav {
     margin-bottom: 0; }
   .section-1 p {
     font-size: 18px;
-    padding-top: 5%;
+    padding-top: 0;
     text-align: center;
     color: #888; }
+  @media (min-width: 600px) {
+    .section-1 img {
+      width: 30%;
+      margin-left: 35%; } }
+  @media (min-width: 993px) {
+    .section-1 #dang-an-shi-liao {
+      margin-left: 15%; }
+    .section-1 img {
+      max-width: 20%;
+      margin-left: 40%; }
+    .section-1 h3 {
+      font-size: 30px; } }
 
 .section-2 {
   height: auto;

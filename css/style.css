@@ -5,17 +5,6 @@ html, body {
   padding: 0;
   margin: 0; }
 
-canvas {
-  display: block; }
-
-#particles-js {
-  margin-top: 4rem;
-  position: absolute;
-  top: 0;
-  z-index: -1;
-  width: 100%;
-  height: 600px; }
-
 nav {
   letter-spacing: 0.2rem;
   background-color: white !important; }
@@ -29,42 +18,52 @@ nav {
     color: #666 !important;
     font-size: 1.2rem !important; }
 
-.homepage .wraper {
-  clear: both;
-  padding: 0;
-  height: 300px; }
-.homepage .headings {
-  font-size: 1rem;
-  margin-top: 160px; }
-.homepage h1 {
-  text-align: center;
-  margin-top: 0.2em;
-  font-size: 2.5rem;
-  font-weight: bold;
-  letter-spacing: 0.2rem;
-  color: #0097a7; }
-.homepage h3 {
-  font-size: 1.25rem;
-  text-align: center;
-  margin-top: 0.1rem;
-  color: #bbdefb; }
-.homepage p {
-  margin-top: 0.75em;
-  font-size: 1rem; }
-.homepage .title {
-  letter-spacing: 0.1em;
-  text-align: center;
-  font-size: 2.5vw;
-  color: #64b5f6;
-  font-size: 1rem; }
-@media screen and (min-width: 1024px) {
+#danChen {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  height: 100vh; }
+
+.homepage {
+  width: 100%; }
   .homepage .headings {
-    margin-top: 160px;
-    font-size: 3rem; }
-  .homepage .title {
-    font-size: 2rem; } }
+    font-size: 1rem;
+    margin-top: 160px; }
+  .homepage h1 {
+    text-align: center;
+    margin-top: 0.2em;
+    font-size: 2.5rem;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    color: #888;
+    text-shadow: 1px 1px 1px black, -1px -1px 1px rgba(255, 255, 255, 0.7); }
+  .homepage h3 {
+    font-size: 1.25rem;
+    text-align: center;
+    margin-top: 0.1rem;
+    color: #bbdefb; }
+  @media screen and (min-width: 1024px) {
+    .homepage .headings {
+      margin-top: 160px;
+      font-size: 3rem; } }
+
+canvas {
+  display: block; }
+
+#particles-js {
+  z-index: -2;
+  margin-top: 4rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  width: 100vw;
+  height: 100%;
+  height: 100vh; }
 
 .section-1 {
+  position: relative;
+  z-index: 2;
+  margin-top: 500px;
   clear: both;
   background-color: #F8F8F8;
   padding-bottom: 5rem; }
@@ -76,9 +75,6 @@ nav {
     font-weight: bold;
     padding: 5rem 0;
     margin: 0; }
-  .section-1 img {
-    width: 20%;
-    margin-left: 40%; }
   .section-1 h3 {
     color: #141414;
     font-size: 22px;
@@ -86,7 +82,7 @@ nav {
     margin-bottom: 0; }
   .section-1 p {
     font-size: 18px;
-    padding-top: 0;
+    padding: 0 4%;
     text-align: center;
     color: #888; }
   @media (min-width: 600px) {
@@ -101,8 +97,15 @@ nav {
       margin-left: 40%; }
     .section-1 h3 {
       font-size: 30px; } }
+  .section-1 #dang-an-shi-liao a:hover i {
+    color: #4bae4f; }
+  .section-1 #xiang-guan-wen-xian a:hover i {
+    color: #F4D03F; }
+  .section-1 #li-ping-lv-you a:hover i {
+    color: #ff5252; }
 
 .section-2 {
+  position: relative;
   height: auto;
   background-color: #F8F8F8;
   text-align: center;
@@ -126,7 +129,7 @@ nav {
     max-width: 510px; }
   .section-2 .section-2-right {
     display: inline-block;
-    margin: 0;
+    margin: 0 5%;
     padding: 0 0 30px;
     clear: both;
     font-size: 1rem !important; }
@@ -174,17 +177,20 @@ nav {
       padding: 0 10% 5%; } }
 
 .dangAn {
+  position: relative;
   padding-bottom: 5rem;
   background-color: white; }
   .dangAn header {
     text-align: center; }
     .dangAn header h1 {
-      margin: 5rem 0 4rem;
+      padding: 5rem 0 4rem;
+      margin: 0;
       font-size: 40px;
       letter-spacing: 1px;
       font-family: "NSimSun", "Microsoft YaHei", "微软雅黑";
       font-weight: bold; }
   .dangAn .dangAn-img {
+    z-index: 2;
     position: relative;
     text-align: center;
     overflow: hidden;
@@ -263,7 +269,9 @@ nav {
       text-transform: uppercase; }
 
 .section-3 {
+  position: relative;
   padding: 0;
+  padding-bottom: 1rem;
   margin: 0;
   clear: both;
   height: 800px;
@@ -273,12 +281,13 @@ nav {
   background-position: center center;
   background-repeat: no-repeat; }
   .section-3 .brief-biograph {
-    height: 600px;
+    height: 400px;
     width: 80%;
     display: inline-block;
     margin: 0 auto;
     text-align: left;
-    color: black; }
+    color: black;
+    padding-bottom: 3rem; }
     .section-3 .brief-biograph h1 {
       font-size: 40px;
       letter-spacing: 1px;
@@ -311,10 +320,10 @@ nav {
         font-size: 1.5rem; }
 
 footer {
+  position: relative;
   margin-bottom: 0 !important;
   clear: both;
-  margin-top: 5rem;
-  padding: 2rem 0;
+  padding: 3rem 0;
   height: auto;
   text-align: left;
   background-color: #808080; }
@@ -346,6 +355,7 @@ footer {
     letter-spacing: 3px; }
 
 .bottom-div {
+  position: relative;
   clear: both;
   padding: 1em 0;
   display: flex;

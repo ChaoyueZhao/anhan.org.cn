@@ -264,20 +264,18 @@ footer {
 .backToTop {
   display: inline-block;
   position: fixed;
-  bottom: 0;
-  right: 0;
-  margin: 4em;
-  padding: 0 1em;
-  background: #E8E8E8;
-  border: 2px solid #e0e0e0;
+  bottom: 30px;
+  right: 30px;
+  padding: 0 10px;
+  background: #2ea1ff;
+  border: 2px solid #2ea1ff;
   letter-spacing: 0.1em;
   font-size: 1.2em;
   font-weight: bold;
-  color: #90caf9;
+  color: #E8E8E8;
   border-radius: 3px; }
   .backToTop:hover {
-    cursor: pointer;
-    background: #e1f5fe; }
+    cursor: pointer; }
 
 .materialboxed {
   display: block;

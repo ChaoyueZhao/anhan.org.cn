@@ -7,20 +7,6 @@ html,body {
     margin: 0;
 }
 
-
-canvas {
-  display: block;
-}
-
-#particles-js {
-  margin-top: 4rem;
-  position: absolute;
-  top:0;
-  z-index: -1;
-  width: 100%;
-  height: 600px;
-}
-
 nav {
     letter-spacing: 0.2rem;
     @media (min-width: 992px) {
@@ -40,12 +26,15 @@ nav {
 }
 
 
+#danChen {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    height: 100vh
+}
+
 .homepage {
-    .wraper{
-        clear:both;
-        padding: 0;
-        height: 300px;
-    }
+    width: 100%;
     .headings {
         font-size: 1rem;
         margin-top: 160px;
@@ -56,7 +45,8 @@ nav {
         font-size: 2.5rem;
         font-weight: bold;
         letter-spacing: 0.2rem;
-        color: #0097a7;
+        color: #888;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 1), -1px -1px 1px rgba(255, 255, 255, .7);
     }
     h3 {
         font-size: 1.25rem;
@@ -64,29 +54,34 @@ nav {
         margin-top: 0.1rem;
         color: #bbdefb;
     }
-    p {
-        margin-top: 0.75em;
-        font-size: 1rem;
-    }
-    .title {
-        letter-spacing: 0.1em;
-        text-align: center;
-        font-size: 2.5vw;
-        color: #64b5f6;
-        font-size: 1rem;
-    }
     @media screen and (min-width: 1024px){
        .headings {
             margin-top: 160px;
             font-size: 3rem;
         }
-        .title {
-            font-size: 2rem;
-        }
     }  
 }
 
+canvas {
+    display: block;
+  }
+  
+  #particles-js {
+    z-index: -2;
+    margin-top: 4rem;
+    position: fixed;
+    top:0;
+    width: 100%;
+    width: 100vw;
+    height: 100%;
+    height: 100vh;
+  }
+
+
 .section-1 {
+    position: relative;
+    z-index: 2;
+    margin-top: 500px;
     clear: both;
     background-color: #F8F8F8;
     padding-bottom: 5rem;
@@ -98,11 +93,7 @@ nav {
         font-weight: bold;
         padding: 5rem 0;
         margin: 0;
-    }
-    img {
-        width:20%;
-        margin-left: 40%;
-    }    
+    }  
     h3 {
         color: rgb(20, 20, 20);
         font-size: 22px;
@@ -111,7 +102,7 @@ nav {
     }    
     p {
         font-size: 18px;
-        padding-top: 0;
+        padding: 0 4%;
         text-align: center;
         color: #888;
     }
@@ -133,9 +124,38 @@ nav {
             font-size: 30px;
         }
     }
+    #dang-an-shi-liao {
+        a {
+            &:hover {
+                i {
+                    color: #4bae4f;
+                }
+            }
+        }
+    }
+    #xiang-guan-wen-xian {
+        a {
+            &:hover {
+                i {
+                    color: #F4D03F;
+                }
+            }
+        }
+    }
+    #li-ping-lv-you {
+        a {
+            &:hover {
+                i {
+                    color: #ff5252;
+                }
+            }
+        }
+    }
+
 }
 
 .section-2 {
+    position: relative;
     height: auto;
     background-color: #F8F8F8;
     text-align: center;
@@ -164,7 +184,7 @@ nav {
     }
     .section-2-right {
         display: inline-block;
-        margin: 0;
+        margin: 0 5%;
         padding: 0 0 30px;
         clear: both;
         font-size: 1rem !important;
@@ -225,12 +245,14 @@ nav {
 }
 
 .dangAn {
+    position: relative;
     padding-bottom: 5rem;
     background-color: white;
     header {
         text-align: center;
         h1 {
-            margin: 5rem 0 4rem;
+            padding: 5rem 0 4rem;
+            margin: 0;
             font-size: 40px;
             letter-spacing: 1px;
             font-family: "NSimSun", "Microsoft YaHei", "微软雅黑";
@@ -238,6 +260,7 @@ nav {
         }
     }
     .dangAn-img {
+        z-index: 2;
         position: relative;
         text-align: center;
         overflow: hidden;
@@ -264,7 +287,7 @@ nav {
             img {
                 -ms-transform:scale(1.2);
                 -webkit-transform:scale(1.2);
-                transform:scale(1.2);                
+                transform:scale(1.2);             
             }
             .overlay {
                 opacity:1;
@@ -332,7 +355,9 @@ nav {
 }
 
 .section-3 {
+    position: relative;
     padding: 0;
+    padding-bottom: 1rem;
     margin: 0;
     clear: both;
     height: 800px;
@@ -342,12 +367,13 @@ nav {
     background-position: center center;
     background-repeat: no-repeat;
     .brief-biograph {
-        height: 600px;
+        height: 400px;
         width: 80%;
         display: inline-block;
         margin: 0 auto;
         text-align: left;
         color: black;
+        padding-bottom: 3rem;
         h1 {
             font-size: 40px;
             letter-spacing: 1px;
@@ -389,10 +415,10 @@ nav {
 }
 
 footer {
+    position: relative;
     margin-bottom: 0 !important;
     clear:both;
-    margin-top: 5rem;
-    padding: 2rem 0 ;
+    padding: 3rem 0;
     height: auto;
     text-align: left;
     background-color: #808080;
@@ -434,6 +460,7 @@ footer {
 }
 
 .bottom-div {
+    position: relative;
     clear: both;
     padding: 1em 0;
     display: flex;

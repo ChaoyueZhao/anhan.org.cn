@@ -91,7 +91,7 @@ canvas {
       margin-left: 35%; } }
   @media (min-width: 993px) {
     .section-1 #dang-an-shi-liao {
-      margin-left: 15%; }
+      margin-left: 12.5%; }
     .section-1 img {
       max-width: 20%;
       margin-left: 40%; }
@@ -100,9 +100,9 @@ canvas {
   .section-1 #dang-an-shi-liao a:hover i {
     color: #4bae4f; }
   .section-1 #xiang-guan-wen-xian a:hover i {
-    color: #F4D03F; }
-  .section-1 #li-ping-lv-you a:hover i {
     color: #ff5252; }
+  .section-1 #li-ping-lv-you a:hover i {
+    color: #00e5ff; }
 
 .section-2 {
   position: relative;
@@ -197,7 +197,8 @@ canvas {
     border-radius: 5%;
     height: 40vw;
     padding: 0 !important;
-    margin: 0.5rem 1rem; }
+    margin: 0.5rem 1rem;
+    animation-duration: 1s; }
     @media (min-width: 992px) {
       .dangAn .dangAn-img {
         height: calc(45vw/3);

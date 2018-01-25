@@ -194,3 +194,25 @@ particlesJS("particles-js",{
   "retina_detect": true
 })
 
+
+$(function() {
+  var firstCol = $('.first-col');
+  var lastCol = $('.last-col');
+  var midCol = $('.mid-col');
+  var sectionTwoLeft = $('.section-2-left');
+  var firstColTop = firstCol.offset().top;
+  var sectionTwoLeftTop = sectionTwoLeft.offset().top;
+  var windowHeight = $(window).height();
+
+  $(window).scroll(function() {
+      var scroll = $(window).scrollTop();
+      if ( scroll >= ( firstColTop - windowHeight )) {
+          firstCol.addClass("animated fadeInLeft");
+          midCol.addClass("animated fadeInUp");
+          lastCol.addClass("animated fadeInRight");
+      }
+      if ( scroll >= ( sectionTwoLeftTop - windowHeight )) {
+        sectionTwoLeft.addClass("animated slideInLeft");
+    }
+  });
+});

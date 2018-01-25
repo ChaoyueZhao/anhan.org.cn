@@ -114,7 +114,7 @@ canvas {
     }
     @media (min-width: 993px) {
         #dang-an-shi-liao {
-            margin-left: 15%;
+            margin-left: 12.5%;
         }
         img {
             max-width: 20%;
@@ -137,7 +137,7 @@ canvas {
         a {
             &:hover {
                 i {
-                    color: #F4D03F;
+                    color: #ff5252;
                 }
             }
         }
@@ -146,7 +146,7 @@ canvas {
         a {
             &:hover {
                 i {
-                    color: #ff5252;
+                    color:#00e5ff;
                 }
             }
         }
@@ -268,6 +268,7 @@ canvas {
         height: 40vw;
         padding: 0 !important;
         margin: 0.5rem 1rem;
+        animation-duration: 1s;
         @media (min-width: 992px) {
             height: calc(45vw/3);
             margin: 1rem 2rem;

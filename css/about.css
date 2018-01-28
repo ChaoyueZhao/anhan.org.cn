@@ -227,6 +227,12 @@ section {
     section article a {
       color: white !important;
       font-weight: bold; }
+  section #about-donate-website li {
+    font-size: 1.25rem;
+    color: white;
+    font-weight: bold;
+    border: none !important;
+    border-radius: 5%; }
   section #about-donate-website img {
     width: 200px;
     height: 250px;

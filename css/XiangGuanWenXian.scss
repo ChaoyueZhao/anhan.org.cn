@@ -1,0 +1,80 @@
+$main-color: #17a7e0;
+
+nav {
+    letter-spacing: 0.2rem;
+
+    @media (min-width: 992px) {
+        .brand-logo {
+            padding-left: 5% !important;        
+        }
+    }
+    background-color: white !important;
+    // .brand-logo span {
+    //     color: $main-color !important;
+    //     font-weight: bold;
+    // }
+    .brand-logo div {
+        letter-spacing: 0ch;
+        width: 100%;
+        height: 65px;
+        color: $main-color;
+        text-align: center;
+        h4 {
+            margin: 0;
+            padding: 0;
+            line-height: 40px;
+            font-weight: bold;
+            font-family: YaHei;
+            @media (min-width: 600px) {
+                line-height: 45px;
+            }
+        }
+        P {
+            margin: 0;
+            padding: 0;
+            font-size: 10px;
+            line-height: 10px;
+            color: grey;
+            @media (min-width: 600px) {
+                line-height: 13px;
+                font-size: 13px;
+            }
+        }
+    }
+    li a {
+        color: #666 !important;
+        font-size: 1.2rem !important;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+
+.carousel {
+    .carousel-item-left {
+        width: 50%;
+        display: inline-block;
+        float: left;
+    }
+    .carousel-item-right {
+        width: 50%;
+        display: inline-flex;
+        img {
+            height: 400px;
+        }
+    }
+}
+
+#fenLei {
+    padding: 5rem 0;
+    text-align: center;
+    i {
+        width: 25%;
+    }
+    h3 {
+        font-size: 1.5rem;
+    }
+    p {
+        font-size: 1rem;
+    }
+}

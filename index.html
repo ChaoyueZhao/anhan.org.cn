@@ -26,7 +26,12 @@
     <header class="navbar-fixed">
         <nav class="nav-wraper">
           <div class="brand-logo">
-            <a href="index.html"><span>安汉纪念馆</span></a>
+            <a href="index.html">
+              <div>
+                  <h4>安汉纪念馆</h4>
+                  <p>AN HAN LIBRARY AND MUSEUM</p>
+              </div>
+            </a>
           </div>
   
           <ul id="nav-mobile" class="right hide-on-med-and-down">
@@ -44,7 +49,8 @@
             </li>
           </ul>    
         </nav>
-      </header>
+    </header>
+    
     <div id="danChen">
       <div id="particles-js" style="background-color: rgb(35, 39, 65)"></div>
       <section class="homepage">
@@ -69,14 +75,14 @@
           </a>        
         </div>
         <div class="col s12 m4  l3" id="xiang-guan-wen-xian">
-          <a href="#" style="cursor: not-allowed">
+          <a href="#" style="cursor: not-allowed" title="尚未开通">
             <p><i class="fa fa-pencil-square-o fa-4x" aria-hidden="true"></i></p>
             <h3>相关文献</h3>
             <p>最权威的安汉研究中心，资料包括学术论文、回忆录、纪念文章和文学作品等。</p>
           </a>
          </div>
         <div class="col s12 m4 l3" id="li-ping-lv-you">
-          <a href="#" style="cursor: not-allowed">
+          <a href="#" style="cursor: not-allowed" title="尚未开通">
             <p><i class="fa fa-location-arrow fa-4x" aria-hidden="true"></i></p>
             <h3>黎坪旅游</h3>
             <p>黎坪国家森林公园景点介绍、旅游资讯、出行攻略、风景欣赏和酒店预订。</p>
@@ -89,28 +95,28 @@
     <section class="dangAn">
       <header><h1>震撼档案史料</h1></header>
       <div class="row">
-          <div class="dangAn-img first-col col s5 offset-s1 l2 offset-l3">
+          <div class="dangAn-img col s5 offset-s1 l2 offset-l3" id="dangAn-one">
             <img src="pic/LiShiDangAn/GuoTu/XiJingRiBao-small.jpg" alt="西京日报">
             <div class="overlay">
               <h2>安汉死亡报道——《西京日报》</h2>
               <a href="category/LiShiDangAn.html#GuoTu"><i class="fa fa-search" aria-hidden="true"></i> 查看</a>
             </div>
           </div>
-          <div class="dangAn-img mid-col col s5 l2">
+          <div class="dangAn-img col s5 l2" id="dangAn-two">
             <img src="pic/LiShiDangAn/FaGuo/TePaiYuan.jpg" alt="">
             <div class="overlay">
                 <h2>勤工俭学名单——国民党省级特派员</h2>
                 <a href="category/LiShiDangAn.html#FaGuo"><i class="fa fa-search" aria-hidden="true"></i> 查看</a>
             </div>
           </div>
-          <div class="dangAn-img last-col col s5 offset-s1 l2">
+          <div class="dangAn-img col s5 offset-s1 l2"  id="dangAn-three">
               <img src="pic/LiShiDangAn/XiAn/XiNong.jpg" alt="">
               <div class="overlay">
                   <h2>前往甘青宁为西农农场选址</h2>
                   <a href="category/LiShiDangAn.html#XiAn"><i class="fa fa-search" aria-hidden="true"></i> 查看</a>
               </div>          
           </div>
-          <div class="dangAn-img first-col col s5 l2 offset-l3">
+          <div class="dangAn-img col s5 l2 offset-l3" id="dangAn-four">
               <img src="pic/LiShiDangAn/TaiWan/RenShiDangAn-2.jpg" alt="">
               <div class="overlay">
                   <h2>安汉民国实业部人事档案</h2>
@@ -118,14 +124,14 @@
               </div>
           </div>
     
-          <div class="dangAn-img mid-col col s5 offset-s1 l2">
+          <div class="dangAn-img col s5 offset-s1 l2" id="dangAn-five">
               <img src="pic/LiShiDangAn/TaiWan/ZhenChaBaoGao.jpg" alt="">
               <div class="overlay">
                   <h2>安汉“包庇种烟及贪污”案侦察报告</h2>
                   <a href="category/LiShiDangAn.html#TaiWan"><i class="fa fa-search" aria-hidden="true"></i> 查看</a>
               </div>
           </div>
-          <div class="dangAn-img last-col col s5 l2">
+          <div class="dangAn-img col s5 l2" id="dangAn-six">
               <img src="pic/LiShiDangAn/FaGuo/ErNianJi.jpg" alt="">
               <div class="overlay">
                   <h2>法国南锡农业与殖民地学院二年级名单</h2>
@@ -307,9 +313,12 @@
         <p>© 2018 anhan.org.cn 版权所有</p>
         <p>Made with <i class="fa fa-heart" style="color: red"></i> by <a href="category/about.html#about-contact">超越</a></p>
     </div>
+    
     <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/materialize.js"></script>
     <script src="js/particles.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/materialize.js"></script>
+    
+    
   </body>
 </html>

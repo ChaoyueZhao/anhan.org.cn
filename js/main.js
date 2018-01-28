@@ -195,24 +195,60 @@ particlesJS("particles-js",{
 })
 
 
-$(function() {
-  var firstCol = $('.first-col');
-  var lastCol = $('.last-col');
-  var midCol = $('.mid-col');
-  var sectionTwoLeft = $('.section-2-left');
-  var firstColTop = firstCol.offset().top;
-  var sectionTwoLeftTop = sectionTwoLeft.offset().top;
-  var windowHeight = $(window).height();
 
-  $(window).scroll(function() {
-      var scroll = $(window).scrollTop();
-      if ( scroll >= ( firstColTop - windowHeight )) {
-          firstCol.addClass("animated fadeInLeft");
-          midCol.addClass("animated fadeInUp");
-          lastCol.addClass("animated fadeInRight");
-      }
-      if ( scroll >= ( sectionTwoLeftTop - windowHeight )) {
-        sectionTwoLeft.addClass("animated slideInLeft");
-    }
+
+$(document).ready(function(){
+  $(function() {
+    var $dangAnOne = $('#dangAn-one');
+    var $dangAnTwo = $('#dangAn-two');
+    var $dangAnThree = $('#dangAn-three');
+    var $dangAnFour = $('#dangAn-four');
+    var $dangAnFive = $('#dangAn-five');
+    var $dangAnSix = $('#dangAn-six');
+    var sectionTwoLeft = $('.section-2-left');
+    var $oneTop = $dangAnOne.offset().top;
+    var $threeTop = $dangAnThree.offset().top;
+    var $fourTop = $dangAnFour.offset().top;
+    var $fiveTop = $dangAnFive.offset().top;
+    var sectionTwoLeftTop = sectionTwoLeft.offset().top;
+    var windowHeight = $(window).height();
+    var windowWidth = $(window).width();
+  
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+        if (windowWidth < 992) {
+          if ( scroll >= ( $oneTop - windowHeight )) {
+            $dangAnOne.addClass("animated fadeInLeft");
+            $dangAnTwo.addClass("animated fadeInRight");
+          }
+          if ( scroll >= ( $threeTop - windowHeight )) {
+            $dangAnThree.addClass("animated fadeInLeft");
+            $dangAnFour.addClass("animated fadeInRight");
+          }
+          if ( scroll >= ( $fiveTop - windowHeight )) {
+            $dangAnFive.addClass("animated fadeInLeft");
+            $dangAnSix.addClass("animated fadeInRight");
+          }
+          if ( scroll >= ( sectionTwoLeftTop - windowHeight )) {
+            sectionTwoLeft.addClass("animated bounceIn");
+          }
+        }
+        if (windowWidth >= 992) {
+          if ( scroll >= ( $oneTop - windowHeight )) {
+            $dangAnOne.addClass("animated fadeInLeft");
+            $dangAnTwo.addClass("animated fadeInUp");
+            $dangAnThree.addClass("animated fadeInRight");
+          }
+          if ( scroll >= ( $fourTop - windowHeight )) {
+            $dangAnFour.addClass("animated fadeInLeft");
+            $dangAnFive.addClass("animated fadeInUp");
+            $dangAnSix.addClass("animated fadeInRight");
+          }
+        }
+  
+        if ( scroll >= ( sectionTwoLeftTop - windowHeight )) {
+          sectionTwoLeft.addClass("animated slideInLeft");
+        }
+    });
   });
-});
+})

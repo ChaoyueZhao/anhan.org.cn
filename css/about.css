@@ -237,6 +237,8 @@ section {
     width: 200px;
     height: 250px;
     margin: 0 15px; }
+  section #about-contact .valign-wrapper {
+    margin: 0; }
   section #about-contact span {
     font-size: 18px;
     font-family: "Microsoft YaHei";

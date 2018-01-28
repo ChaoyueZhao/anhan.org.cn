@@ -35,18 +35,34 @@ nav {
     nav li a:hover {
       text-decoration: none; }
 
-.carousel .carousel-item-left {
-  width: 50%;
-  display: inline-block;
-  float: left; }
-.carousel .carousel-item-right {
-  width: 50%;
-  display: inline-flex; }
-  .carousel .carousel-item-right img {
-    height: 400px; }
+.carousel {
+  max-height: 400px !important;
+  min-height: 200px; }
+  .carousel .carousel-item-left {
+    width: 50%;
+    display: inline-block;
+    float: left; }
+    .carousel .carousel-item-left h3 {
+      margin-top: 10%;
+      font-size: 3vw; }
+    .carousel .carousel-item-left p {
+      font-size: 1.5vw !important;
+      margin-top: 0; }
+  .carousel .carousel-item-right {
+    position: relative;
+    padding-top: 10%;
+    width: 50%;
+    display: inline-block;
+    height: 400px;
+    overflow: hidden; }
+    .carousel .carousel-item-right img {
+      position: absolute;
+      top: 10%;
+      left: 10%;
+      width: 80%; }
 
 #fenLei {
-  padding: 5rem 0;
+  padding: 5rem 0 2rem;
   text-align: center; }
   #fenLei i {
     width: 25%; }
@@ -54,5 +70,8 @@ nav {
     font-size: 1.5rem; }
   #fenLei p {
     font-size: 1rem; }
+  @media (min-width: 992px) {
+    #fenLei {
+      padding: 5rem 15% 2rem; } }
 
 /*# sourceMappingURL=XiangGuanWenXian.css.map */

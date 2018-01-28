@@ -51,22 +51,39 @@ nav {
 }
 
 .carousel {
+    max-height: 400px !important;
+    min-height: 200px;
     .carousel-item-left {
         width: 50%;
         display: inline-block;
         float: left;
+        h3 {
+            margin-top: 10%;
+            font-size: 3vw;
+        }
+        p {
+            font-size: 1.5vw !important;
+            margin-top: 0
+        }
     }
     .carousel-item-right {
+        position: relative;
+        padding-top: 10%;
         width: 50%;
-        display: inline-flex;
+        display: inline-block;
+        height: 400px;
+        overflow: hidden;
         img {
-            height: 400px;
+            position: absolute;
+            top: 10%;
+            left: 10%;
+            width: 80%
         }
     }
 }
 
 #fenLei {
-    padding: 5rem 0;
+    padding: 5rem 0 2rem;
     text-align: center;
     i {
         width: 25%;
@@ -77,4 +94,8 @@ nav {
     p {
         font-size: 1rem;
     }
+    @media (min-width: 992px) {
+        padding: 5rem 15% 2rem;
+    }
+
 }

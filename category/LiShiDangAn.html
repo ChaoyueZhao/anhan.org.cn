@@ -49,11 +49,12 @@
     <section class="row">
       <div class="col s12">
           <ul class="tabs">
-              <li class="tab col s2 offset-s1"><a href="#GuoTu" class="active">国图资料</a></li>
-              <li class="tab col s2"><a href="#XiAn">西安资料</a></li>
-              <li class="tab col s2"><a href="#HanZhong">汉中资料</a></li>
-              <li class="tab col s2"><a href="#TaiWan">台湾资料</a></li>
-              <li class="tab col s2"><a href="#FaGuo">法国资料</a></li>
+              <li class="tab col s2 offset-s1"><a href="#GuoTu" class="active light-blue-text">国图资料<span class="new badge" data-badge-caption="">4</span></a></li>
+              <li class="tab col s2"><a href="#XiAn" class="light-blue-text">西安资料<span class="new badge" data-badge-caption="">6</span></a></li>
+              <li class="tab col s2"><a href="#HanZhong" class="light-blue-text">汉中资料<span class="new badge" data-badge-caption="">7</span></a></li>
+              <li class="tab col s2"><a href="#TaiWan" class="light-blue-text">台湾资料<span class="new badge" data-badge-caption="">3</span></a></li>
+              <li class="tab col s2"><a href="#FaGuo" class="light-blue-text">法国资料<span class="new badge" data-badge-caption="">10</span></a></li>
+              <div class="indicator light-blue" style="z-index:1"></div>
           </ul>
       
             <!-- Tab panes -->
@@ -958,25 +959,6 @@
         $(this).children('.content-right').children().toggleClass('fa-angle-double-down fa-angle-double-up');
       })
 
-      // $(document).ready(function() {
-      //   jQuery(window).scroll(function() {
-      //     if ($(this).scrollTop() > 600) {
-      //     $('backToTop').fadeIn()}
-      //     else {$('backToTop').fadeOut()}
-      //   })
-      // });
-
-      // $(window).on('scroll', function() {
-      //   if ($(this).scrollTop() > 600) {
-      //     $('.backToTop').animate({
-      //       right: "30px"}, 300);
-      //   }
-      //   else {
-      //     $('.backToTop').animate({
-      //       right: "-61px"}, 300);
-      //   }
-      // });
-
       $(window).on('scroll', function() {
         if ($(this).scrollTop() > 400) {
           $('.backToTop').fadeIn();
@@ -993,6 +975,7 @@
       $(document).ready(function(){
         $('.modal').modal();
       })
+
 
     </script>
   </body>

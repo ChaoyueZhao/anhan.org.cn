@@ -54,16 +54,20 @@ nav {
     max-height: 400px !important;
     min-height: 200px;
     .carousel-item-left {
+        position: relative;
+        padding-top: 50px;
         width: 50%;
         display: inline-block;
         float: left;
         h3 {
-            margin-top: 10%;
             font-size: 3vw;
         }
         p {
             font-size: 1.5vw !important;
             margin-top: 0
+        }
+        @media (min-width: 600px) {
+            padding-top: 130px;
         }
     }
     .carousel-item-right {
@@ -73,16 +77,26 @@ nav {
         display: inline-block;
         height: 400px;
         overflow: hidden;
-        img {
+        div {
             position: absolute;
             top: 10%;
-            left: 10%;
-            width: 80%
+            right: 10%;
+            height: 400px;
+            width: 40vw;
+            img {
+                width: 100%
+            }
         }
     }
 }
 
 #fenLei {
+    h2 {
+        text-align: center;
+        margin: 0 0 2rem !important;
+        font-size: 2.5rem;
+        letter-spacing: 0.25rem;
+    }
     padding: 5rem 0 2rem;
     text-align: center;
     i {

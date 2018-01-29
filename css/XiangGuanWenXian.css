@@ -39,15 +39,19 @@ nav {
   max-height: 400px !important;
   min-height: 200px; }
   .carousel .carousel-item-left {
+    position: relative;
+    padding-top: 50px;
     width: 50%;
     display: inline-block;
     float: left; }
     .carousel .carousel-item-left h3 {
-      margin-top: 10%;
       font-size: 3vw; }
     .carousel .carousel-item-left p {
       font-size: 1.5vw !important;
       margin-top: 0; }
+    @media (min-width: 600px) {
+      .carousel .carousel-item-left {
+        padding-top: 130px; } }
   .carousel .carousel-item-right {
     position: relative;
     padding-top: 10%;
@@ -55,15 +59,23 @@ nav {
     display: inline-block;
     height: 400px;
     overflow: hidden; }
-    .carousel .carousel-item-right img {
+    .carousel .carousel-item-right div {
       position: absolute;
       top: 10%;
-      left: 10%;
-      width: 80%; }
+      right: 10%;
+      height: 400px;
+      width: 40vw; }
+      .carousel .carousel-item-right div img {
+        width: 100%; }
 
 #fenLei {
   padding: 5rem 0 2rem;
   text-align: center; }
+  #fenLei h2 {
+    text-align: center;
+    margin: 0 0 2rem !important;
+    font-size: 2.5rem;
+    letter-spacing: 0.25rem; }
   #fenLei i {
     width: 25%; }
   #fenLei h3 {

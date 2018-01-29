@@ -46,6 +46,24 @@ nav {
     }
 }
 
+.tabs {
+    li {
+        
+        a {
+            position: relative;
+            span {
+                position: absolute;
+                top: 0;
+                padding: 0;
+                margin: 0;
+                font-weight: bold !important;
+                min-width: 2rem !important;
+            }
+        }
+
+    }
+}
+
 .intro {
     flex: 0 0 auto;
     height: auto;

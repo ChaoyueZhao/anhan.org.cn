@@ -44,15 +44,15 @@
     <div class="wrapper">
         <section>
             <div class="carousel carousel-slider center col l12" data-indicators="true">
-                <div class="carousel-item  blue-grey lighten-2 white-text" href="#one!" id="carousel-1">
-
+                <div class="carousel-item" href="#one!" id="carousel-1">
+                  <img src="../pic/XiangGuanWenXian/carousel-1.png" alt="">
                 </div>
-                <div class="carousel-item  red lighten-2 white-text" href="#one!" id="carousel-2">
-
+                <div class="carousel-item" href="#one!" id="carousel-2">
+                  <img src="../pic/XiangGuanWenXian/carousel-2.jpg" alt="">
                 </div>
 
-                <div class="carousel-item teal lighten-2 white-text" href="#one!" id="carousel-3">
-
+                <div class="carousel-item" href="#one!" id="carousel-3">
+                  <img src="../pic/XiangGuanWenXian/carousel-3.png" alt="">
                 </div>
             </div>
         </section>
@@ -112,58 +112,66 @@
   
         <section class="main-body row">
             <div class="col l8">
-              <div class="row">
-                <h5>作家专栏</h5>
-                <div class="col l3">
+              <div class="row" id="zhuan-lan">
+                <div class="title">
+                  <div class="title-left">
+                    <p>作家专栏</p>
+                  </div>
+                  <div class="title-right">
+                    <p><a href="#">更多>></a></p>
+                  </div>
+                </div>
+                
+                <div class="col s6 m3 l3">
                     <div class="card">
                         <div class="card-image">
-                          <img src="../pic/XiangGuanWenXian/wuYuanGui.jpg">
-                          <span class="card-title">吴元贵</span>
+                          <img src="../pic/XiangGuanWenXian/wang-peng.jpg">
+                          <span class="card-title">王蓬</span>
                         </div>
                         <div class="card-content">
-                          <p>南郑文艺家协会主席，《南郑文艺》主编</p>
+                          <p>汉中市作协主席、陕西省作协副主席、中国作协会员，出版著作20余部。</p>
                         </div>
                         <div class="card-action">
                           <a href="#">查看作品</a>
                         </div>
                       </div>
                 </div>
-                <div class="col l3">
+                <div class="col s6 m3 l3">
                     <div class="card">
                         <div class="card-image">
                           <img src="../pic/XiangGuanWenXian/wuYuanGui.jpg">
                           <span class="card-title">吴元贵</span>
                         </div>
                         <div class="card-content">
-                          <p>南郑文艺家协会主席，《南郑文艺》主编</p>
+                          <p>南郑民间文艺家协会主席，《南郑文艺》主编。撒的发生东方闪电发送</p>
                         </div>
                         <div class="card-action">
                           <a href="#">查看作品</a>
                         </div>
                       </div>
                 </div>
-                <div class="col l3">
+                <div class="col s6 m3 l3">
                     <div class="card">
                         <div class="card-image">
-                          <img src="../pic/XiangGuanWenXian/wuYuanGui.jpg">
-                          <span class="card-title">吴元贵</span>
+                          <img src="../pic/XiangGuanWenXian/wei-ling.jpg">
+                          <span class="card-title">魏玲</span>
                         </div>
                         <div class="card-content">
-                          <p>南郑文艺家协会主席，《南郑文艺》主编</p>
+                          <p>笔名九子，著有长篇小说《体香恋》《魂断黎坪》和杂文、散文若干。</p>
                         </div>
                         <div class="card-action">
                           <a href="#">查看作品</a>
                         </div>
                       </div>
                 </div>
-                <div class="col l3">
+                <div class="col s6 m3 l3">
                     <div class="card">
                         <div class="card-image">
-                          <img src="../pic/XiangGuanWenXian/wuYuanGui.jpg">
-                          <span class="card-title">吴元贵</span>
+                          <img src="../pic/XiangGuanWenXian/feng-gui-hua.jpg">
+                          <span class="card-title">冯贵华</span>
                         </div>
                         <div class="card-content">
-                          <p>南郑文艺家协会主席，《南郑文艺》主编</p>
+                          <p>笔名谷子、桂桦，陕西作协会员，出版《指间风声》等多部著作。</p>
                         </div>
                         <div class="card-action">
                           <a href="#">查看作品</a>
@@ -206,12 +214,14 @@
     <script>
       $(document).ready(function(){
         $('.carousel.carousel-slider').carousel({fullWidth: true});
+        $('.carousel-item').css("height","100%");
       });
       autoplay();   
       function autoplay() {
         $('.carousel').carousel('next');
-        setTimeout(autoplay, 5000);
+        setTimeout(autoplay, 6000);
       }
+
 
     </script>
   </body>

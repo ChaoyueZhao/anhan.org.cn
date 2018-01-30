@@ -150,6 +150,7 @@ canvas {
     }
     #dang-an-shi-liao {
         a {
+            display: inline-block;
             &:hover {
                 i {
                     color: #4bae4f;
@@ -159,6 +160,7 @@ canvas {
     }
     #xiang-guan-wen-xian {
         a {
+            display: inline-block;
             &:hover {
                 i {
                     color: #ff5252;
@@ -168,6 +170,7 @@ canvas {
     }
     #li-ping-lv-you {
         a {
+            display: inline-block;
             &:hover {
                 i {
                     color:#00e5ff;

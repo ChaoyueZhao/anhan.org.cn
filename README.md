@@ -1,4 +1,4 @@
 # 安汉纪念馆 #
 ### www.anhan.org.cn ###
 
-技术栈： HTML5/CSS3/JavaScript/Bootstrap
+民国农垦专家、西北开发先行者安汉先生在线图文资料库

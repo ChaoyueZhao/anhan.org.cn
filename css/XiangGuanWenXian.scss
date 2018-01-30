@@ -3,7 +3,7 @@ $main-color: #17a7e0;
 
 .wrapper {
     max-width: 1440px;
-    margin: 0 auto;
+    margin:0 auto;
 }
 
 nav {
@@ -56,89 +56,106 @@ nav {
     }
 }
 
-.carousel {
-    max-height: 400px !important;
-    min-height: 200px;
-    .carousel-item-left {
-        position: relative;
-        padding-top: 50px;
-        width: 50%;
-        display: inline-block;
-        float: left;
-        h3 {
-            font-size: 3vw;
-        }
-        p {
-            font-size: 1.5vw !important;
-            margin-top: 0
-        }
-        @media (min-width: 600px) {
-            padding-top: 130px;
-        }
-    }
-    .carousel-item-right {
-        padding-top: 10%;
-        width: 50%;
-        display: inline-block;
-        height: 400px;
-        overflow: hidden;
-    }
-    #first-carousel-right {
-        background-image: url("../pic/XiangGuanWenXian/nanZhengWenYi.jpg");
-        background-position: center -10%;
-        background-size: 80%;
-        background-repeat: no-repeat;
-
-    }
-    #second-carousel-right {
-        background-image: url("../pic/XiangGuanWenXian/an-han-zhi-si.jpg");
-        background-position: center -10%;
-        background-size: contain;
-        background-repeat: no-repeat;
-    }
-    #third-carousel-right {
-        background-image: url("../pic/XiangGuanWenXian/an-han-zi-liao.jpg");
-        background-position: center -10%;
-        background-size: contain;
-        background-repeat: no-repeat;
-    }
-}
 
 #carousel-1 {
-    background-image: url('../pic/XiangGuanWenXian/carousel-1.png')
+    // background-image: url('../pic/XiangGuanWenXian/carousel-1.png');
+    // background-size: 100% auto;
+    // background-repeat: no-repeat;
+    height: 400px !important;
 }
 
 #carousel-2 {
-    background-image: url('../pic/XiangGuanWenXian/carousel-2.png')
+    // background-image: url('../pic/XiangGuanWenXian/carousel-2.png');
+    // background-size:100% auto;
+    // background-repeat: no-repeat;
+    height: 400px !important;
 }
 
 #carousel-3 {
-    background-image: url('../pic/XiangGuanWenXian/carousel-3.png')
+    // background-image: url('../pic/XiangGuanWenXian/carousel-3.png');
+    // background-size: 100% auto;
+    // background-repeat: no-repeat;
+    height: 400px !important;
 }
 
 .fenLei {
     .row {
         .inner-div {
-            height: 110px;
-            line-height: 110px;
+            margin: 0.25rem 0;
+            height: 50px;
+            line-height: 50px;
             background-color: #f5f5f5;
             border-radius: 5px;
+            @media (min-width: 600px) {
+                margin: 0.5rem;
+            }
         }
     } 
-    padding: 5rem 0 2rem;
+
+    padding: 2rem 0;
     text-align: center;
     strong {
-        font-size: 1.25rem;
+        font-size: 0.5rem;
         letter-spacing: 0.15rem;
     }
     @media (min-width: 992px) {
-        padding: 5rem 5% 2rem;
+        padding: 2rem 5%;
+        strong {
+            font-size: 1.25rem;
+            letter-spacing: 0.15rem;
+        }
+        .row {
+            .inner-div {
+                height: 110px;
+                line-height: 110px;
+                background-color: #f5f5f5;
+                border-radius: 5px;
+            }
+        } 
     }
 
 }
 
 .main-body {
+    .title {
+        position: relative;
+        height: 4rem;
+        border-bottom: 3px #eee solid;
+        margin-bottom: 1.5rem;
+        .title-left {
+            position: absolute;
+            top: 0;
+            left: 0.25rem;
+            display: inline-block;
+            margin-left: 1rem;
+            p {
+                font-size: 1.5rem;
+                line-height: 1.25rem;
+                font-weight: bold;
+            }
+        }
+        .title-right {
+            position: absolute;
+            top: 0.5rem;
+            right: 0;
+            display: inline-block;
+            margin-right: 5%;
+            p {
+                font-size: 1rem;
+                line-height: 1.25rem;
+            }
+        }
+    }
     @media (min-width: 992px) {
-        padding: 5rem 2% 2rem;
+        padding: 0 2%;
+    }
+    #zhuan-lan {
+        h5 {
+            padding-left: 1rem;
+        }
+        .card-content {
+            padding: 1rem;
+            height: calc(22px *3 + 2rem);
+        }
     }
 }

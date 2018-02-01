@@ -1,0 +1,72 @@
+nav {
+  letter-spacing: 0.2rem;
+  background-color: white !important; }
+  @media (min-width: 992px) {
+    nav .brand-logo {
+      padding-left: 5% !important; } }
+  nav .brand-logo div {
+    letter-spacing: 0ch;
+    width: 100%;
+    height: 65px;
+    color: #17a7e0;
+    text-align: center; }
+    nav .brand-logo div h4 {
+      margin: 0;
+      padding: 0;
+      line-height: 40px;
+      font-weight: bold;
+      font-family: YaHei; }
+      @media (min-width: 600px) {
+        nav .brand-logo div h4 {
+          line-height: 45px; } }
+    nav .brand-logo div P {
+      margin: 0;
+      padding: 0;
+      font-size: 10px;
+      line-height: 10px;
+      color: grey; }
+      @media (min-width: 600px) {
+        nav .brand-logo div P {
+          line-height: 13px;
+          font-size: 13px; } }
+  nav li a {
+    color: #666 !important;
+    font-size: 1.2rem !important; }
+
+section .headings {
+  text-align: center;
+  padding-bottom: 15px; }
+  section .headings h1 {
+    font-size: 24px;
+    font-weight: bold; }
+  section .headings h2 {
+    font-size: 22px; }
+  section .headings h3 {
+    font-size: 18px; }
+  section .headings h4 {
+    font-size: 16px; }
+  section .headings h5 {
+    font-size: 12px; }
+  section .headings h6 {
+    font-size: 10px; }
+section .wen-zhang {
+  padding-bottom: 15px; }
+  section .wen-zhang h1 {
+    font-size: 24px;
+    font-weight: bold; }
+  section .wen-zhang h2 {
+    font-size: 22px; }
+  section .wen-zhang h3 {
+    font-size: 18px; }
+  section .wen-zhang h4 {
+    font-size: 16px; }
+  section .wen-zhang h5 {
+    font-size: 12px; }
+  section .wen-zhang h6 {
+    font-size: 10px; }
+@media (min-width: 992px) {
+  section {
+    width: 660px;
+    margin: 47px auto 0; } }
+
+/*# sourceMappingURL=articles.css.map */

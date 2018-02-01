@@ -45,14 +45,17 @@
         <section>
             <div class="carousel carousel-slider center col l12" data-indicators="true">
                 <div class="carousel-item" href="#one!" id="carousel-1">
-                  <img src="../pic/XiangGuanWenXian/carousel-1.png" alt="">
+                  <a href="#" title="点击查看"><img src="../pic/XiangGuanWenXian/carousel-1.png" alt="《安汉之死》"></a>
+                  
                 </div>
                 <div class="carousel-item" href="#one!" id="carousel-2">
-                  <img src="../pic/XiangGuanWenXian/carousel-2.jpg" alt="">
+                  
+                  <a href="#" title="点击查看"><img src="../pic/XiangGuanWenXian/carousel-2.png" alt="《安汉诞辰120周年特辑》"></a>
                 </div>
 
                 <div class="carousel-item" href="#one!" id="carousel-3">
-                  <img src="../pic/XiangGuanWenXian/carousel-3.png" alt="">
+                  
+                  <a href="#" title="点击查看"><img src="../pic/XiangGuanWenXian/carousel-3.png" alt="《安汉资料》"></a>
                 </div>
             </div>
         </section>
@@ -118,7 +121,7 @@
                     <p>作家专栏</p>
                   </div>
                   <div class="title-right">
-                    <p><a href="#">更多>></a></p>
+                    <p><a href="WenXian/writers/writers.html">更多>></a></p>
                   </div>
                 </div>
                 
@@ -132,7 +135,7 @@
                           <p>汉中市作协主席、陕西省作协副主席、中国作协会员，出版著作20余部。</p>
                         </div>
                         <div class="card-action">
-                          <a href="#">查看作品</a>
+                          <a href="WenXian/writers/writers.html">查看作品</a>
                         </div>
                       </div>
                 </div>
@@ -143,10 +146,10 @@
                           <span class="card-title">吴元贵</span>
                         </div>
                         <div class="card-content">
-                          <p>南郑民间文艺家协会主席，《南郑文艺》主编。撒的发生东方闪电发送</p>
+                          <p>陕西作协会员、南郑民间文艺家协会主席，《南郑文艺》主编。</p>
                         </div>
                         <div class="card-action">
-                          <a href="#">查看作品</a>
+                          <a href="WenXian/writers/writers.html">查看作品</a>
                         </div>
                       </div>
                 </div>
@@ -160,7 +163,7 @@
                           <p>笔名九子，著有长篇小说《体香恋》《魂断黎坪》和杂文、散文若干。</p>
                         </div>
                         <div class="card-action">
-                          <a href="#">查看作品</a>
+                          <a href="WenXian/writers/writers.html">查看作品</a>
                         </div>
                       </div>
                 </div>
@@ -174,7 +177,7 @@
                           <p>笔名谷子、桂桦，陕西作协会员，出版《指间风声》等多部著作。</p>
                         </div>
                         <div class="card-action">
-                          <a href="#">查看作品</a>
+                          <a href="WenXian/writers/writers.html">查看作品</a>
                         </div>
                       </div>
                 </div>
@@ -187,27 +190,6 @@
     </div>
 
 
-
-
-      <div>
-        <!--PC和WAP自适应版-->
-        <div id="SOHUCS" sid="请将此处替换为配置SourceID的语句" ></div> 
-        <script type="text/javascript"> 
-          (function(){ 
-            var appid = 'cytroOtN3'; 
-            var conf = 'prod_94a0bae4e32996471ee8af5553635074'; 
-            var width = window.innerWidth || document.documentElement.clientWidth; 
-            if (width < 960) { 
-            window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="http://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>'); } else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("http://changyan.sohu.com/upload/changyan.js",function(){window.changyan.api.config({appid:appid,conf:conf})}); } })(); 
-        </script>
-      </div>
-
-
-    
-
-    
-
-
     <script src="../js/jquery-3.2.1.min.js"></script>
     <script src="../js/materialize.js"></script>
     <script src="../js/main.js"></script>
@@ -216,11 +198,23 @@
         $('.carousel.carousel-slider').carousel({fullWidth: true});
         $('.carousel-item').css("height","100%");
       });
-      autoplay();   
-      function autoplay() {
-        $('.carousel').carousel('next');
-        setTimeout(autoplay, 6000);
-      }
+
+      $(document).ready(function(){
+        var carousel_interval = 6000;
+        $('.carousel').carousel();
+          var int;
+          function run(){
+            int = setInterval(function(){ 
+              $('.carousel').carousel('next');
+            }, carousel_interval);
+          }
+          function stop(){
+            clearInterval(int);
+          }
+          run();
+          $('.carousel').hover(stop, run);
+      });
+
 
 
     </script>

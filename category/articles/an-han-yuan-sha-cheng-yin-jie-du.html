@@ -13,6 +13,7 @@
 
         <link rel="stylesheet" href="../../css/materialize.css">
         <link rel="stylesheet" href="../../css/articles.css">
+        <link rel="stylesheet" href="../../fonts/web-fonts-with-css/css/fontawesome-all.css">
     </head>
     <body>
         <!--[if lte IE 9]>
@@ -72,6 +73,21 @@
                     <p>学界无论怎样解读冤杀。但有一点，安汉为了这个民族和国家，立志献身的英雄气概在《西北垦殖论》中就有了强烈的表达。如果有幸读到青年时期安汉的家书，安汉身上有一种浓郁的中国士大夫的家国情怀，宁为玉碎，不为瓦全，就知道在他身上不缺少任何现代意义被称之&ldquo;钙&rdquo;的元素。</p>
             </div>
 
+            <div class="like">
+                <a class="btn-floating btn-large waves-effect waves-light blue lighten-5" title="点赞">
+                    <i class="fas fa-thumbs-up" id="thumbs-up"></i>
+                </a>
+
+                <span>
+
+                </span>
+
+                <a class="btn-floating btn-large waves-effect waves-light cyan lighten-5" title="分享">
+                    <i class="fas fa-share-alt"></i>
+                </a>              
+
+            </div>
+
 
             <div>
                 <!--PC和WAP自适应版-->
@@ -100,5 +116,51 @@
             ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
         </script>
         <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+
+        <script>
+
+            $(document).ready(function(){
+                $(window).on('scroll', function() {
+                    if ($(this).width() > 992) {
+                        if($(this).scrollTop() > 200) {
+                            $('.like').fadeIn();
+                        } else {
+                            $('.like').fadeOut();
+                        } 
+                    }
+                });
+            })
+
+            $(document).ready(function(){
+                var previousScroll = 0;
+                $(window).scroll(function(){
+                    var currentScroll = $(this).scrollTop();
+                    if (currentScroll > 0 & currentScroll < $(document).height() - $(window).height()) {
+                        if (currentScroll > previousScroll) {
+                            $('header').css("opacity", 0);
+                        } else {
+                            $('header').css("opacity", "1");
+                        }
+                        previousScroll = currentScroll;
+                    }
+                })
+            })
+
+            $(document).ready(function(){
+                
+                $.ajax({
+                    type: "post",
+                    url: "http://192.168.3.23:8080/selectByUrl",
+                    data: "url = 123",
+                    success: function(data) {
+                        var count=data.likeCount;
+                        $('.like span').html(count);
+                    }  
+                })
+            })
+
+
+            
+        </script>
     </body>
 </html>

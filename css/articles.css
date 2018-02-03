@@ -33,40 +33,58 @@ nav {
     color: #666 !important;
     font-size: 1.2rem !important; }
 
-section .headings {
-  text-align: center;
-  padding-bottom: 15px; }
-  section .headings h1 {
-    font-size: 24px;
-    font-weight: bold; }
-  section .headings h2 {
-    font-size: 22px; }
-  section .headings h3 {
-    font-size: 18px; }
-  section .headings h4 {
-    font-size: 16px; }
-  section .headings h5 {
-    font-size: 12px; }
-  section .headings h6 {
-    font-size: 10px; }
-section .wen-zhang {
-  padding-bottom: 15px; }
-  section .wen-zhang h1 {
-    font-size: 24px;
-    font-weight: bold; }
-  section .wen-zhang h2 {
-    font-size: 22px; }
-  section .wen-zhang h3 {
-    font-size: 18px; }
-  section .wen-zhang h4 {
-    font-size: 16px; }
-  section .wen-zhang h5 {
-    font-size: 12px; }
-  section .wen-zhang h6 {
-    font-size: 10px; }
-@media (min-width: 992px) {
-  section {
-    width: 660px;
-    margin: 47px auto 0; } }
+section {
+  position: relative;
+  margin: 47px 3rem 0; }
+  section .headings {
+    text-align: center;
+    padding-bottom: 15px; }
+    section .headings h1 {
+      font-size: 24px;
+      font-weight: bold; }
+    section .headings h2 {
+      font-size: 22px; }
+    section .headings h3 {
+      font-size: 18px; }
+    section .headings h4 {
+      font-size: 16px; }
+    section .headings h5 {
+      font-size: 12px; }
+    section .headings h6 {
+      font-size: 10px; }
+  section .wen-zhang {
+    padding-bottom: 15px;
+    line-height: 1.7; }
+    section .wen-zhang h1 {
+      font-size: 24px;
+      font-weight: bold; }
+    section .wen-zhang h2 {
+      font-size: 22px; }
+    section .wen-zhang h3 {
+      font-size: 18px; }
+    section .wen-zhang h4 {
+      font-size: 16px; }
+    section .wen-zhang h5 {
+      font-size: 12px; }
+    section .wen-zhang h6 {
+      font-size: 10px; }
+  @media (min-width: 992px) {
+    section {
+      width: 660px;
+      margin: 47px auto 0; } }
+  section .like {
+    text-align: center;
+    padding: 1rem 0; }
+    section .like a {
+      margin: 1rem; }
+      section .like a i {
+        color: grey; }
+    @media (min-width: 992px) {
+      section .like {
+        position: fixed;
+        width: 50px;
+        left: calc(50vw - 330px - 150px);
+        top: 17%;
+        display: none; } }
 
 /*# sourceMappingURL=articles.css.map */

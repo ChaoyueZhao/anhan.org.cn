@@ -13,6 +13,7 @@
 
         <link rel="stylesheet" href="../../css/materialize.css">
         <link rel="stylesheet" href="../../css/articles.css">
+        <link rel="stylesheet" href="../../fonts/web-fonts-with-css/css/fontawesome-all.css">
     </head>
     <body>
         <!--[if lte IE 9]>
@@ -91,6 +92,17 @@
                     <p class="bbsp">文章摘自《休闲读品&middot;天下》第四辑</p>
             </div>
 
+            <div class="like">
+                    <a class="btn-floating btn-large waves-effect waves-light blue lighten-5" title="点赞">
+                        <i class="fas fa-thumbs-up" id="thumbs-up"></i>
+                    </a>
+    
+                    <a class="btn-floating btn-large waves-effect waves-light cyan lighten-5" title="分享">
+                        <i class="fas fa-share-alt"></i>
+                    </a>              
+    
+            </div>
+
 
             <div>
                 <!--PC和WAP自适应版-->
@@ -111,6 +123,37 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
         <script src="../../js/materialize.js"></script>
         <script src="../../js/jquery-3.2.1.min.js"></script>
+
+        <script>
+
+                $(document).ready(function(){
+                    $(window).on('scroll', function() {
+                        if ($(this).width() > 992) {
+                            if($(this).scrollTop() > 200) {
+                                $('.like').fadeIn();
+                            } else {
+                                $('.like').fadeOut();
+                            } 
+                        }
+                    });
+                })
+    
+                $(document).ready(function(){
+                    var previousScroll = 0;
+                    $(window).scroll(function(){
+                        var currentScroll = $(this).scrollTop();
+                        if (currentScroll > 0 & currentScroll < $(document).height() - $(window).height()) {
+                            if (currentScroll > previousScroll) {
+                                $('header').css("opacity", 0);
+                            } else {
+                                $('header').css("opacity", "1");
+                            }
+                            previousScroll = currentScroll;
+                        }
+                    })
+                })
+                
+            </script>
         
 
         <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->

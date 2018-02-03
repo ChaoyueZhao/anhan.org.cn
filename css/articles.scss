@@ -45,7 +45,8 @@ nav {
 
 
 section {
-
+    position: relative;
+    margin: 47px 3rem 0;
     .headings {
         text-align: center;
         padding-bottom: 15px;
@@ -64,10 +65,29 @@ section {
         h5 { font-size: 12px;}
         h6 { font-size: 10px;}    
         padding-bottom: 15px;
+        line-height: 1.7
     }
     @media (min-width: 992px) {
         width: 660px;
         margin: 47px auto 0;
+    }
+    .like {
+        text-align: center;
+        padding: 1rem 0;
+        a {
+            margin: 1rem;
+            i {
+                color: grey
+            }
+        }
+        @media (min-width: 992px) {
+            position: fixed;
+            width: 50px;
+            left:  calc(50vw - 330px - 150px);
+            top: 17%;
+            display: none;
+
+        }
     }
     
 }

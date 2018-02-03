@@ -255,24 +255,24 @@ $(document).ready(function(){
 
 $(document).ready(function(){
   $('#dang-an-shi-liao').hover(function(){
-    $(this).find('i').attr("class", "fa fa-unlock-alt fa-4x");
+    $(this).find('i').attr("class", "fas fa-lock-open fa-4x");
   },function(){
-    $(this).find('i').attr("class", "fa fa-lock fa-4x");
+    $(this).find('i').attr("class", "fas fa-lock fa-4x");
   });
 })
 
 $(document).ready(function(){
   $('#li-ping-lv-you').hover(function(){
-    $(this).find('i').attr("class", "fa fa-plane fa-4x");
+    $(this).find('i').attr("class", "fas fa-rocket fa-4x");
   },function(){
-    $(this).find('i').attr("class", "fa fa-location-arrow fa-4x");
+    $(this).find('i').attr("class", "fas fa-location-arrow fa-4x");
   });
 })
 
 $(document).ready(function(){
   $('#xiang-guan-wen-xian').hover(function(){
-    $(this).find('i').attr("class", "fa fa-pencil-square-o fa-4x");
+    $(this).find('i').attr("class", "fas fa-pencil-alt fa-4x");
   },function(){
-    $(this).find('i').attr("class", "fa fa-pencil fa-4x");
+    $(this).find('i').attr("class", "fas fa-edit fa-4x");
   });
 })

@@ -74,15 +74,16 @@ section {
     .like {
         text-align: center;
         padding: 1rem 0;
-        a {
+        span {
             margin: 1rem;
+            border: #666 1px solid;
             i {
                 color: grey
             }
         }
         @media (min-width: 992px) {
             position: fixed;
-            width: 50px;
+            width: 100px;
             left:  calc(50vw - 330px - 150px);
             top: 17%;
             display: none;

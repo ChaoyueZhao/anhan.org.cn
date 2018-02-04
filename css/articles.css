@@ -81,6 +81,6 @@ section {
     @media (min-width: 992px) {
       section .like {
         position: fixed;
-        left: calc(50vw - 330px - 100px); } }
+        left: calc(50vw - 330px - 120px); } }
 
 /*# sourceMappingURL=articles.css.map */

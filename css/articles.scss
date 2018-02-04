@@ -79,7 +79,7 @@ section {
         display: none;
         @media (min-width: 992px) {
             position: fixed;
-            left:  calc(50vw - 330px - 50px);
+            left:  calc(50vw - 330px - 100px);
         }
     }
 }

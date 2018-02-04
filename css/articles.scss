@@ -73,21 +73,13 @@ section {
     }
     .like {
         text-align: center;
-        padding: 1rem 0;
-        span {
-            margin: 1rem;
-            border: #666 1px solid;
-            i {
-                color: grey
-            }
-        }
+        position: fixed;
+        left:  1rem;
+        top: 17%;
+        display: none;
         @media (min-width: 992px) {
             position: fixed;
-            width: 100px;
             left:  calc(50vw - 330px - 150px);
-            top: 17%;
-            display: none;
-
         }
     }
     

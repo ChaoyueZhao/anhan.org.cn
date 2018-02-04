@@ -234,14 +234,7 @@
             </div>
 
             <div class="like">
-                    <a class="btn-floating btn-large waves-effect waves-light blue lighten-5" title="点赞">
-                        <i class="fas fa-thumbs-up" id="thumbs-up"></i>
-                    </a>
-    
-                    <a class="btn-floating btn-large waves-effect waves-light cyan lighten-5" title="分享">
-                        <i class="fas fa-share-alt"></i>
-                    </a>              
-    
+                <span class="likebtn-wrapper" data-theme="youtube" data-lang="zh_CN" data-ef_voting="grow" data-vert="true" data-show_like_label="false" data-like_enabled="false" data-dislike_enabled="false" data-counter_count="true" data-popup_width="50"></span>
             </div>
 
 
@@ -269,12 +262,10 @@
 
                 $(document).ready(function(){
                     $(window).on('scroll', function() {
-                        if ($(this).width() > 992) {
-                            if($(this).scrollTop() > 200) {
-                                $('.like').fadeIn();
-                            } else {
-                                $('.like').fadeOut();
-                            } 
+                        if($(this).scrollTop() > 200) {
+                            $('.like').fadeIn();
+                        } else {
+                            $('.like').fadeOut();
                         }
                     });
                 })
@@ -295,6 +286,10 @@
                 })
                 
             </script>
+
+            <script>
+                (function(d,e,s){if(d.getElementById("likebtn_wjs"))return;a=d.createElement(e);m=d.getElementsByTagName(e)[0];a.async=1;a.id="likebtn_wjs";a.src=s;m.parentNode.insertBefore(a, m)})(document,"script","//w.likebtn.com/js/w/widget.js");
+            </script>            
         
 
         <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->

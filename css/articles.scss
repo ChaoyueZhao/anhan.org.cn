@@ -74,7 +74,7 @@ section {
     .like {
         text-align: center;
         position: fixed;
-        left:  1rem;
+        left:  0.9rem;
         top: 17%;
         display: none;
         @media (min-width: 992px) {
@@ -82,6 +82,5 @@ section {
             left:  calc(50vw - 330px - 150px);
         }
     }
-    
 }
 

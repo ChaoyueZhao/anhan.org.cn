@@ -75,7 +75,7 @@ section {
   section .like {
     text-align: center;
     position: fixed;
-    left: 1rem;
+    left: 0.9rem;
     top: 17%;
     display: none; }
     @media (min-width: 992px) {

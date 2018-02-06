@@ -39,6 +39,9 @@ nav {
     nav li a:hover {
       text-decoration: none; }
 
+.carousel img {
+  width: 100%; }
+
 .fenLei {
   padding: 2rem 0;
   text-align: center; }

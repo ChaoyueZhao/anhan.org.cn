@@ -26,6 +26,8 @@ nav {
   background-color: white;
   display: flex;
   flex-direction: column; }
+  .wraper section {
+    flex-grow: 1; }
   @media (min-width: 1024px) {
     .wraper {
       display: block;
@@ -187,10 +189,8 @@ section .content-right {
   section .content-right i {
     line-height: 4rem;
     color: #90caf9;
-    font-size: 4rem;
+    font-size: 3rem;
     padding-right: 10%; }
-    section .content-right i:hover {
-      font-size: 5rem; }
 section .xiaLa {
   display: block;
   height: auto;
@@ -204,6 +204,8 @@ section .xiaLa {
     height: 25rem;
     overflow: hidden;
     display: inline-block; }
+    section .xiaLa .tuPian img {
+      width: 100%; }
   section .xiaLa .shuoMing {
     display: inline-block;
     width: 40%;

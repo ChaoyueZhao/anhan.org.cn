@@ -50,7 +50,7 @@ nav {
   font-size: 1.5rem; }
 .wrapper .collapsible .collapsible-body {
   display: grid;
-  grid-template-columns: 30% 70%;
+  grid-template-columns: 30% 60%;
   grid-gap: 5%; }
 .wrapper .collapsible .body-left {
   align-content: start;
@@ -66,15 +66,13 @@ nav {
     text-align: left;
     font-size: 1.4rem;
     font-weight: bold; }
-.wrapper .collapsible .writer-intro {
-  width: 60%; }
-  .wrapper .collapsible .writer-intro p {
-    font-size: 1.4rem;
-    font-weight: bold; }
-  .wrapper .collapsible .writer-intro span {
-    font-size: 1.25rem;
-    font-family: KaiTi;
-    font-weight: bold;
-    text-indent: 2rem; }
+.wrapper .collapsible .writer-intro p {
+  font-size: 1.4rem;
+  font-weight: bold; }
+.wrapper .collapsible .writer-intro span {
+  font-size: 1.25rem;
+  font-family: KaiTi;
+  font-weight: bold;
+  text-indent: 2rem; }
 
 /*# sourceMappingURL=writers.css.map */

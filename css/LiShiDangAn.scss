@@ -138,11 +138,17 @@ section {
           }
       }
     #GuoJiaTuShuGuan {
-        background: url('../pic/LiShiDangAn/GuoTu/GuoTuBeiJing.jpg');
+        background: url('../pic/LiShiDangAn/GuoTu/GuoTuBeiJing-small.jpg');
         background-size: cover;
         background-position: center 60%;
         background-repeat: no-repeat;
         overflow: hidden;
+        @media (min-width: 992px) {
+            background: url('../pic/LiShiDangAn/GuoTu/GuoTuBeiJing-big.jpg');
+            background-position: 60%;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
     }
       
     #ShanXiDangAnGuan {
@@ -154,19 +160,31 @@ section {
     }
       
     #NanZhengWenShi {
-        background: url('../pic/LiShiDangAn/HanZhong/NanZheng.jpg');
+        background: url('../pic/LiShiDangAn/HanZhong/NanZheng-small.jpg');
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
         overflow: hidden;
+        @media (min-width: 992px) {
+            background: url('../pic/LiShiDangAn/HanZhong/NanZheng-big.jpg');
+            background-position: bottom;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
     }
       
     #FaGuoTuShuGuan {
-        background: url('../pic/LiShiDangAn/FaGuo/FaTuBeiJing.jpg');
+        background: url('../pic/LiShiDangAn/FaGuo/FaTuBeiJing-small.jpg');
         background-size: cover;
         background-position: center 85%;
         background-repeat: no-repeat;
         overflow: hidden;
+        @media (min-width: 992px) {
+            background: url('../pic/LiShiDangAn/FaGuo/FaTuBeiJing-big.jpg');
+            background-position: bottom;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
     }
       
     #ZhongYanYuan {
@@ -253,7 +271,7 @@ section {
             line-height: 4rem;
             color: #90caf9;
             font-size: 3rem;
-            padding-right: 10%;
+            padding-right: 30%;
         }
     }
     .xiaLa {

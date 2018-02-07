@@ -97,11 +97,17 @@ section .jieshao-wenzi {
       font-size: 1.5rem;
       padding: 0.25rem 0 0.75rem 0; }
 section #GuoJiaTuShuGuan {
-  background: url("../pic/LiShiDangAn/GuoTu/GuoTuBeiJing.jpg");
+  background: url("../pic/LiShiDangAn/GuoTu/GuoTuBeiJing-small.jpg");
   background-size: cover;
   background-position: center 60%;
   background-repeat: no-repeat;
   overflow: hidden; }
+  @media (min-width: 992px) {
+    section #GuoJiaTuShuGuan {
+      background: url("../pic/LiShiDangAn/GuoTu/GuoTuBeiJing-big.jpg");
+      background-position: 60%;
+      background-repeat: no-repeat;
+      background-size: cover; } }
 section #ShanXiDangAnGuan {
   background: url("../pic/LiShiDangAn/XiAn/background.jpg");
   background-size: cover;
@@ -109,17 +115,29 @@ section #ShanXiDangAnGuan {
   background-repeat: no-repeat;
   overflow: hidden; }
 section #NanZhengWenShi {
-  background: url("../pic/LiShiDangAn/HanZhong/NanZheng.jpg");
+  background: url("../pic/LiShiDangAn/HanZhong/NanZheng-small.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   overflow: hidden; }
+  @media (min-width: 992px) {
+    section #NanZhengWenShi {
+      background: url("../pic/LiShiDangAn/HanZhong/NanZheng-big.jpg");
+      background-position: bottom;
+      background-repeat: no-repeat;
+      background-size: cover; } }
 section #FaGuoTuShuGuan {
-  background: url("../pic/LiShiDangAn/FaGuo/FaTuBeiJing.jpg");
+  background: url("../pic/LiShiDangAn/FaGuo/FaTuBeiJing-small.jpg");
   background-size: cover;
   background-position: center 85%;
   background-repeat: no-repeat;
   overflow: hidden; }
+  @media (min-width: 992px) {
+    section #FaGuoTuShuGuan {
+      background: url("../pic/LiShiDangAn/FaGuo/FaTuBeiJing-big.jpg");
+      background-position: bottom;
+      background-repeat: no-repeat;
+      background-size: cover; } }
 section #ZhongYanYuan {
   background: url("../pic/LiShiDangAn/TaiWan/JinShiGuan.png");
   background-size: cover;
@@ -190,7 +208,7 @@ section .content-right {
     line-height: 4rem;
     color: #90caf9;
     font-size: 3rem;
-    padding-right: 10%; }
+    padding-right: 30%; }
 section .xiaLa {
   display: block;
   height: auto;

@@ -396,7 +396,7 @@ footer {
   display: flex;
   justify-content: space-around;
   background-color: black;
-  color: white; }
+  color: #bdbdbd; }
   .bottom-div p a {
     color: #85add3 !important; }
     .bottom-div p a:hover {

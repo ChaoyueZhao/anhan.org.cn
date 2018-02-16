@@ -41,10 +41,9 @@ nav {
     font-size: 1.2rem !important; }
 
 #danChen {
-  position: fixed;
+  position: absolute;
   width: 100%;
-  height: 100%;
-  height: 100vh; }
+  height: 600px; }
 
 .homepage {
   width: 100%; }
@@ -74,13 +73,11 @@ canvas {
 
 #particles-js {
   z-index: -2;
-  margin-top: 4rem;
-  position: fixed;
+  margin-top: 0;
+  position: absolute;
   top: 0;
-  width: 100%;
   width: 100vw;
-  height: 100%;
-  height: 100vh; }
+  height: 500px; }
 
 .section-1 {
   position: relative;
@@ -340,7 +337,7 @@ canvas {
     width: 100%;
     overflow: hidden;
     position: relative;
-    padding: 1rem !important;
+    padding: 2rem !important;
     border-top: 5px solid black;
     border-radius: 0.75rem; }
     .section-3 .news_container .news {
@@ -355,6 +352,7 @@ canvas {
         font-size: 1.5rem; }
 
 footer {
+  margin-top: 4rem;
   position: relative;
   margin-bottom: 0 !important;
   clear: both;
@@ -401,5 +399,8 @@ footer {
     color: #85add3 !important; }
     .bottom-div p a:hover {
       text-decoration: none; }
+  .bottom-div #busuanzi_value_site_pv {
+    color: #90caf9;
+    font-size: 1.2em; }
 
 /*# sourceMappingURL=style.css.map */

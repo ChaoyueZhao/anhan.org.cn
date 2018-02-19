@@ -105,42 +105,66 @@ nav {
 @media (min-width: 992px) {
   aside {
     margin-top: 50px; } }
+aside #an-niu {
+  display: flex;
+  justify-content: center; }
+  @media (min-width: 992px) {
+    aside #an-niu {
+      display: block; } }
 aside .tou-gao {
   height: 80px;
+  width: 30%;
   border: 1px solid #ff6642;
   border-radius: 5px;
   cursor: pointer;
   text-align: center;
   letter-spacing: 3px;
   margin: 1rem; }
+  aside .tou-gao a {
+    color: #ff6642 !important; }
   aside .tou-gao:hover {
     background-color: #ff6642; }
-  aside .tou-gao:hover p {
-    color: white; }
+  aside .tou-gao:hover a {
+    color: white !important; }
   aside .tou-gao p {
     font-size: 28px;
     color: #ff6642;
     font-weight: 400;
     margin: 15px;
-    line-height: 50px; }
+    line-height: 40px; }
+  @media (min-width: 992px) {
+    aside .tou-gao {
+      font-size: 20px;
+      width: 65%;
+      display: block;
+      margin: 1rem auto; } }
 aside .jiu-wen {
   height: 80px;
+  width: 30%;
   border: 1px solid #119c8c;
   border-radius: 5px;
   cursor: pointer;
   text-align: center;
   letter-spacing: 3px;
   margin: 1rem; }
+  aside .jiu-wen a {
+    color: #119c8c !important; }
   aside .jiu-wen:hover {
     background-color: #119c8c; }
-  aside .jiu-wen:hover p {
-    color: white; }
+  aside .jiu-wen:hover a {
+    color: white !important; }
   aside .jiu-wen p {
     font-size: 28px;
     color: #119c8c;
     font-weight: 400;
     margin: 15px;
-    line-height: 50px; }
+    line-height: 40px; }
+  @media (min-width: 992px) {
+    aside .jiu-wen {
+      font-size: 20px;
+      width: 65%;
+      display: block;
+      margin: 1rem auto; } }
 aside .article-list a:hover p {
   background-color: #e0e0e0; }
 aside .article-list p {

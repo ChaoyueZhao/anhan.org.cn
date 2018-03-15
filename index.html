@@ -330,9 +330,10 @@
     <script src="js/particles.js"></script>
     <script src="js/main.js"></script>
     <script src="js/core.js"></script>
+    <script src="js/cipher-core.js"></script>
     <script src="js/base64.js"></script>
     <script src="js/sha1.js"></script>
-    <script src="js/cipher-core.js"></script>
+    
     
     <script src="js/hmac.js"></script>
     <script src="js/materialize.js"></script>
@@ -341,7 +342,7 @@
     <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
 <script>
-  /******** 本示例仅做开发参考使用，不建议在生产环境下暴露 key！ ********/
+  
   var UID = "UE50007352"; // 测试用 用户ID，请更换成您自己的用户ID
   var KEY = "kwunfnwg8trcl0r8"; // 测试用key，请更换成您自己的 Key
   var API = "http://api.seniverse.com/v3/weather/now.json"; // 获取天气实况
@@ -359,10 +360,10 @@
     var obj = document.getElementById('weather-api');
     var weather = data.results[0];
     var text = [];
-    text.push("Location: " + weather.location.path);
-    text.push("Weather: " + weather.now.text);
-    text.push("Temperature: " + weather.now.temperature);
-    obj.innerText = text.join("\n");
+    text.push( weather.location.name);
+    text.push( weather.now.text);
+    text.push( weather.now.temperature + " &#x2103;");
+    obj.innerText = text.join();
   }
   // 构造最终请求的 url
   var url = API + "?location=" + LOCATION + "&" + str + "&callback=jsonpCallback";

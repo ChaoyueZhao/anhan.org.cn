@@ -324,42 +324,48 @@
         <p id="weather-api">当前天气：</p>
     </div>
     
+
+
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/particles.js"></script>
     <script src="js/main.js"></script>
     <script src="js/materialize.js"></script>
     <script src="js/lazysizes.js"></script>
+    
     <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
-    <script>
-      
-      var UID = "UE50007352"; // 测试用 用户ID，请更换成您自己的用户ID
-      var KEY = "kwunfnwg8trcl0r8"; // 测试用key，请更换成您自己的 Key
-      var API = "http://api.seniverse.com/v3/weather/now.json"; // 获取天气实况
-      var LOCATION = "beijing"; // 除拼音外，还可以使用 v3 id、汉语等形式
-      // 获取当前时间戳
-      var ts = Math.floor((new Date()).getTime() / 1000);
-      // 构造验证参数字符串
-      var str = "ts=" + ts + "&uid=" + UID;
-      // 使用 HMAC-SHA1 方式，以 API 密钥（key）对上一步生成的参数字符串（raw）进行加密
-      // 并将加密结果用 base64 编码，并做一个 urlencode，得到签名 sig
-      var sig = CryptoJS.HmacSHA1(str, KEY).toString(CryptoJS.enc.Base64);
-      sig = encodeURIComponent(sig);
-      str = str + "&sig=" + sig;
-      // 构造最终请求的 url
-      var url = API + "?location=" + LOCATION + "&" + str + "&callback=foo";
-      console.log(url)
-      // 直接发送请求进行调用，手动处理回调函数
-      $.getJSON(url, function(data) {
-        var obj = document.getElementById('weather-api');
-        var weather = data.results[0];
-        var text = [];
-        text.push("Location: " + weather.location.path);
-        text.push("Weather: " + weather.now.text);
-        text.push("Temperature: " + weather.now.temperature);
-        obj.innerText = text.join("\n")
-      });
-    </script>
+<script>
+  /******** 本示例仅做开发参考使用，不建议在生产环境下暴露 key！ ********/
+  var UID = "UE50007352"; // 测试用 用户ID，请更换成您自己的用户ID
+  var KEY = "kwunfnwg8trcl0r8"; // 测试用key，请更换成您自己的 Key
+  var API = "http://api.seniverse.com/v3/weather/now.json"; // 获取天气实况
+  var LOCATION = "beijing"; // 除拼音外，还可以使用 v3 id、汉语等形式
+  // 获取当前时间戳
+  var ts = Math.floor((new Date()).getTime() / 1000);
+  // 构造验证参数字符串
+  var str = "ts=" + ts + "&uid=" + UID;
+  // 使用 HMAC-SHA1 方式，以 API 密钥（key）对上一步生成的参数字符串（raw）进行加密
+  // 并将加密结果用 base64 编码，并做一个 urlencode，得到签名 sig
+  // var sig = CryptoJS.HmacSHA1(str, KEY).toString(CryptoJS.enc.Base64);
+  // sig = encodeURIComponent(sig);
+  // str = str + "&sig=" + sig;
+  var jsonpCallback = function(data) {
+    var obj = document.getElementById('weather-api');
+    var weather = data.results[0];
+    var text = [];
+    text.push("Location: " + weather.location.path);
+    text.push("Weather: " + weather.now.text);
+    text.push("Temperature: " + weather.now.temperature);
+    obj.innerText = text.join("\n");
+  }
+  // 构造最终请求的 url
+  var url = API + "?location=" + LOCATION + "&" + str + "&callback=jsonpCallback";
+  // 向 HTML 中动态插入 script 标签，通过 JSONP 的方式进行调用
+  var newScript = document.createElement('script');
+  newScript.type = 'text/javascript';
+  newScript.src = url;
+  $('body').append(newScript);
+</script>
     
     
   </body>

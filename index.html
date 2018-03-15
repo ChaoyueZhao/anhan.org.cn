@@ -329,6 +329,12 @@
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/particles.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/core.js"></script>
+    <script src="js/base64.js"></script>
+    <script src="js/sha1.js"></script>
+    <script src="js/cipher-core.js"></script>
+    
+    <script src="js/hmac.js"></script>
     <script src="js/materialize.js"></script>
     <script src="js/lazysizes.js"></script>
     
@@ -346,9 +352,9 @@
   var str = "ts=" + ts + "&uid=" + UID;
   // 使用 HMAC-SHA1 方式，以 API 密钥（key）对上一步生成的参数字符串（raw）进行加密
   // 并将加密结果用 base64 编码，并做一个 urlencode，得到签名 sig
-  // var sig = CryptoJS.HmacSHA1(str, KEY).toString(CryptoJS.enc.Base64);
-  // sig = encodeURIComponent(sig);
-  // str = str + "&sig=" + sig;
+  var sig = CryptoJS.HmacSHA1(str, KEY).toString(CryptoJS.enc.Base64);
+  sig = encodeURIComponent(sig);
+  str = str + "&sig=" + sig;
   var jsonpCallback = function(data) {
     var obj = document.getElementById('weather-api');
     var weather = data.results[0];

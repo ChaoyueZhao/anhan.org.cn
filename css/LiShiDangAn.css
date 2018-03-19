@@ -13,9 +13,31 @@ nav {
   @media (min-width: 992px) {
     nav .brand-logo {
       padding-left: 5% !important; } }
-  nav .brand-logo span {
-    color: #17a7e0 !important;
-    font-weight: bold; }
+  nav .brand-logo div {
+    letter-spacing: 0ch;
+    width: 100%;
+    height: 65px;
+    color: #17a7e0;
+    text-align: center; }
+    nav .brand-logo div h4 {
+      margin: 0;
+      padding: 0;
+      line-height: 40px;
+      font-weight: bold;
+      font-family: YaHei; }
+      @media (min-width: 600px) {
+        nav .brand-logo div h4 {
+          line-height: 45px; } }
+    nav .brand-logo div P {
+      margin: 0;
+      padding: 0;
+      font-size: 10px;
+      line-height: 10px;
+      color: grey; }
+      @media (min-width: 600px) {
+        nav .brand-logo div P {
+          line-height: 13px;
+          font-size: 13px; } }
   nav li a {
     color: #666 !important;
     font-size: 1.2rem !important; }

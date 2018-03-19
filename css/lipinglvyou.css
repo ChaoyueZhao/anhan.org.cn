@@ -39,6 +39,12 @@ nav {
     color: #666 !important;
     font-size: 1.2rem !important; }
 
+#allmap {
+  width: 80%;
+  height: 800px;
+  margin: 0 auto;
+  border: #17a7e0 solid 2px; }
+
 footer {
   margin-top: 4rem;
   position: relative;

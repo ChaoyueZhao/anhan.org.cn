@@ -40,11 +40,6 @@ nav {
     color: #666 !important;
     font-size: 1.2rem !important; }
 
-#danChen {
-  position: absolute;
-  width: 100%;
-  height: 600px; }
-
 .homepage {
   width: 100%; }
   .homepage .headings {
@@ -71,18 +66,9 @@ nav {
 canvas {
   display: block; }
 
-#particles-js {
-  z-index: -2;
-  margin-top: 0;
-  position: absolute;
-  top: 0;
-  width: 100vw;
-  height: 500px; }
-
 .section-1 {
   position: relative;
   z-index: 2;
-  margin-top: 450px;
   clear: both;
   background-color: #F8F8F8;
   padding-bottom: 5rem; }

@@ -158,7 +158,6 @@ aside {
         }
     }
     .tou-gao {
-        
         height: 80px;
         width: 30%;
         border: 1px solid #ff6642;
@@ -178,22 +177,22 @@ aside {
         &:hover a {
             color: white !important
         }
-
-
-
-        
+   
         p {
-            font-size: 28px;
+            font-size: 20px;
             color: #ff6642;
             font-weight: 400;
-            margin: 15px;
-            line-height: 40px;
+            margin: 0;
+            line-height: 80px;
         }
         @media (min-width: 992px) {
-            font-size: 20px;
+            font-size: 28px;
             width: 65%;
             display: block;
             margin: 1rem auto;
+            p {
+                font-size: 28px;
+            }
         }
     }
     .jiu-wen {
@@ -216,18 +215,21 @@ aside {
             color: white !important
         }
         p {
-            font-size: 28px;
+            font-size: 20px;
             color: #119c8c;
             font-weight: 400;
-            margin: 15px;
-            line-height: 40px;
+            margin: 0;
+            line-height: 80px;
 
         }
         @media (min-width: 992px) {
-            font-size: 20px;
+            font-size: 28px;
             width: 65%;
             display: block;
             margin: 1rem auto;
+            p {
+                font-size: 28px;
+            }
         }
     }
     .article-list {

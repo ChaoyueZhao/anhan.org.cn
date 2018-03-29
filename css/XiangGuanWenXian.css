@@ -127,17 +127,19 @@ aside .tou-gao {
   aside .tou-gao:hover a {
     color: white !important; }
   aside .tou-gao p {
-    font-size: 28px;
+    font-size: 20px;
     color: #ff6642;
     font-weight: 400;
-    margin: 15px;
-    line-height: 40px; }
+    margin: 0;
+    line-height: 80px; }
   @media (min-width: 992px) {
     aside .tou-gao {
-      font-size: 20px;
+      font-size: 28px;
       width: 65%;
       display: block;
-      margin: 1rem auto; } }
+      margin: 1rem auto; }
+      aside .tou-gao p {
+        font-size: 28px; } }
 aside .jiu-wen {
   height: 80px;
   width: 30%;
@@ -154,17 +156,19 @@ aside .jiu-wen {
   aside .jiu-wen:hover a {
     color: white !important; }
   aside .jiu-wen p {
-    font-size: 28px;
+    font-size: 20px;
     color: #119c8c;
     font-weight: 400;
-    margin: 15px;
-    line-height: 40px; }
+    margin: 0;
+    line-height: 80px; }
   @media (min-width: 992px) {
     aside .jiu-wen {
-      font-size: 20px;
+      font-size: 28px;
       width: 65%;
       display: block;
-      margin: 1rem auto; } }
+      margin: 1rem auto; }
+      aside .jiu-wen p {
+        font-size: 28px; } }
 aside .article-list a:hover p {
   background-color: #e0e0e0; }
 aside .article-list p {

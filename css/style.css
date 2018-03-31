@@ -84,7 +84,7 @@ canvas {
     color: #141414;
     font-size: 22px;
     text-align: center;
-    margin-bottom: 0; }
+    margin: 0; }
   .section-1 p {
     font-size: 18px;
     padding: 0 4%;
@@ -108,18 +108,30 @@ canvas {
       display: inline-block; }
       .section-1 #dang-an-shi-liao a:hover i {
         color: #4bae4f; }
+      .section-1 #dang-an-shi-liao a i {
+        font-size: 6rem; }
+      .section-1 #dang-an-shi-liao a p:first-of-type {
+        margin: 0; }
   .section-1 #xiang-guan-wen-xian {
     padding: 0; }
     .section-1 #xiang-guan-wen-xian a {
       display: inline-block; }
       .section-1 #xiang-guan-wen-xian a:hover i {
         color: #ff5252; }
+      .section-1 #xiang-guan-wen-xian a i {
+        font-size: 6rem; }
+      .section-1 #xiang-guan-wen-xian a p:first-of-type {
+        margin: 0; }
   .section-1 #li-ping-lv-you {
     padding: 0; }
     .section-1 #li-ping-lv-you a {
       display: inline-block; }
       .section-1 #li-ping-lv-you a:hover i {
         color: #00e5ff; }
+      .section-1 #li-ping-lv-you a i {
+        font-size: 6rem; }
+      .section-1 #li-ping-lv-you a p:first-of-type {
+        margin: 0; }
 
 .section-2 {
   position: relative;

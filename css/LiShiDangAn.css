@@ -119,61 +119,61 @@ section .jieshao-wenzi {
       font-size: 1.5rem;
       padding: 0.25rem 0 0.75rem 0; }
 section #GuoJiaTuShuGuan {
-  background: url("../pic/LiShiDangAn/GuoTu/GuoTuBeiJing-small.jpg");
+  background: url("http://p6dzsyolx.bkt.clouddn.com/GuoTuBeiJing-small.jpg");
   background-size: cover;
   background-position: center 60%;
   background-repeat: no-repeat;
   overflow: hidden; }
   @media (min-width: 992px) {
     section #GuoJiaTuShuGuan {
-      background: url("../pic/LiShiDangAn/GuoTu/GuoTuBeiJing-big.jpg");
+      background: url("http://p6dzsyolx.bkt.clouddn.com/GuoTuBeiJing-big.jpg");
       background-position: 60%;
       background-repeat: no-repeat;
       background-size: cover; } }
 section #ShanXiDangAnGuan {
-  background: url("../pic/LiShiDangAn/XiAn/background.jpg");
+  background: url("http://p6dzsyolx.bkt.clouddn.com/background.jpg");
   background-size: cover;
   background-position: center bottom;
   background-repeat: no-repeat;
   overflow: hidden; }
 section #NanZhengWenShi {
-  background: url("../pic/LiShiDangAn/HanZhong/NanZheng-small.jpg");
+  background: url("http://p6dzsyolx.bkt.clouddn.com/NanZheng-small.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   overflow: hidden; }
   @media (min-width: 992px) {
     section #NanZhengWenShi {
-      background: url("../pic/LiShiDangAn/HanZhong/NanZheng-big.jpg");
+      background: url("http://p6dzsyolx.bkt.clouddn.com/NanZheng-big.jpg");
       background-position: bottom;
       background-repeat: no-repeat;
       background-size: cover; } }
 section #FaGuoTuShuGuan {
-  background: url("../pic/LiShiDangAn/FaGuo/FaTuBeiJing-small.jpg");
+  background: url("http://p6dzsyolx.bkt.clouddn.com/FaTuBeiJing-small.jpg");
   background-size: cover;
   background-position: center 85%;
   background-repeat: no-repeat;
   overflow: hidden; }
   @media (min-width: 992px) {
     section #FaGuoTuShuGuan {
-      background: url("../pic/LiShiDangAn/FaGuo/FaTuBeiJing-big.jpg");
+      background: url("http://p6dzsyolx.bkt.clouddn.com/FaTuBeiJing-big.jpg");
       background-position: bottom;
       background-repeat: no-repeat;
       background-size: cover; } }
 section #ZhongYanYuan {
-  background: url("../pic/LiShiDangAn/TaiWan/JinShiGuan.png");
+  background: url("http://p6dzsyolx.bkt.clouddn.com/JinShiGuan.png");
   background-size: cover;
   background-position: center 85%;
   background-repeat: no-repeat;
   overflow: hidden; }
 section #QinGongJianXue {
-  background: url("../pic/LiShiDangAn/FaGuo/paris-1920s.jpg");
+  background: url("http://p6dzsyolx.bkt.clouddn.com/paris-1920s.jpg");
   background-size: cover;
   background-position: center 40%;
   background-repeat: no-repeat;
   overflow: hidden; }
 section #LiAngTuShuGuan {
-  background: url("../pic/LiShiDangAn/FaGuo/LiAng.jpg");
+  background: url("http://p6dzsyolx.bkt.clouddn.com/LiAng.jpg");
   background-size: cover;
   background-position: center 80%;
   background-repeat: no-repeat;

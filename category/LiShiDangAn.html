@@ -3,12 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>历史档案</title>
-    <link rel="stylesheet" href="../css/normalize.css">
-    <link rel="stylesheet" href="../css/LiShiDangAn.css">
-    <link href="../css/jquery.bxslider.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="http://p6dzsyolx.bkt.clouddn.com/normalize.css">
+    <link rel="stylesheet" href="http://p6dzsyolx.bkt.clouddn.com/LiShiDangAn.css">
+    <link rel="stylesheet" href="http://p6dzsyolx.bkt.clouddn.com/jquery.bxslider.css">
     <link rel="stylesheet" href="../fonts/fontello/css/fontello.css">
-    <link rel="stylesheet" href="../css/animate.css">
-    <link rel="stylesheet" href="../css/materialize.css">
+    <link rel="stylesheet" href="http://p6dzsyolx.bkt.clouddn.com/animate.css">
+    <link rel="stylesheet" href="http://p6dzsyolx.bkt.clouddn.com/materialize.css">
     <link rel="icon" type="image/png" href="../pic/favicon.png"> 
   </head>
   <body>
@@ -973,35 +973,55 @@
 
 
 
-    <script src="../js/jquery-3.2.1.min.js"></script>
-    <script src="../js/materialize.js"></script>
-    <script src="../js/jquery.bxslider.js"></script>
-    <script src="../js/main.js"></script>
-    <script src="../js/lazysizes.js"></script>
+    <script src="http://p6dzsyolx.bkt.clouddn.com/jquery-3.2.1.min.js"></script>
+    <script src="http://p6dzsyolx.bkt.clouddn.com/materialize.js"></script>
+    <script src="http://p6dzsyolx.bkt.clouddn.com/jquery.bxslider.js"></script>
+    <script src="http://p6dzsyolx.bkt.clouddn.com/lazysizes.js"></script>
     <script>
-      $('.BiaoTi').click(function(){
-        event.preventDefault();
-        $(this).next().toggleClass('yinCang');
-        $(this).children('.content-right').children().toggleClass('icon-angle-double-down icon-angle-double-up');
+
+
+      var biaoTi = document.getElementsByClassName('BiaoTi');
+      for (var i = 0; i < biaoTi.length; i++) {
+          biaoTi[i].addEventListener('click', function(){
+            event.preventDefault();
+            this.nextElementSibling.classList.toggle('yinCang');
+            var ttt = this.childNodes[3].childNodes[1];
+            if (ttt.className.indexOf('icon-angle-double-up')== -1) {
+              ttt.className = ttt.className.replace('icon-angle-double-down', 'icon-angle-double-up')
+            }
+            else {
+              ttt.className = ttt.className.replace('icon-angle-double-up', 'icon-angle-double-down')
+            }
+        })
+      }
+           
+
+
+     // $(window).on('scroll', function() {
+      //  if ($(this).scrollTop() > 400) {
+      //    $('.backToTop').fadeIn();
+      //  } else {
+       //   $('.backToTop').fadeOut();
+       //   }
+    //  });
+
+      window.addEventListener('scroll', function(){
+        if (this.scrollTop > 400) {
+          document.querySelector('.backToTop').style.opacity = '1';
+        }
+        else {
+          document.querySelector('.backToTop').style.opacity = '0';
+        }
       })
 
-      $(window).on('scroll', function() {
-        if ($(this).scrollTop() > 400) {
-          $('.backToTop').fadeIn();
-        } else {
-          $('.backToTop').fadeOut();
-          }
-      });
 
+      //$('.backToTop').on('click', function(e) {
+      //  $("html, body").animate({scrollTop: 0}, 500);
+      //});
 
-      $('.backToTop').on('click', function(e) {
-        $("html, body").animate({scrollTop: 0}, 500);
-      });
-
-      $(document).ready(function(){
-        $('.modal').modal();
+      document.querySelector('.backToTop').addEventListener('click', function(){
+        window.scrollY = 0;
       })
-
 
     </script>
   </body>
